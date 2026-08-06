@@ -6,6 +6,7 @@
 #include <QSqlError>
 #include <QSqlQuery>
 #include <QThread>
+#include <QTimeZone>
 #include <QVariant>
 
 namespace {
@@ -22,8 +23,13 @@ QDateTime fromDbTime(const QVariant& raw)
     QDateTime dt = QDateTime::fromString(s, QStringLiteral("yyyy-MM-dd HH:mm:ss.zzz"));
     if (!dt.isValid())
         dt = QDateTime::fromString(s, QStringLiteral("yyyy-MM-dd HH:mm:ss"));
-    if (dt.isValid())
-        dt.setTimeSpec(Qt::UTC);
+    if (dt.isValid()) {
+#if QT_VERSION >= QT_VERSION_CHECK(6, 5, 0)
+        dt.setTimeZone(QTimeZone::UTC);
+#else
+        dt.setTimeSpec(Qt::UTC); // not deprecated before Qt 6.5
+#endif
+    }
     return dt;
 }
 } // namespace

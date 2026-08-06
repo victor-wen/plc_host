@@ -4,6 +4,7 @@
 #include <QtCharts/QDateTimeAxis>
 #include <QtCharts/QLineSeries>
 #include <QtCharts/QValueAxis>
+#include <QTimeZone>
 #include <QtGlobal>
 #include <QtMath>
 
@@ -153,7 +154,11 @@ void TrendService::pruneAndUpdateAxes()
         qint64 windowMs = 0;
         for (auto it = m_entries.constBegin(); it != m_entries.constEnd(); ++it)
             windowMs = qMax(windowMs, qint64(it->historySeconds) * 1000);
-        const QDateTime end = QDateTime::fromMSecsSinceEpoch(latest, Qt::UTC);
+#if QT_VERSION >= QT_VERSION_CHECK(6, 5, 0)
+        const QDateTime end = QDateTime::fromMSecsSinceEpoch(latest, QTimeZone::UTC);
+#else
+        const QDateTime end = QDateTime::fromMSecsSinceEpoch(latest, Qt::UTC); // not deprecated before Qt 6.5
+#endif
         m_axisX->setRange(end.addMSecs(-windowMs), end);
     }
 
