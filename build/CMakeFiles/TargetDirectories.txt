@@ -17,6 +17,7 @@
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_DashboardRepository.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_QtModbusClient.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_AcquisitionEngine.dir
+/home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_UiSmoke.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/test.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/edit_cache.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/rebuild_cache.dir
@@ -40,3 +41,5 @@
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_QtModbusClient_autogen.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_AcquisitionEngine_autogen_timestamp_deps.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_AcquisitionEngine_autogen.dir
+/home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_UiSmoke_autogen_timestamp_deps.dir
+/home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_UiSmoke_autogen.dir

@@ -11,6 +11,9 @@ set(SOURCES
     runtime/WriteQueue.cpp
     storage/DatabaseMigrator.cpp
     dashboard/DashboardRepository.cpp
+    ui/PlcConfigWidget.cpp
+    ui/TagEditorWidget.cpp
+    ui/TagMonitorWidget.cpp
 )
 
 set(HEADERS
@@ -29,6 +32,9 @@ set(HEADERS
     storage/DatabaseMigrator.h
     dashboard/DashboardDocument.h
     dashboard/DashboardRepository.h
+    ui/PlcConfigWidget.h
+    ui/TagEditorWidget.h
+    ui/TagMonitorWidget.h
 )
 
 qt_add_executable(plc_host ${SOURCES} ${HEADERS})

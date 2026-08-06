@@ -1,10 +1,10 @@
-Start testing: Aug 06 22:29 CST
+Start testing: Aug 06 22:36 CST
 ----------------------------------------------------------
-1/10 Testing: tst_smoke
-1/10 Test: tst_smoke
+1/11 Testing: tst_smoke
+1/11 Test: tst_smoke
 Command: "/home/victor/c_proj/plc_host/build/tests/tst_smoke"
 Directory: /home/victor/c_proj/plc_host/build/tests
-"tst_smoke" start time: Aug 06 22:29 CST
+"tst_smoke" start time: Aug 06 22:36 CST
 Output:
 ----------------------------------------------------------
 ********* Start testing of SmokeTest *********
@@ -15,18 +15,18 @@ PASS   : SmokeTest::cleanupTestCase()
 Totals: 3 passed, 0 failed, 0 skipped, 0 blacklisted, 0ms
 ********* Finished testing of SmokeTest *********
 <end of output>
-Test time =   0.01 sec
+Test time =   0.12 sec
 ----------------------------------------------------------
 Test Passed.
-"tst_smoke" end time: Aug 06 22:29 CST
+"tst_smoke" end time: Aug 06 22:36 CST
 "tst_smoke" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/10 Testing: tst_DomainModels
-2/10 Test: tst_DomainModels
+2/11 Testing: tst_DomainModels
+2/11 Test: tst_DomainModels
 Command: "/home/victor/c_proj/plc_host/build/tests/tst_DomainModels"
 Directory: /home/victor/c_proj/plc_host/build/tests
-"tst_DomainModels" start time: Aug 06 22:29 CST
+"tst_DomainModels" start time: Aug 06 22:36 CST
 Output:
 ----------------------------------------------------------
 ********* Start testing of DomainModelsTest *********
@@ -43,18 +43,18 @@ PASS   : DomainModelsTest::cleanupTestCase()
 Totals: 9 passed, 0 failed, 0 skipped, 0 blacklisted, 0ms
 ********* Finished testing of DomainModelsTest *********
 <end of output>
-Test time =   0.01 sec
+Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"tst_DomainModels" end time: Aug 06 22:29 CST
+"tst_DomainModels" end time: Aug 06 22:36 CST
 "tst_DomainModels" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-3/10 Testing: tst_DatabaseMigrations
-3/10 Test: tst_DatabaseMigrations
+3/11 Testing: tst_DatabaseMigrations
+3/11 Test: tst_DatabaseMigrations
 Command: "/home/victor/c_proj/plc_host/build/tests/tst_DatabaseMigrations"
 Directory: /home/victor/c_proj/plc_host/build/tests
-"tst_DatabaseMigrations" start time: Aug 06 22:29 CST
+"tst_DatabaseMigrations" start time: Aug 06 22:36 CST
 Output:
 ----------------------------------------------------------
 ********* Start testing of DatabaseMigrationsTest *********
@@ -64,21 +64,21 @@ PASS   : DatabaseMigrationsTest::migrate_creates_all_tables()
 PASS   : DatabaseMigrationsTest::migrate_idempotent()
 PASS   : DatabaseMigrationsTest::currentVersion_returns_1_after_migration()
 PASS   : DatabaseMigrationsTest::cleanupTestCase()
-Totals: 5 passed, 0 failed, 0 skipped, 0 blacklisted, 75ms
+Totals: 5 passed, 0 failed, 0 skipped, 0 blacklisted, 76ms
 ********* Finished testing of DatabaseMigrationsTest *********
 <end of output>
-Test time =   0.08 sec
+Test time =   0.10 sec
 ----------------------------------------------------------
 Test Passed.
-"tst_DatabaseMigrations" end time: Aug 06 22:29 CST
+"tst_DatabaseMigrations" end time: Aug 06 22:36 CST
 "tst_DatabaseMigrations" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-4/10 Testing: tst_ValueCodec
-4/10 Test: tst_ValueCodec
+4/11 Testing: tst_ValueCodec
+4/11 Test: tst_ValueCodec
 Command: "/home/victor/c_proj/plc_host/build/tests/tst_ValueCodec"
 Directory: /home/victor/c_proj/plc_host/build/tests
-"tst_ValueCodec" start time: Aug 06 22:29 CST
+"tst_ValueCodec" start time: Aug 06 22:36 CST
 Output:
 ----------------------------------------------------------
 ********* Start testing of ValueCodecTest *********
@@ -126,18 +126,18 @@ PASS   : ValueCodecTest::cleanupTestCase()
 Totals: 33 passed, 0 failed, 0 skipped, 0 blacklisted, 1ms
 ********* Finished testing of ValueCodecTest *********
 <end of output>
-Test time =   0.01 sec
+Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"tst_ValueCodec" end time: Aug 06 22:29 CST
+"tst_ValueCodec" end time: Aug 06 22:36 CST
 "tst_ValueCodec" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-5/10 Testing: tst_WriteQueue
-5/10 Test: tst_WriteQueue
+5/11 Testing: tst_WriteQueue
+5/11 Test: tst_WriteQueue
 Command: "/home/victor/c_proj/plc_host/build/tests/tst_WriteQueue"
 Directory: /home/victor/c_proj/plc_host/build/tests
-"tst_WriteQueue" start time: Aug 06 22:29 CST
+"tst_WriteQueue" start time: Aug 06 22:36 CST
 Output:
 ----------------------------------------------------------
 ********* Start testing of WriteQueueTest *********
@@ -159,18 +159,18 @@ PASS   : WriteQueueTest::cleanupTestCase()
 Totals: 14 passed, 0 failed, 0 skipped, 0 blacklisted, 1ms
 ********* Finished testing of WriteQueueTest *********
 <end of output>
-Test time =   0.01 sec
+Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"tst_WriteQueue" end time: Aug 06 22:29 CST
+"tst_WriteQueue" end time: Aug 06 22:36 CST
 "tst_WriteQueue" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-6/10 Testing: tst_TagCache
-6/10 Test: tst_TagCache
+6/11 Testing: tst_TagCache
+6/11 Test: tst_TagCache
 Command: "/home/victor/c_proj/plc_host/build/tests/tst_TagCache"
 Directory: /home/victor/c_proj/plc_host/build/tests
-"tst_TagCache" start time: Aug 06 22:29 CST
+"tst_TagCache" start time: Aug 06 22:36 CST
 Output:
 ----------------------------------------------------------
 ********* Start testing of TagCacheTest *********
@@ -185,21 +185,21 @@ PASS   : TagCacheTest::concurrentReadWrite()
 PASS   : TagCacheTest::snapshotIsolation()
 PASS   : TagCacheTest::staleBoundary()
 PASS   : TagCacheTest::cleanupTestCase()
-Totals: 10 passed, 0 failed, 0 skipped, 0 blacklisted, 282ms
+Totals: 10 passed, 0 failed, 0 skipped, 0 blacklisted, 195ms
 ********* Finished testing of TagCacheTest *********
 <end of output>
-Test time =   0.29 sec
+Test time =   0.22 sec
 ----------------------------------------------------------
 Test Passed.
-"tst_TagCache" end time: Aug 06 22:29 CST
+"tst_TagCache" end time: Aug 06 22:36 CST
 "tst_TagCache" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-7/10 Testing: tst_PollPlanner
-7/10 Test: tst_PollPlanner
+7/11 Testing: tst_PollPlanner
+7/11 Test: tst_PollPlanner
 Command: "/home/victor/c_proj/plc_host/build/tests/tst_PollPlanner"
 Directory: /home/victor/c_proj/plc_host/build/tests
-"tst_PollPlanner" start time: Aug 06 22:29 CST
+"tst_PollPlanner" start time: Aug 06 22:36 CST
 Output:
 ----------------------------------------------------------
 ********* Start testing of PollPlannerTest *********
@@ -221,18 +221,18 @@ PASS   : PollPlannerTest::cleanupTestCase()
 Totals: 14 passed, 0 failed, 0 skipped, 0 blacklisted, 1ms
 ********* Finished testing of PollPlannerTest *********
 <end of output>
-Test time =   0.01 sec
+Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"tst_PollPlanner" end time: Aug 06 22:29 CST
+"tst_PollPlanner" end time: Aug 06 22:36 CST
 "tst_PollPlanner" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-8/10 Testing: tst_DashboardRepository
-8/10 Test: tst_DashboardRepository
+8/11 Testing: tst_DashboardRepository
+8/11 Test: tst_DashboardRepository
 Command: "/home/victor/c_proj/plc_host/build/tests/tst_DashboardRepository"
 Directory: /home/victor/c_proj/plc_host/build/tests
-"tst_DashboardRepository" start time: Aug 06 22:29 CST
+"tst_DashboardRepository" start time: Aug 06 22:36 CST
 Output:
 ----------------------------------------------------------
 ********* Start testing of DashboardRepositoryTest *********
@@ -245,21 +245,21 @@ PASS   : DashboardRepositoryTest::saveItems_loadItems_roundtripAllFields()
 PASS   : DashboardRepositoryTest::zOrder_roundtrip_isExact()
 PASS   : DashboardRepositoryTest::jsonFields_roundtrip_isExact()
 PASS   : DashboardRepositoryTest::cleanupTestCase()
-Totals: 8 passed, 0 failed, 0 skipped, 0 blacklisted, 198ms
+Totals: 8 passed, 0 failed, 0 skipped, 0 blacklisted, 194ms
 ********* Finished testing of DashboardRepositoryTest *********
 <end of output>
-Test time =   0.21 sec
+Test time =   0.22 sec
 ----------------------------------------------------------
 Test Passed.
-"tst_DashboardRepository" end time: Aug 06 22:29 CST
+"tst_DashboardRepository" end time: Aug 06 22:36 CST
 "tst_DashboardRepository" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-9/10 Testing: tst_QtModbusClient
-9/10 Test: tst_QtModbusClient
+9/11 Testing: tst_QtModbusClient
+9/11 Test: tst_QtModbusClient
 Command: "/home/victor/c_proj/plc_host/build/tests/tst_QtModbusClient"
 Directory: /home/victor/c_proj/plc_host/build/tests
-"tst_QtModbusClient" start time: Aug 06 22:29 CST
+"tst_QtModbusClient" start time: Aug 06 22:36 CST
 Output:
 ----------------------------------------------------------
 ********* Start testing of QtModbusClientTest *********
@@ -271,21 +271,21 @@ PASS   : QtModbusClientTest::readHoldingRegisters()
 PASS   : QtModbusClientTest::writeHoldingRegister()
 PASS   : QtModbusClientTest::requestWhileDisconnected_returnsNullptr()
 PASS   : QtModbusClientTest::cleanupTestCase()
-Totals: 7 passed, 0 failed, 0 skipped, 0 blacklisted, 3ms
+Totals: 7 passed, 0 failed, 0 skipped, 0 blacklisted, 5ms
 ********* Finished testing of QtModbusClientTest *********
 <end of output>
-Test time =   0.01 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"tst_QtModbusClient" end time: Aug 06 22:29 CST
+"tst_QtModbusClient" end time: Aug 06 22:36 CST
 "tst_QtModbusClient" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-10/10 Testing: tst_AcquisitionEngine
-10/10 Test: tst_AcquisitionEngine
+10/11 Testing: tst_AcquisitionEngine
+10/11 Test: tst_AcquisitionEngine
 Command: "/home/victor/c_proj/plc_host/build/tests/tst_AcquisitionEngine"
 Directory: /home/victor/c_proj/plc_host/build/tests
-"tst_AcquisitionEngine" start time: Aug 06 22:29 CST
+"tst_AcquisitionEngine" start time: Aug 06 22:36 CST
 Output:
 ----------------------------------------------------------
 ********* Start testing of AcquisitionEngineTest *********
@@ -298,14 +298,42 @@ PASS   : AcquisitionEngineTest::reconnectBackoff()
 PASS   : AcquisitionEngineTest::staleOnFailure()
 PASS   : AcquisitionEngineTest::stop_doesNotAutoReconnect()
 PASS   : AcquisitionEngineTest::cleanupTestCase()
-Totals: 8 passed, 0 failed, 0 skipped, 0 blacklisted, 806ms
+Totals: 8 passed, 0 failed, 0 skipped, 0 blacklisted, 808ms
 ********* Finished testing of AcquisitionEngineTest *********
 <end of output>
-Test time =   0.81 sec
+Test time =   0.83 sec
 ----------------------------------------------------------
 Test Passed.
-"tst_AcquisitionEngine" end time: Aug 06 22:29 CST
+"tst_AcquisitionEngine" end time: Aug 06 22:36 CST
 "tst_AcquisitionEngine" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Aug 06 22:29 CST
+11/11 Testing: tst_UiSmoke
+11/11 Test: tst_UiSmoke
+Command: "/home/victor/c_proj/plc_host/build/tests/tst_UiSmoke"
+Directory: /home/victor/c_proj/plc_host/build/tests
+"tst_UiSmoke" start time: Aug 06 22:36 CST
+Output:
+----------------------------------------------------------
+********* Start testing of UiSmokeTest *********
+Config: Using QtTest library 6.4.2, Qt 6.4.2 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 13.2.0), ubuntu 24.04
+PASS   : UiSmokeTest::initTestCase()
+QWARN  : UiSmokeTest::mainWindow_constructs_and_navigates() This plugin does not support propagateSizeHints()
+PASS   : UiSmokeTest::mainWindow_constructs_and_navigates()
+PASS   : UiSmokeTest::plcConfigWidget_fields_roundtrip()
+PASS   : UiSmokeTest::plcConfigWidget_defaults_apply()
+PASS   : UiSmokeTest::tagEditorModel_crud_and_edit()
+PASS   : UiSmokeTest::tagEditorModel_move_up_down()
+PASS   : UiSmokeTest::tagMonitorModel_values_colors_and_filter()
+PASS   : UiSmokeTest::cleanupTestCase()
+Totals: 8 passed, 0 failed, 0 skipped, 0 blacklisted, 78ms
+********* Finished testing of UiSmokeTest *********
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"tst_UiSmoke" end time: Aug 06 22:36 CST
+"tst_UiSmoke" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 06 22:36 CST

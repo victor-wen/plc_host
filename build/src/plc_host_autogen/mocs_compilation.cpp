@@ -4,3 +4,6 @@
 #include "EQXUSF6PRG/moc_IModbusClient.cpp"
 #include "EQXUSF6PRG/moc_QtModbusClient.cpp"
 #include "BP4HXTY4JZ/moc_AcquisitionEngine.cpp"
+#include "UYX5XTB5RZ/moc_PlcConfigWidget.cpp"
+#include "UYX5XTB5RZ/moc_TagEditorWidget.cpp"
+#include "UYX5XTB5RZ/moc_TagMonitorWidget.cpp"

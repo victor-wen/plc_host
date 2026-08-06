@@ -1,11 +1,12 @@
-tst_smoke 35 0.000220421
-tst_DomainModels 34 0.000214484
-tst_DatabaseMigrations 32 0.00259823
-tst_WriteQueue 30 0.000236065
-tst_TagCache 31 0.00929529
-tst_PollPlanner 26 0.000303683
-tst_ValueCodec 20 0.000381912
-tst_QtModbusClient 10 0.00101346
-tst_AcquisitionEngine 6 0.135544
-tst_DashboardRepository 1 0.206336
+tst_smoke 36 0.00338909
+tst_DomainModels 35 0.000614468
+tst_DatabaseMigrations 33 0.00295257
+tst_WriteQueue 31 0.000709061
+tst_TagCache 32 0.00674394
+tst_PollPlanner 27 0.000857153
+tst_ValueCodec 21 0.00104717
+tst_QtModbusClient 11 0.00231976
+tst_AcquisitionEngine 7 0.118426
+tst_DashboardRepository 3 0.0718407
+tst_UiSmoke 1 0.0923064
 ---

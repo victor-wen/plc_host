@@ -11,6 +11,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/victor/c_proj/plc_host/src/app/MainWindow.h",
+			"MU",
+			"M37QIKJ6ZC/moc_MainWindow.cpp",
+			null
+		],
+		[
 			"/home/victor/c_proj/plc_host/src/dashboard/DashboardDocument.h",
 			"MU",
 			"GOJBEEH4MY/moc_DashboardDocument.cpp",
@@ -75,6 +81,24 @@
 			"MU",
 			"UTQNU3RORD/moc_DatabaseMigrator.cpp",
 			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/ui/PlcConfigWidget.h",
+			"MU",
+			"RF5KSEWXUK/moc_PlcConfigWidget.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/ui/TagEditorWidget.h",
+			"MU",
+			"RF5KSEWXUK/moc_TagEditorWidget.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/ui/TagMonitorWidget.h",
+			"MU",
+			"RF5KSEWXUK/moc_TagMonitorWidget.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -83,6 +107,7 @@
 	"MOC_DEFINITIONS" : 
 	[
 		"QT_CORE_LIB",
+		"QT_GUI_LIB",
 		"QT_NETWORK_LIB",
 		"QT_NO_DEBUG",
 		"QT_SERIALBUS_LIB",
@@ -90,7 +115,8 @@
 		"QT_SQL_LIB",
 		"QT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\"",
 		"QT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\"",
-		"QT_TESTLIB_LIB"
+		"QT_TESTLIB_LIB",
+		"QT_WIDGETS_LIB"
 	],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -110,13 +136,15 @@
 		"/usr/include/x86_64-linux-gnu/qt6/QtSerialBus",
 		"/usr/include/x86_64-linux-gnu/qt6/QtNetwork",
 		"/usr/include/x86_64-linux-gnu/qt6/QtSerialPort",
+		"/usr/include/x86_64-linux-gnu/qt6/QtWidgets",
+		"/usr/include/x86_64-linux-gnu/qt6/QtGui",
+		"/usr/include",
 		"/usr/include/c++/13",
 		"/usr/include/x86_64-linux-gnu/c++/13",
 		"/usr/include/c++/13/backward",
 		"/usr/lib/gcc/x86_64-linux-gnu/13/include",
 		"/usr/local/include",
-		"/usr/include/x86_64-linux-gnu",
-		"/usr/include"
+		"/usr/include/x86_64-linux-gnu"
 	],
 	"MOC_MACRO_NAMES" : 
 	[
@@ -150,6 +178,7 @@
 	"SETTINGS_FILE" : "/home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_smoke_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "/home/victor/c_proj/plc_host/src/app/MainWindow.cpp", "MU", null ],
 		[
 			"/home/victor/c_proj/plc_host/src/dashboard/DashboardRepository.cpp",
 			"MU",
@@ -172,6 +201,13 @@
 		[ "/home/victor/c_proj/plc_host/src/runtime/WriteQueue.cpp", "MU", null ],
 		[
 			"/home/victor/c_proj/plc_host/src/storage/DatabaseMigrator.cpp",
+			"MU",
+			null
+		],
+		[ "/home/victor/c_proj/plc_host/src/ui/PlcConfigWidget.cpp", "MU", null ],
+		[ "/home/victor/c_proj/plc_host/src/ui/TagEditorWidget.cpp", "MU", null ],
+		[
+			"/home/victor/c_proj/plc_host/src/ui/TagMonitorWidget.cpp",
 			"MU",
 			null
 		],

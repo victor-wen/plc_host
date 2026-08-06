@@ -99,6 +99,24 @@
 			"MU",
 			"5XLNPBDXWK/moc_DatabaseMigrator.cpp",
 			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/ui/PlcConfigWidget.h",
+			"MU",
+			"UYX5XTB5RZ/moc_PlcConfigWidget.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/ui/TagEditorWidget.h",
+			"MU",
+			"UYX5XTB5RZ/moc_TagEditorWidget.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/ui/TagMonitorWidget.h",
+			"MU",
+			"UYX5XTB5RZ/moc_TagMonitorWidget.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -205,6 +223,13 @@
 		[ "/home/victor/c_proj/plc_host/src/runtime/WriteQueue.cpp", "MU", null ],
 		[
 			"/home/victor/c_proj/plc_host/src/storage/DatabaseMigrator.cpp",
+			"MU",
+			null
+		],
+		[ "/home/victor/c_proj/plc_host/src/ui/PlcConfigWidget.cpp", "MU", null ],
+		[ "/home/victor/c_proj/plc_host/src/ui/TagEditorWidget.cpp", "MU", null ],
+		[
+			"/home/victor/c_proj/plc_host/src/ui/TagMonitorWidget.cpp",
 			"MU",
 			null
 		]
