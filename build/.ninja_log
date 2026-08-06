@@ -1,0 +1,21 @@
+# ninja log v5
+1	159	1786023267938277134	src/plc_host_autogen/timestamp	f4082118f8d37bce
+1	159	1786023267938277134	src/plc_host_autogen/mocs_compilation.cpp	f4082118f8d37bce
+1	159	1786023267938277134	/home/victor/c_proj/plc_host/build/src/plc_host_autogen/timestamp	f4082118f8d37bce
+1	159	1786023267938277134	/home/victor/c_proj/plc_host/build/src/plc_host_autogen/mocs_compilation.cpp	f4082118f8d37bce
+2	160	1786023267938277134	tests/tst_smoke_autogen/timestamp	c1e66fbf5520ec9d
+2	160	1786023267938277134	tests/tst_smoke_autogen/mocs_compilation.cpp	c1e66fbf5520ec9d
+2	160	1786023267938277134	/home/victor/c_proj/plc_host/build/tests/tst_smoke_autogen/timestamp	c1e66fbf5520ec9d
+2	160	1786023267938277134	/home/victor/c_proj/plc_host/build/tests/tst_smoke_autogen/mocs_compilation.cpp	c1e66fbf5520ec9d
+160	168	1786023267958180731	tests/CMakeFiles/tst_smoke.dir/tst_smoke_autogen/mocs_compilation.cpp.o	c3930e062b52d80
+159	1420	1786023269206071468	src/CMakeFiles/plc_host.dir/plc_host_autogen/mocs_compilation.cpp.o	e99add622c154de
+159	1421	1786023269206071468	src/CMakeFiles/plc_host.dir/app/MainWindow.cpp.o	ac0b4aae2590cb05
+159	1453	1786023269242431907	src/CMakeFiles/plc_host.dir/app/main.cpp.o	4d05b0356bd3bf39
+160	1607	1786023269396827157	tests/CMakeFiles/tst_smoke.dir/unit/tst_smoke.cpp.o	8f6791f7eed6fea4
+3	20	1786023279724615384	src/plc_host_autogen/timestamp	f4082118f8d37bce
+3	20	1786023279724615384	src/plc_host_autogen/mocs_compilation.cpp	f4082118f8d37bce
+3	20	1786023279724615384	/home/victor/c_proj/plc_host/build/src/plc_host_autogen/timestamp	f4082118f8d37bce
+3	20	1786023279724615384	/home/victor/c_proj/plc_host/build/src/plc_host_autogen/mocs_compilation.cpp	f4082118f8d37bce
+3	141	1786023279846658599	tests/tst_smoke	9a37aee676373efd
+21	1233	1786023280939762796	src/CMakeFiles/plc_host.dir/app/AppContext.cpp.o	ae960b39b076be52
+1233	1495	1786023281199325678	src/plc_host	c77582d315993618

@@ -1,0 +1,25 @@
+Start testing: Aug 06 21:34 CST
+----------------------------------------------------------
+1/1 Testing: tst_smoke
+1/1 Test: tst_smoke
+Command: "/home/victor/c_proj/plc_host/build/tests/tst_smoke"
+Directory: /home/victor/c_proj/plc_host/build/tests
+"tst_smoke" start time: Aug 06 21:34 CST
+Output:
+----------------------------------------------------------
+********* Start testing of SmokeTest *********
+Config: Using QtTest library 6.4.2, Qt 6.4.2 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 13.2.0), ubuntu 24.04
+PASS   : SmokeTest::initTestCase()
+PASS   : SmokeTest::alwaysPasses()
+PASS   : SmokeTest::cleanupTestCase()
+Totals: 3 passed, 0 failed, 0 skipped, 0 blacklisted, 1ms
+********* Finished testing of SmokeTest *********
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"tst_smoke" end time: Aug 06 21:34 CST
+"tst_smoke" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 06 21:34 CST

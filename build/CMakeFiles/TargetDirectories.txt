@@ -1,0 +1,15 @@
+/home/victor/c_proj/plc_host/build/CMakeFiles/test.dir
+/home/victor/c_proj/plc_host/build/CMakeFiles/edit_cache.dir
+/home/victor/c_proj/plc_host/build/CMakeFiles/rebuild_cache.dir
+/home/victor/c_proj/plc_host/build/src/CMakeFiles/plc_host.dir
+/home/victor/c_proj/plc_host/build/src/CMakeFiles/test.dir
+/home/victor/c_proj/plc_host/build/src/CMakeFiles/edit_cache.dir
+/home/victor/c_proj/plc_host/build/src/CMakeFiles/rebuild_cache.dir
+/home/victor/c_proj/plc_host/build/src/CMakeFiles/plc_host_autogen_timestamp_deps.dir
+/home/victor/c_proj/plc_host/build/src/CMakeFiles/plc_host_autogen.dir
+/home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_smoke.dir
+/home/victor/c_proj/plc_host/build/tests/CMakeFiles/test.dir
+/home/victor/c_proj/plc_host/build/tests/CMakeFiles/edit_cache.dir
+/home/victor/c_proj/plc_host/build/tests/CMakeFiles/rebuild_cache.dir
+/home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_smoke_autogen_timestamp_deps.dir
+/home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_smoke_autogen.dir
