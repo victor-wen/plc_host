@@ -1,5 +1,10 @@
 set(DOMAIN_SOURCES ${CMAKE_SOURCE_DIR}/src/domain/Tag.cpp)
-set(STORAGE_SOURCES ${CMAKE_SOURCE_DIR}/src/storage/DatabaseMigrator.cpp)
+set(STORAGE_SOURCES
+    ${CMAKE_SOURCE_DIR}/src/storage/DatabaseMigrator.cpp
+    ${CMAKE_SOURCE_DIR}/src/storage/BackupService.cpp
+)
+set(RECIPE_SOURCES ${CMAKE_SOURCE_DIR}/src/recipe/RecipeService.cpp)
+set(LOGGING_SOURCES ${CMAKE_SOURCE_DIR}/src/logging/LogService.cpp)
 set(HISTORY_SOURCES
     ${CMAKE_SOURCE_DIR}/src/history/HistoryService.cpp
     ${CMAKE_SOURCE_DIR}/src/history/CsvExporter.cpp
@@ -91,7 +96,8 @@ function(add_qtest filepath)
         ${ALARM_SOURCES}
         ${RUNTIME_SOURCES} ${MODBUS_SOURCES} ${MODBUS_HEADERS}
         ${DASHBOARD_SOURCES} ${DASHBOARD_HEADERS}
-        ${UI_SOURCES} ${UI_HEADERS})
+        ${UI_SOURCES} ${UI_HEADERS}
+        ${RECIPE_SOURCES} ${LOGGING_SOURCES})
     target_include_directories(${target} PRIVATE ${CMAKE_SOURCE_DIR}/src)
     target_link_libraries(${target} PRIVATE
         Qt6::Test Qt6::Sql Qt6::SerialBus Qt6::Widgets Qt6::Charts)
@@ -120,3 +126,6 @@ add_qtest(unit/tst_HistoryService)
 add_qtest(unit/tst_CsvExporter)
 add_qtest(ui/tst_TrendWidget)
 add_qtest(unit/tst_AlarmEngine)
+add_qtest(unit/tst_RecipeService)
+add_qtest(unit/tst_LogService)
+add_qtest(unit/tst_BackupService)

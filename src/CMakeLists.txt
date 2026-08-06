@@ -10,6 +10,9 @@ set(SOURCES
     runtime/TagCache.cpp
     runtime/WriteQueue.cpp
     storage/DatabaseMigrator.cpp
+    storage/BackupService.cpp
+    recipe/RecipeService.cpp
+    logging/LogService.cpp
     history/HistoryService.cpp
     history/CsvExporter.cpp
     history/TrendService.cpp
@@ -55,6 +58,9 @@ set(HEADERS
     runtime/TagCache.h
     runtime/WriteQueue.h
     storage/DatabaseMigrator.h
+    storage/BackupService.h
+    recipe/RecipeService.h
+    logging/LogService.h
     history/HistoryService.h
     history/CsvExporter.h
     history/TrendService.h

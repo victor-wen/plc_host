@@ -215,6 +215,12 @@
 			null
 		],
 		[
+			"/home/victor/c_proj/plc_host/src/logging/LogService.h",
+			"MU",
+			"SHPYQPRM5Q/moc_LogService.cpp",
+			null
+		],
+		[
 			"/home/victor/c_proj/plc_host/src/modbus/IModbusClient.h",
 			"MU",
 			"EQXUSF6PRG/moc_IModbusClient.cpp",
@@ -239,6 +245,12 @@
 			null
 		],
 		[
+			"/home/victor/c_proj/plc_host/src/recipe/RecipeService.h",
+			"MU",
+			"W5OZAV7AD6/moc_RecipeService.cpp",
+			null
+		],
+		[
 			"/home/victor/c_proj/plc_host/src/runtime/AcquisitionEngine.h",
 			"MU",
 			"BP4HXTY4JZ/moc_AcquisitionEngine.cpp",
@@ -254,6 +266,12 @@
 			"/home/victor/c_proj/plc_host/src/runtime/WriteQueue.h",
 			"MU",
 			"BP4HXTY4JZ/moc_WriteQueue.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/storage/BackupService.h",
+			"MU",
+			"5XLNPBDXWK/moc_BackupService.cpp",
 			null
 		],
 		[
@@ -490,6 +508,7 @@
 			"MU",
 			null
 		],
+		[ "/home/victor/c_proj/plc_host/src/logging/LogService.cpp", "MU", null ],
 		[ "/home/victor/c_proj/plc_host/src/modbus/PollPlanner.cpp", "MU", null ],
 		[
 			"/home/victor/c_proj/plc_host/src/modbus/QtModbusClient.cpp",
@@ -498,12 +517,22 @@
 		],
 		[ "/home/victor/c_proj/plc_host/src/modbus/ValueCodec.cpp", "MU", null ],
 		[
+			"/home/victor/c_proj/plc_host/src/recipe/RecipeService.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/victor/c_proj/plc_host/src/runtime/AcquisitionEngine.cpp",
 			"MU",
 			null
 		],
 		[ "/home/victor/c_proj/plc_host/src/runtime/TagCache.cpp", "MU", null ],
 		[ "/home/victor/c_proj/plc_host/src/runtime/WriteQueue.cpp", "MU", null ],
+		[
+			"/home/victor/c_proj/plc_host/src/storage/BackupService.cpp",
+			"MU",
+			null
+		],
 		[
 			"/home/victor/c_proj/plc_host/src/storage/DatabaseMigrator.cpp",
 			"MU",

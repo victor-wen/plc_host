@@ -64,6 +64,8 @@ src/plc_host_autogen/timestamp: \
   /home/victor/c_proj/plc_host/src/history/HistoryService.h \
   /home/victor/c_proj/plc_host/src/history/TrendService.cpp \
   /home/victor/c_proj/plc_host/src/history/TrendService.h \
+  /home/victor/c_proj/plc_host/src/logging/LogService.cpp \
+  /home/victor/c_proj/plc_host/src/logging/LogService.h \
   /home/victor/c_proj/plc_host/src/modbus/IModbusClient.h \
   /home/victor/c_proj/plc_host/src/modbus/PollPlanner.cpp \
   /home/victor/c_proj/plc_host/src/modbus/PollPlanner.h \
@@ -71,12 +73,16 @@ src/plc_host_autogen/timestamp: \
   /home/victor/c_proj/plc_host/src/modbus/QtModbusClient.h \
   /home/victor/c_proj/plc_host/src/modbus/ValueCodec.cpp \
   /home/victor/c_proj/plc_host/src/modbus/ValueCodec.h \
+  /home/victor/c_proj/plc_host/src/recipe/RecipeService.cpp \
+  /home/victor/c_proj/plc_host/src/recipe/RecipeService.h \
   /home/victor/c_proj/plc_host/src/runtime/AcquisitionEngine.cpp \
   /home/victor/c_proj/plc_host/src/runtime/AcquisitionEngine.h \
   /home/victor/c_proj/plc_host/src/runtime/TagCache.cpp \
   /home/victor/c_proj/plc_host/src/runtime/TagCache.h \
   /home/victor/c_proj/plc_host/src/runtime/WriteQueue.cpp \
   /home/victor/c_proj/plc_host/src/runtime/WriteQueue.h \
+  /home/victor/c_proj/plc_host/src/storage/BackupService.cpp \
+  /home/victor/c_proj/plc_host/src/storage/BackupService.h \
   /home/victor/c_proj/plc_host/src/storage/DatabaseMigrator.cpp \
   /home/victor/c_proj/plc_host/src/storage/DatabaseMigrator.h \
   /home/victor/c_proj/plc_host/src/ui/PlcConfigWidget.cpp \

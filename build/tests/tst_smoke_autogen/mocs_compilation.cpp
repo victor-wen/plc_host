@@ -20,6 +20,7 @@
 #include "4JPZGQXAVH/moc_ButtonActionExecutor.cpp"
 #include "LZX4AUEEY2/moc_HistoryService.cpp"
 #include "LZX4AUEEY2/moc_TrendService.cpp"
+#include "VPTEYQMQ6I/moc_LogService.cpp"
 #include "BULX6S5DRZ/moc_IModbusClient.cpp"
 #include "BULX6S5DRZ/moc_QtModbusClient.cpp"
 #include "CXQXMEVQOR/moc_AcquisitionEngine.cpp"
