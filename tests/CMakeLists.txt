@@ -1,5 +1,6 @@
 set(DOMAIN_SOURCES ${CMAKE_SOURCE_DIR}/src/domain/Tag.cpp)
 set(STORAGE_SOURCES ${CMAKE_SOURCE_DIR}/src/storage/DatabaseMigrator.cpp)
+set(HISTORY_SOURCES ${CMAKE_SOURCE_DIR}/src/history/HistoryService.cpp)
 set(RUNTIME_SOURCES
     ${CMAKE_SOURCE_DIR}/src/runtime/AcquisitionEngine.cpp
     ${CMAKE_SOURCE_DIR}/src/runtime/TagCache.cpp
@@ -79,6 +80,7 @@ set(UI_HEADERS
 function(add_qtest filepath)
     get_filename_component(target ${filepath} NAME_WE)
     add_executable(${target} ${filepath}.cpp ${DOMAIN_SOURCES} ${STORAGE_SOURCES}
+        ${HISTORY_SOURCES}
         ${RUNTIME_SOURCES} ${MODBUS_SOURCES} ${MODBUS_HEADERS}
         ${DASHBOARD_SOURCES} ${DASHBOARD_HEADERS}
         ${UI_SOURCES} ${UI_HEADERS})
@@ -105,3 +107,4 @@ add_qtest(ui/tst_DashboardItems)
 add_qtest(unit/tst_ButtonActionModel)
 add_qtest(unit/tst_ButtonActionExecutor)
 add_qtest(ui/tst_DashboardRuntime)
+add_qtest(unit/tst_HistoryService)

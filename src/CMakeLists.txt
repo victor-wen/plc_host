@@ -10,6 +10,7 @@ set(SOURCES
     runtime/TagCache.cpp
     runtime/WriteQueue.cpp
     storage/DatabaseMigrator.cpp
+    history/HistoryService.cpp
     dashboard/DashboardRepository.cpp
     dashboard/DashboardScene.cpp
     dashboard/DashboardView.cpp
@@ -50,6 +51,7 @@ set(HEADERS
     runtime/TagCache.h
     runtime/WriteQueue.h
     storage/DatabaseMigrator.h
+    history/HistoryService.h
     dashboard/DashboardDocument.h
     dashboard/DashboardRepository.h
     dashboard/DashboardBaseItem.h

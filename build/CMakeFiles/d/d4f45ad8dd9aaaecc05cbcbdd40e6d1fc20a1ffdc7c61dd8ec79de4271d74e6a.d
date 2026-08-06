@@ -51,6 +51,8 @@ tests/tst_smoke_autogen/timestamp: \
   /home/victor/c_proj/plc_host/src/domain/Tag.cpp \
   /home/victor/c_proj/plc_host/src/domain/Tag.h \
   /home/victor/c_proj/plc_host/src/domain/TagValue.h \
+  /home/victor/c_proj/plc_host/src/history/HistoryService.cpp \
+  /home/victor/c_proj/plc_host/src/history/HistoryService.h \
   /home/victor/c_proj/plc_host/src/modbus/IModbusClient.h \
   /home/victor/c_proj/plc_host/src/modbus/PollPlanner.cpp \
   /home/victor/c_proj/plc_host/src/modbus/PollPlanner.h \

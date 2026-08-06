@@ -167,6 +167,12 @@
 			null
 		],
 		[
+			"/home/victor/c_proj/plc_host/src/history/HistoryService.h",
+			"MU",
+			"LZX4AUEEY2/moc_HistoryService.cpp",
+			null
+		],
+		[
 			"/home/victor/c_proj/plc_host/src/modbus/IModbusClient.h",
 			"MU",
 			"BULX6S5DRZ/moc_IModbusClient.cpp",
@@ -417,6 +423,11 @@
 			null
 		],
 		[ "/home/victor/c_proj/plc_host/src/domain/Tag.cpp", "MU", null ],
+		[
+			"/home/victor/c_proj/plc_host/src/history/HistoryService.cpp",
+			"MU",
+			null
+		],
 		[ "/home/victor/c_proj/plc_host/src/modbus/PollPlanner.cpp", "MU", null ],
 		[
 			"/home/victor/c_proj/plc_host/src/modbus/QtModbusClient.cpp",

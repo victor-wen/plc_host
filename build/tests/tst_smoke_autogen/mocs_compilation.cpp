@@ -17,6 +17,7 @@
 #include "VQD5LQW43X/moc_ValueInputItem.cpp"
 #include "VQD5LQW43X/moc_ValueItem.cpp"
 #include "4JPZGQXAVH/moc_ButtonActionExecutor.cpp"
+#include "LZX4AUEEY2/moc_HistoryService.cpp"
 #include "BULX6S5DRZ/moc_IModbusClient.cpp"
 #include "BULX6S5DRZ/moc_QtModbusClient.cpp"
 #include "CXQXMEVQOR/moc_AcquisitionEngine.cpp"
