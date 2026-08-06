@@ -8,10 +8,12 @@
 #include <QListWidgetItem>
 #include <QPainter>
 #include <QPushButton>
+#include <QTimeZone>
 #include <QVBoxLayout>
 #include <QtCharts/QChart>
 #include <QtCharts/QChartView>
 #include <QtCharts/QLineSeries>
+#include <QtGlobal>
 
 #include <iterator>
 
@@ -168,7 +170,11 @@ bool TrendWidget::exportDataToFile(const QString& filePath)
             TagValue tv;
             tv.tagId = t.id;
             tv.value = p.y();
-            tv.timestamp = QDateTime::fromMSecsSinceEpoch(qint64(p.x()), Qt::UTC);
+#if QT_VERSION >= QT_VERSION_CHECK(6, 5, 0)
+            tv.timestamp = QDateTime::fromMSecsSinceEpoch(qint64(p.x()), QTimeZone::UTC);
+#else
+            tv.timestamp = QDateTime::fromMSecsSinceEpoch(qint64(p.x()), Qt::UTC); // not deprecated before Qt 6.5
+#endif
             tv.quality = Quality::Good;
             rows.append(tv);
         }
