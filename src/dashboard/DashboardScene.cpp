@@ -1,6 +1,11 @@
 #include "DashboardScene.h"
 
+#include <QApplication>
+#include <QClipboard>
 #include <QColor>
+#include <QJsonArray>
+#include <QJsonDocument>
+#include <QKeyEvent>
 #include <QPainter>
 #include <QPainterPath>
 #include <QStyleOptionGraphicsItem>
@@ -97,6 +102,7 @@ DashboardBaseItem* DashboardScene::addItem(const DashboardItem& meta)
 {
     // 工厂：DASH-05+ 在此按 itemType 分发到具体组件；当前统一创建占位组件。
     auto* item = new PlaceholderItem(meta.itemType);
+
     item->itemId = meta.id;
     item->itemType = meta.itemType;
     item->commonStyle = meta.commonStyle;
@@ -126,6 +132,18 @@ QList<DashboardBaseItem*> DashboardScene::dashboardItems() const
     for (QGraphicsItem* item : all) {
         if (auto* dbi = dynamic_cast<DashboardBaseItem*>(item))
             result.append(dbi);
+    }
+    return result;
+}
+
+QList<QGraphicsItem*> DashboardScene::topLevelItems() const
+{
+    QList<QGraphicsItem*> result;
+    const auto all = QGraphicsScene::items();
+    result.reserve(all.size());
+    for (QGraphicsItem* item : all) {
+        if (!item->parentItem())
+            result.append(item);
     }
     return result;
 }
@@ -180,6 +198,77 @@ void DashboardScene::sendToBack()
         item->setZValue(bottom - 1.0);
         bottom -= 1.0;
     }
+}
+
+void DashboardScene::stepForward()
+{
+    for (auto* item : selectedItems())
+        item->setZValue(item->zValue() + 1.0);
+}
+
+void DashboardScene::stepBackward()
+{
+    for (auto* item : selectedItems())
+        item->setZValue(item->zValue() - 1.0);
+}
+
+void DashboardScene::copySelected()
+{
+    const auto sel = selectedItems();
+    if (sel.isEmpty())
+        return;
+
+    QJsonArray array;
+    for (auto* item : sel)
+        array.append(dashboardItemToJson(item));
+    m_clipboard = array;
+
+    // 镜像到系统剪贴板（JSON 文本），便于外部粘贴。
+    if (auto* clipboard = QApplication::clipboard())
+        clipboard->setText(QString::fromUtf8(QJsonDocument(array).toJson(QJsonDocument::Compact)));
+}
+
+void DashboardScene::pasteClipboard()
+{
+    if (m_clipboard.isEmpty())
+        return;
+
+    QList<DashboardBaseItem*> pasted;
+    pasted.reserve(m_clipboard.size());
+    for (const QJsonValue& value : m_clipboard) {
+        DashboardItem meta = dashboardItemFromJson(value.toObject());
+        meta.id = -1; // 粘贴产生新组件（未保存）
+        meta.x += 20.0; // 相对原位置偏移 +20px
+        meta.y += 20.0;
+        pasted.append(addItem(meta));
+    }
+
+    // 粘贴后仅选中新组件。
+    clearSelection();
+    for (auto* item : pasted)
+        item->setSelected(true);
+}
+
+void DashboardScene::keyPressEvent(QKeyEvent* event)
+{
+    if (m_editMode) {
+        if (event->matches(QKeySequence::Copy)) {
+            copySelected();
+            event->accept();
+            return;
+        }
+        if (event->matches(QKeySequence::Paste)) {
+            pasteClipboard();
+            event->accept();
+            return;
+        }
+        if (event->key() == Qt::Key_Delete) {
+            deleteSelected();
+            event->accept();
+            return;
+        }
+    }
+    QGraphicsScene::keyPressEvent(event);
 }
 
 void DashboardScene::alignSelected(Qt::Alignment alignment)

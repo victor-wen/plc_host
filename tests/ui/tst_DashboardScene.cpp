@@ -8,6 +8,18 @@
 
 namespace {
 
+// 顶层项计数（缩放手柄为子项，不计入）：等价于组件数。
+int topLevelItemCount(const QGraphicsScene& scene)
+{
+    int count = 0;
+    const auto all = scene.items();
+    for (QGraphicsItem* item : all) {
+        if (!item->parentItem())
+            ++count;
+    }
+    return count;
+}
+
 // 测试辅助：构造一个未保存（id=-1）的组件元数据。
 DashboardItem makeItem(const QString& type, qreal x = 0, qreal y = 0,
                        qreal width = 100, qreal height = 100)
@@ -36,7 +48,8 @@ private slots:
         scene.addItem(makeItem(QStringLiteral("unknownType")));
 
         QCOMPARE(scene.dashboardItems().size(), 3);
-        QCOMPARE(scene.items().size(), 3);
+        // 顶层项 = 组件数（DASH-03 缩放手柄为子项，不计入顶层）。
+        QCOMPARE(topLevelItemCount(scene), 3);
 
         QStringList types;
         for (auto* item : scene.dashboardItems())
@@ -143,7 +156,8 @@ private slots:
         scene.deleteSelected();
 
         QCOMPARE(scene.dashboardItems().size(), 2);
-        QCOMPARE(scene.items().size(), 2);
+        // 顶层项 = 组件数（缩放手柄为子项，不计入顶层）。
+        QCOMPARE(topLevelItemCount(scene), 2);
         QCOMPARE(scene.selectedItems().size(), 0);
     }
 

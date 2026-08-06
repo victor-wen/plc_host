@@ -1,6 +1,7 @@
 #pragma once
 
 #include <QGraphicsScene>
+#include <QJsonArray>
 #include <QList>
 #include <QPointF>
 #include <QUndoStack>
@@ -8,13 +9,15 @@
 #include "DashboardBaseItem.h"
 #include "DashboardDocument.h"
 
+class QKeyEvent;
+
 // 看板自由画布 (docs/architecture/interfaces.md §9, docs/qt/qt-widgets-graphics-view.md,
 // Phase 2 DASH-02)
 //
 // - 场景尺寸与背景色来自 DashboardPage（setPage）。
-// - addItem(const DashboardItem&) 是组件工厂：按 itemType 创建对应 QGraphicsObject，
-//   当前具体组件（DASH-05+）尚未实现，统一创建占位组件；未知/损坏类型按
-//   errorPlaceholder 黄色占位。
+// - addItem(const DashboardItem&) 是组件工厂：按 itemType 创建对应 QGraphicsObject
+//   （text/rect/image/value/led/switch 为 DASH-05 具体组件，其余类型 DASH-06+）；
+//   未知/损坏类型按 errorPlaceholder 黄色占位。
 // - setEditMode(false) 切换运行模式：所有组件不可移动/不可选择。
 // - 组件数 <100，使用 NoIndex 线性索引，避免维护 BSP 树的开销。
 class DashboardScene : public QGraphicsScene {
@@ -49,12 +52,26 @@ public:
     // 返回场景中所有 DashboardBaseItem 子类组件（过滤非看板图形项）。
     QList<DashboardBaseItem*> dashboardItems() const;
 
+    // 顶层项：场景中无父项的图形项（组件本体；DASH-03 缩放手柄等子项不计入）。
+    // Qt 6 移除了 QGraphicsScene::topLevelItems()，这里提供等价实现。
+    QList<QGraphicsItem*> topLevelItems() const;
+
     // 将坐标吸附到 gridSize 网格（向最近网格点取整）。
     QPointF snapToGrid(QPointF pos, int gridSize = 10) const;
 
     // 选中项置于最前 / 最后（修改 zValue，保持选中集内部相对顺序）。
     void bringToFront();
     void sendToBack();
+
+    // DASH-03: 层级微调 ±1（保持选中集内部相对顺序）。
+    void stepForward();
+    void stepBackward();
+
+    // DASH-03: 复制/粘贴。copySelected 将选中项序列化为 JSON 数组存入场景
+    // 剪贴板（同时镜像到系统剪贴板）；pasteClipboard 读回并以原位置 +20px
+    // 偏移创建新组件并选中它们。
+    void copySelected();
+    void pasteClipboard();
 
     // 按包围盒对齐选中项：AlignLeft/HAlignCenter/AlignRight 与
     // AlignTop/VAlignCenter/AlignBottom。
@@ -66,10 +83,18 @@ public:
     // 返回选中的 DashboardBaseItem 组件（过滤非看板图形项）。
     QList<DashboardBaseItem*> selectedItems() const;
 
+protected:
+    // DASH-03 快捷键（仅编辑模式）：Delete → deleteSelected；
+    // Ctrl+C → copySelected；Ctrl+V → pasteClipboard。
+    void keyPressEvent(QKeyEvent* event) override;
+
 private:
     // 撤销/重做栈：所有编辑操作（添加/删除/移动/缩放/属性修改）经命令入栈。
     QUndoStack m_undoStack;
 
     // 运行模式标记：新加入的组件应用当前模式。
     bool m_editMode = true;
+
+    // DASH-03 复制/粘贴中转的组件 JSON 数组（场景剪贴板）。
+    QJsonArray m_clipboard;
 };
