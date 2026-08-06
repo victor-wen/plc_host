@@ -1,13 +1,15 @@
 # Additional clean files
 cmake_minimum_required(VERSION 3.16)
 
-if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "")
+if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "Debug")
   file(REMOVE_RECURSE
   "src/CMakeFiles/plc_host_autogen.dir/AutogenUsed.txt"
   "src/CMakeFiles/plc_host_autogen.dir/ParseCache.txt"
   "src/plc_host_autogen"
   "tests/CMakeFiles/tst_AcquisitionEngine_autogen.dir/AutogenUsed.txt"
   "tests/CMakeFiles/tst_AcquisitionEngine_autogen.dir/ParseCache.txt"
+  "tests/CMakeFiles/tst_AlarmEngine_autogen.dir/AutogenUsed.txt"
+  "tests/CMakeFiles/tst_AlarmEngine_autogen.dir/ParseCache.txt"
   "tests/CMakeFiles/tst_ButtonActionExecutor_autogen.dir/AutogenUsed.txt"
   "tests/CMakeFiles/tst_ButtonActionExecutor_autogen.dir/ParseCache.txt"
   "tests/CMakeFiles/tst_ButtonActionModel_autogen.dir/AutogenUsed.txt"
@@ -45,6 +47,7 @@ if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "")
   "tests/CMakeFiles/tst_smoke_autogen.dir/AutogenUsed.txt"
   "tests/CMakeFiles/tst_smoke_autogen.dir/ParseCache.txt"
   "tests/tst_AcquisitionEngine_autogen"
+  "tests/tst_AlarmEngine_autogen"
   "tests/tst_ButtonActionExecutor_autogen"
   "tests/tst_ButtonActionModel_autogen"
   "tests/tst_DashboardGeometry_autogen"

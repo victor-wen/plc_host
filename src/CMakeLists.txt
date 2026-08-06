@@ -11,6 +11,7 @@ set(SOURCES
     runtime/WriteQueue.cpp
     storage/DatabaseMigrator.cpp
     history/HistoryService.cpp
+    alarm/AlarmEngine.cpp
     dashboard/DashboardRepository.cpp
     dashboard/DashboardScene.cpp
     dashboard/DashboardView.cpp
@@ -52,6 +53,8 @@ set(HEADERS
     runtime/WriteQueue.h
     storage/DatabaseMigrator.h
     history/HistoryService.h
+    alarm/AlarmEngine.h
+    alarm/AlarmRule.h
     dashboard/DashboardDocument.h
     dashboard/DashboardRepository.h
     dashboard/DashboardBaseItem.h

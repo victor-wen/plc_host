@@ -26,6 +26,7 @@
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_ButtonActionExecutor.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_DashboardRuntime.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_HistoryService.dir
+/home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_AlarmEngine.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/test.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/edit_cache.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/rebuild_cache.dir
@@ -67,3 +68,5 @@
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_DashboardRuntime_autogen.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_HistoryService_autogen_timestamp_deps.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_HistoryService_autogen.dir
+/home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_AlarmEngine_autogen_timestamp_deps.dir
+/home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_AlarmEngine_autogen.dir

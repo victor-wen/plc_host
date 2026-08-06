@@ -1,5 +1,8 @@
 tests/tst_smoke_autogen/timestamp: \
   tests/tst_smoke_autogen/moc_predefs.h \
+  /home/victor/c_proj/plc_host/src/alarm/AlarmEngine.cpp \
+  /home/victor/c_proj/plc_host/src/alarm/AlarmEngine.h \
+  /home/victor/c_proj/plc_host/src/alarm/AlarmRule.h \
   /home/victor/c_proj/plc_host/src/app/MainWindow.cpp \
   /home/victor/c_proj/plc_host/src/app/MainWindow.h \
   /home/victor/c_proj/plc_host/src/dashboard/DashboardBaseItem.h \

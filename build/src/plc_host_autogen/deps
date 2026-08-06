@@ -1,6 +1,9 @@
 plc_host_autogen/timestamp: \
 	/home/victor/c_proj/plc_host/build/src/plc_host_autogen/moc_predefs.h \
 	/home/victor/c_proj/plc_host/src/CMakeLists.txt \
+	/home/victor/c_proj/plc_host/src/alarm/AlarmEngine.cpp \
+	/home/victor/c_proj/plc_host/src/alarm/AlarmEngine.h \
+	/home/victor/c_proj/plc_host/src/alarm/AlarmRule.h \
 	/home/victor/c_proj/plc_host/src/app/AppContext.cpp \
 	/home/victor/c_proj/plc_host/src/app/AppContext.h \
 	/home/victor/c_proj/plc_host/src/app/MainWindow.cpp \

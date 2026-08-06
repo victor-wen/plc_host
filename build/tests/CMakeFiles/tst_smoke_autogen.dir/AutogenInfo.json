@@ -11,6 +11,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/victor/c_proj/plc_host/src/alarm/AlarmEngine.h",
+			"MU",
+			"WGFR42NDP7/moc_AlarmEngine.cpp",
+			null
+		],
+		[
 			"/home/victor/c_proj/plc_host/src/app/MainWindow.h",
 			"MU",
 			"M37QIKJ6ZC/moc_MainWindow.cpp",
@@ -247,7 +253,6 @@
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
 		"QT_NETWORK_LIB",
-		"QT_NO_DEBUG",
 		"QT_SERIALBUS_LIB",
 		"QT_SERIALPORT_LIB",
 		"QT_SQL_LIB",
@@ -316,6 +321,7 @@
 	"SETTINGS_FILE" : "/home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_smoke_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "/home/victor/c_proj/plc_host/src/alarm/AlarmEngine.cpp", "MU", null ],
 		[ "/home/victor/c_proj/plc_host/src/app/MainWindow.cpp", "MU", null ],
 		[
 			"/home/victor/c_proj/plc_host/src/dashboard/DashboardController.cpp",

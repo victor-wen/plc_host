@@ -11,6 +11,18 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/victor/c_proj/plc_host/src/alarm/AlarmEngine.h",
+			"MU",
+			"NSWXIA6IKK/moc_AlarmEngine.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/alarm/AlarmRule.h",
+			"MU",
+			"NSWXIA6IKK/moc_AlarmRule.cpp",
+			null
+		],
+		[
 			"/home/victor/c_proj/plc_host/src/app/AppContext.h",
 			"MU",
 			"VJIZ3MDCXP/moc_AppContext.cpp",
@@ -266,7 +278,6 @@
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
 		"QT_NETWORK_LIB",
-		"QT_NO_DEBUG",
 		"QT_OPENGLWIDGETS_LIB",
 		"QT_OPENGL_LIB",
 		"QT_SERIALBUS_LIB",
@@ -336,6 +347,7 @@
 	"SETTINGS_FILE" : "/home/victor/c_proj/plc_host/build/src/CMakeFiles/plc_host_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "/home/victor/c_proj/plc_host/src/alarm/AlarmEngine.cpp", "MU", null ],
 		[ "/home/victor/c_proj/plc_host/src/app/AppContext.cpp", "MU", null ],
 		[ "/home/victor/c_proj/plc_host/src/app/MainWindow.cpp", "MU", null ],
 		[ "/home/victor/c_proj/plc_host/src/app/main.cpp", "MU", null ],
