@@ -77,6 +77,42 @@
 			null
 		],
 		[
+			"/home/victor/c_proj/plc_host/src/dashboard/items/ImageItem.h",
+			"MU",
+			"VQD5LQW43X/moc_ImageItem.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/items/LedItem.h",
+			"MU",
+			"VQD5LQW43X/moc_LedItem.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/items/RectItem.h",
+			"MU",
+			"VQD5LQW43X/moc_RectItem.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/items/SwitchItem.h",
+			"MU",
+			"VQD5LQW43X/moc_SwitchItem.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/items/TextItem.h",
+			"MU",
+			"VQD5LQW43X/moc_TextItem.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/items/ValueItem.h",
+			"MU",
+			"VQD5LQW43X/moc_ValueItem.cpp",
+			null
+		],
+		[
 			"/home/victor/c_proj/plc_host/src/domain/Tag.h",
 			"MU",
 			"RCFEFXN5P7/moc_Tag.cpp",
@@ -264,6 +300,36 @@
 		],
 		[
 			"/home/victor/c_proj/plc_host/src/dashboard/commands/ResizeCommand.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/items/ImageItem.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/items/LedItem.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/items/RectItem.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/items/SwitchItem.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/items/TextItem.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/items/ValueItem.cpp",
 			"MU",
 			null
 		],

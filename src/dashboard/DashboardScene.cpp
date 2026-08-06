@@ -14,6 +14,12 @@
 #include "dashboard/commands/MoveCommand.h"
 #include "dashboard/commands/RemoveItemCommand.h"
 #include "dashboard/commands/ResizeCommand.h"
+#include "dashboard/items/ImageItem.h"
+#include "dashboard/items/LedItem.h"
+#include "dashboard/items/RectItem.h"
+#include "dashboard/items/SwitchItem.h"
+#include "dashboard/items/TextItem.h"
+#include "dashboard/items/ValueItem.h"
 
 #include <algorithm>
 
@@ -100,8 +106,23 @@ void DashboardScene::setPage(const DashboardPage& page)
 
 DashboardBaseItem* DashboardScene::addItem(const DashboardItem& meta)
 {
-    // 工厂：DASH-05+ 在此按 itemType 分发到具体组件；当前统一创建占位组件。
-    auto* item = new PlaceholderItem(meta.itemType);
+    // 工厂：DASH-05 起按 itemType 分发到具体组件；未知/损坏类型降级为
+    // PlaceholderItem（黄色占位框，接口 §9 降级语义）。
+    DashboardBaseItem* item = nullptr;
+    if (meta.itemType == QStringLiteral("text"))
+        item = new TextItem;
+    else if (meta.itemType == QStringLiteral("rect"))
+        item = new RectItem;
+    else if (meta.itemType == QStringLiteral("image"))
+        item = new ImageItem;
+    else if (meta.itemType == QStringLiteral("value"))
+        item = new ValueItem;
+    else if (meta.itemType == QStringLiteral("led"))
+        item = new LedItem;
+    else if (meta.itemType == QStringLiteral("switch"))
+        item = new SwitchItem;
+    else
+        item = new PlaceholderItem(meta.itemType);
 
     item->itemId = meta.id;
     item->itemType = meta.itemType;
@@ -112,6 +133,8 @@ DashboardBaseItem* DashboardScene::addItem(const DashboardItem& meta)
     item->setPos(meta.x, meta.y);
     item->setZValue(meta.zOrder);
     item->setEditMode(m_editMode);
+    // 从 config 恢复组件业务属性（表现层属性读取已赋值的 commonStyle）。
+    item->deserialize(meta.config);
     QGraphicsScene::addItem(item);
     return item;
 }

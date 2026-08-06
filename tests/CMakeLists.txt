@@ -23,6 +23,12 @@ set(DASHBOARD_SOURCES
     ${CMAKE_SOURCE_DIR}/src/dashboard/commands/MoveCommand.cpp
     ${CMAKE_SOURCE_DIR}/src/dashboard/commands/ResizeCommand.cpp
     ${CMAKE_SOURCE_DIR}/src/dashboard/commands/PropertyChangeCommand.cpp
+    ${CMAKE_SOURCE_DIR}/src/dashboard/items/TextItem.cpp
+    ${CMAKE_SOURCE_DIR}/src/dashboard/items/RectItem.cpp
+    ${CMAKE_SOURCE_DIR}/src/dashboard/items/ImageItem.cpp
+    ${CMAKE_SOURCE_DIR}/src/dashboard/items/ValueItem.cpp
+    ${CMAKE_SOURCE_DIR}/src/dashboard/items/LedItem.cpp
+    ${CMAKE_SOURCE_DIR}/src/dashboard/items/SwitchItem.cpp
 )
 set(DASHBOARD_HEADERS
     ${CMAKE_SOURCE_DIR}/src/dashboard/DashboardDocument.h
@@ -35,6 +41,12 @@ set(DASHBOARD_HEADERS
     ${CMAKE_SOURCE_DIR}/src/dashboard/commands/MoveCommand.h
     ${CMAKE_SOURCE_DIR}/src/dashboard/commands/ResizeCommand.h
     ${CMAKE_SOURCE_DIR}/src/dashboard/commands/PropertyChangeCommand.h
+    ${CMAKE_SOURCE_DIR}/src/dashboard/items/TextItem.h
+    ${CMAKE_SOURCE_DIR}/src/dashboard/items/RectItem.h
+    ${CMAKE_SOURCE_DIR}/src/dashboard/items/ImageItem.h
+    ${CMAKE_SOURCE_DIR}/src/dashboard/items/ValueItem.h
+    ${CMAKE_SOURCE_DIR}/src/dashboard/items/LedItem.h
+    ${CMAKE_SOURCE_DIR}/src/dashboard/items/SwitchItem.h
 )
 set(UI_SOURCES
     ${CMAKE_SOURCE_DIR}/src/ui/PlcConfigWidget.cpp
@@ -74,3 +86,4 @@ add_qtest(integration/tst_AcquisitionEngine)
 add_qtest(ui/tst_UiSmoke)
 add_qtest(ui/tst_DashboardScene)
 add_qtest(ui/tst_DashboardGeometry)
+add_qtest(ui/tst_DashboardItems)

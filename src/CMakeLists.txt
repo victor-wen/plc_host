@@ -18,6 +18,12 @@ set(SOURCES
     dashboard/commands/MoveCommand.cpp
     dashboard/commands/ResizeCommand.cpp
     dashboard/commands/PropertyChangeCommand.cpp
+    dashboard/items/TextItem.cpp
+    dashboard/items/RectItem.cpp
+    dashboard/items/ImageItem.cpp
+    dashboard/items/ValueItem.cpp
+    dashboard/items/LedItem.cpp
+    dashboard/items/SwitchItem.cpp
     ui/PlcConfigWidget.cpp
     ui/TagEditorWidget.cpp
     ui/TagMonitorWidget.cpp
@@ -47,6 +53,12 @@ set(HEADERS
     dashboard/commands/MoveCommand.h
     dashboard/commands/ResizeCommand.h
     dashboard/commands/PropertyChangeCommand.h
+    dashboard/items/TextItem.h
+    dashboard/items/RectItem.h
+    dashboard/items/ImageItem.h
+    dashboard/items/ValueItem.h
+    dashboard/items/LedItem.h
+    dashboard/items/SwitchItem.h
     ui/PlcConfigWidget.h
     ui/TagEditorWidget.h
     ui/TagMonitorWidget.h

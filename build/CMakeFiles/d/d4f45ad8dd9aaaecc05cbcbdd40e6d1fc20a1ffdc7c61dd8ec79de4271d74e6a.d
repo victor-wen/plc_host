@@ -20,6 +20,18 @@ tests/tst_smoke_autogen/timestamp: \
   /home/victor/c_proj/plc_host/src/dashboard/commands/RemoveItemCommand.h \
   /home/victor/c_proj/plc_host/src/dashboard/commands/ResizeCommand.cpp \
   /home/victor/c_proj/plc_host/src/dashboard/commands/ResizeCommand.h \
+  /home/victor/c_proj/plc_host/src/dashboard/items/ImageItem.cpp \
+  /home/victor/c_proj/plc_host/src/dashboard/items/ImageItem.h \
+  /home/victor/c_proj/plc_host/src/dashboard/items/LedItem.cpp \
+  /home/victor/c_proj/plc_host/src/dashboard/items/LedItem.h \
+  /home/victor/c_proj/plc_host/src/dashboard/items/RectItem.cpp \
+  /home/victor/c_proj/plc_host/src/dashboard/items/RectItem.h \
+  /home/victor/c_proj/plc_host/src/dashboard/items/SwitchItem.cpp \
+  /home/victor/c_proj/plc_host/src/dashboard/items/SwitchItem.h \
+  /home/victor/c_proj/plc_host/src/dashboard/items/TextItem.cpp \
+  /home/victor/c_proj/plc_host/src/dashboard/items/TextItem.h \
+  /home/victor/c_proj/plc_host/src/dashboard/items/ValueItem.cpp \
+  /home/victor/c_proj/plc_host/src/dashboard/items/ValueItem.h \
   /home/victor/c_proj/plc_host/src/domain/PlcConfig.h \
   /home/victor/c_proj/plc_host/src/domain/Tag.cpp \
   /home/victor/c_proj/plc_host/src/domain/Tag.h \
@@ -359,6 +371,7 @@ tests/tst_smoke_autogen/timestamp: \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QFlags \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QHash \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QIODevice \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QJsonArray \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QJsonObject \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QMargins \
@@ -368,6 +381,7 @@ tests/tst_smoke_autogen/timestamp: \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QPointF \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QRectF \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSharedDataPointer \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
@@ -377,6 +391,7 @@ tests/tst_smoke_autogen/timestamp: \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QUuid \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QVector \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QtGlobal \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q23functional.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
@@ -435,6 +450,7 @@ tests/tst_smoke_autogen/timestamp: \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qitemselectionmodel.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterator.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonarray.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonobject.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonvalue.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h \
@@ -502,6 +518,10 @@ tests/tst_smoke_autogen/timestamp: \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qxpfunctional.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QCursor \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPen \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QUndoStack \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
@@ -603,6 +623,7 @@ tests/tst_smoke_autogen/timestamp: \
   /usr/include/x86_64-linux-gnu/qt6/QtTest/qttestlib-config.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsObject \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsSceneMouseEvent \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsView \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSizePolicy \
@@ -617,6 +638,7 @@ tests/tst_smoke_autogen/timestamp: \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsitem.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicssceneevent.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsview.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
