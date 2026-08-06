@@ -6,6 +6,7 @@ set(RUNTIME_SOURCES
 )
 set(MODBUS_SOURCES
     ${CMAKE_SOURCE_DIR}/src/modbus/PollPlanner.cpp
+    ${CMAKE_SOURCE_DIR}/src/modbus/ValueCodec.cpp
 )
 
 function(add_qtest filepath)
@@ -20,6 +21,7 @@ endfunction()
 add_qtest(unit/tst_smoke)
 add_qtest(unit/tst_DomainModels)
 add_qtest(unit/tst_DatabaseMigrations)
+add_qtest(unit/tst_ValueCodec)
 add_qtest(unit/tst_WriteQueue)
 add_qtest(unit/tst_TagCache)
 add_qtest(unit/tst_PollPlanner)
