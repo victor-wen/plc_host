@@ -21,7 +21,7 @@ jobs:
           host: windows
           target: desktop
           arch: win64_msvc2022_64
-          modules: "qtcharts qtserialbus"
+          modules: "qtcharts qtserialbus qtserialport"
           cache: true
 
       - name: Setup MSVC
