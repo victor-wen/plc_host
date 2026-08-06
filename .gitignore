@@ -1,1 +1,4 @@
+# 自动生成，不提交
 build/
+compile_commands.json
+dist/
