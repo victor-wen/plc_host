@@ -41,6 +41,30 @@
 			null
 		],
 		[
+			"/home/victor/c_proj/plc_host/src/modbus/IModbusClient.h",
+			"MU",
+			"EQXUSF6PRG/moc_IModbusClient.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/modbus/PollPlanner.h",
+			"MU",
+			"EQXUSF6PRG/moc_PollPlanner.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/modbus/QtModbusClient.h",
+			"MU",
+			"EQXUSF6PRG/moc_QtModbusClient.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/modbus/ValueCodec.h",
+			"MU",
+			"EQXUSF6PRG/moc_ValueCodec.cpp",
+			null
+		],
+		[
 			"/home/victor/c_proj/plc_host/src/runtime/TagCache.h",
 			"MU",
 			"BP4HXTY4JZ/moc_TagCache.cpp",
@@ -142,6 +166,13 @@
 		[ "/home/victor/c_proj/plc_host/src/app/MainWindow.cpp", "MU", null ],
 		[ "/home/victor/c_proj/plc_host/src/app/main.cpp", "MU", null ],
 		[ "/home/victor/c_proj/plc_host/src/domain/Tag.cpp", "MU", null ],
+		[ "/home/victor/c_proj/plc_host/src/modbus/PollPlanner.cpp", "MU", null ],
+		[
+			"/home/victor/c_proj/plc_host/src/modbus/QtModbusClient.cpp",
+			"MU",
+			null
+		],
+		[ "/home/victor/c_proj/plc_host/src/modbus/ValueCodec.cpp", "MU", null ],
 		[ "/home/victor/c_proj/plc_host/src/runtime/TagCache.cpp", "MU", null ],
 		[ "/home/victor/c_proj/plc_host/src/runtime/WriteQueue.cpp", "MU", null ],
 		[

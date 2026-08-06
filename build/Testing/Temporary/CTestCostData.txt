@@ -1,6 +1,9 @@
-tst_smoke 7 0.000516576
-tst_DomainModels 6 0.000506918
-tst_DatabaseMigrations 4 0.0205425
-tst_WriteQueue 3 0.00125304
-tst_TagCache 1 0.00390584
+tst_smoke 29 0.00025683
+tst_DomainModels 28 0.000249691
+tst_DatabaseMigrations 26 0.00354945
+tst_WriteQueue 24 0.000327251
+tst_TagCache 25 0.00903425
+tst_PollPlanner 20 0.000390222
+tst_ValueCodec 14 0.00055436
+tst_QtModbusClient 4 0.00266465
 ---

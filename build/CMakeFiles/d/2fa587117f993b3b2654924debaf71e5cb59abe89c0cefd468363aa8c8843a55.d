@@ -10,6 +10,13 @@ src/plc_host_autogen/timestamp: \
   /home/victor/c_proj/plc_host/src/domain/Tag.cpp \
   /home/victor/c_proj/plc_host/src/domain/Tag.h \
   /home/victor/c_proj/plc_host/src/domain/TagValue.h \
+  /home/victor/c_proj/plc_host/src/modbus/IModbusClient.h \
+  /home/victor/c_proj/plc_host/src/modbus/PollPlanner.cpp \
+  /home/victor/c_proj/plc_host/src/modbus/PollPlanner.h \
+  /home/victor/c_proj/plc_host/src/modbus/QtModbusClient.cpp \
+  /home/victor/c_proj/plc_host/src/modbus/QtModbusClient.h \
+  /home/victor/c_proj/plc_host/src/modbus/ValueCodec.cpp \
+  /home/victor/c_proj/plc_host/src/modbus/ValueCodec.h \
   /home/victor/c_proj/plc_host/src/runtime/TagCache.cpp \
   /home/victor/c_proj/plc_host/src/runtime/TagCache.h \
   /home/victor/c_proj/plc_host/src/runtime/WriteQueue.cpp \
@@ -300,6 +307,8 @@ src/plc_host_autogen/timestamp: \
   /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qanystringview.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydata.h \
@@ -331,6 +340,7 @@ src/plc_host_autogen/timestamp: \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobalstatic.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevicebase.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterator.h \
@@ -407,6 +417,15 @@ src/plc_host_autogen/timestamp: \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSerialBus/QModbusDataUnit \
+  /usr/include/x86_64-linux-gnu/qt6/QtSerialBus/QModbusReply \
+  /usr/include/x86_64-linux-gnu/qt6/QtSerialBus/qmodbusdataunit.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSerialBus/qmodbusdevice.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSerialBus/qmodbuspdu.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSerialBus/qmodbusreply.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSerialBus/qtserialbus-config.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSerialBus/qtserialbusexports.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSerialBus/qtserialbusglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \

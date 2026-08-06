@@ -17,6 +17,30 @@
 			null
 		],
 		[
+			"/home/victor/c_proj/plc_host/src/modbus/IModbusClient.h",
+			"MU",
+			"BULX6S5DRZ/moc_IModbusClient.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/modbus/PollPlanner.h",
+			"MU",
+			"BULX6S5DRZ/moc_PollPlanner.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/modbus/QtModbusClient.h",
+			"MU",
+			"BULX6S5DRZ/moc_QtModbusClient.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/modbus/ValueCodec.h",
+			"MU",
+			"BULX6S5DRZ/moc_ValueCodec.cpp",
+			null
+		],
+		[
 			"/home/victor/c_proj/plc_host/src/runtime/TagCache.h",
 			"MU",
 			"CXQXMEVQOR/moc_TagCache.cpp",
@@ -41,7 +65,10 @@
 	"MOC_DEFINITIONS" : 
 	[
 		"QT_CORE_LIB",
+		"QT_NETWORK_LIB",
 		"QT_NO_DEBUG",
+		"QT_SERIALBUS_LIB",
+		"QT_SERIALPORT_LIB",
 		"QT_SQL_LIB",
 		"QT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\"",
 		"QT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\"",
@@ -62,6 +89,9 @@
 		"/usr/include/x86_64-linux-gnu/qt6/QtCore",
 		"/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++",
 		"/usr/include/x86_64-linux-gnu/qt6/QtSql",
+		"/usr/include/x86_64-linux-gnu/qt6/QtSerialBus",
+		"/usr/include/x86_64-linux-gnu/qt6/QtNetwork",
+		"/usr/include/x86_64-linux-gnu/qt6/QtSerialPort",
 		"/usr/include/c++/13",
 		"/usr/include/x86_64-linux-gnu/c++/13",
 		"/usr/include/c++/13/backward",
@@ -103,6 +133,13 @@
 	"SOURCES" : 
 	[
 		[ "/home/victor/c_proj/plc_host/src/domain/Tag.cpp", "MU", null ],
+		[ "/home/victor/c_proj/plc_host/src/modbus/PollPlanner.cpp", "MU", null ],
+		[
+			"/home/victor/c_proj/plc_host/src/modbus/QtModbusClient.cpp",
+			"MU",
+			null
+		],
+		[ "/home/victor/c_proj/plc_host/src/modbus/ValueCodec.cpp", "MU", null ],
 		[ "/home/victor/c_proj/plc_host/src/runtime/TagCache.cpp", "MU", null ],
 		[ "/home/victor/c_proj/plc_host/src/runtime/WriteQueue.cpp", "MU", null ],
 		[

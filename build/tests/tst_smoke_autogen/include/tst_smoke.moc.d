@@ -284,6 +284,15 @@
   /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QFlags \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QIODevice \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMetaType \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSharedDataPointer \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QUrl \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q23functional.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
@@ -318,6 +327,7 @@
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcryptographichash.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h \
@@ -397,10 +407,34 @@
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qxpfunctional.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QHostAddress \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QNetworkAccessManager \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QNetworkCookie \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QNetworkReply \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QNetworkRequest \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QSslConfiguration \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QSslPreSharedKeyAuthenticator \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qabstractsocket.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qhostaddress.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qnetworkaccessmanager.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qnetworkcookie.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qnetworkreply.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qnetworkrequest.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qssl.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslcertificate.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslconfiguration.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslerror.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslpresharedkeyauthenticator.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslsocket.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtcpsocket.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetwork-config.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetworkexports.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetworkglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtTest/QTest \
   /usr/include/x86_64-linux-gnu/qt6/QtTest/qbenchmark.h \
   /usr/include/x86_64-linux-gnu/qt6/QtTest/qbenchmarkmetric.h \
   /usr/include/x86_64-linux-gnu/qt6/QtTest/qtest.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtTest/qtest_network.h \
   /usr/include/x86_64-linux-gnu/qt6/QtTest/qtestcase.h \
   /usr/include/x86_64-linux-gnu/qt6/QtTest/qtestdata.h \
   /usr/include/x86_64-linux-gnu/qt6/QtTest/qtestsystem.h \
