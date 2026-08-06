@@ -13,6 +13,8 @@ set(SOURCES
     dashboard/DashboardRepository.cpp
     dashboard/DashboardScene.cpp
     dashboard/DashboardView.cpp
+    dashboard/DashboardController.cpp
+    dashboard/runtime/ButtonActionExecutor.cpp
     dashboard/commands/AddItemCommand.cpp
     dashboard/commands/RemoveItemCommand.cpp
     dashboard/commands/MoveCommand.cpp
@@ -53,6 +55,8 @@ set(HEADERS
     dashboard/DashboardBaseItem.h
     dashboard/DashboardScene.h
     dashboard/DashboardView.h
+    dashboard/DashboardController.h
+    dashboard/runtime/ButtonActionExecutor.h
     dashboard/commands/AddItemCommand.h
     dashboard/commands/RemoveItemCommand.h
     dashboard/commands/MoveCommand.h

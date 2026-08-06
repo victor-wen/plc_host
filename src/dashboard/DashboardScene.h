@@ -49,6 +49,9 @@ public:
     // 切换全部组件的编辑/运行模式。
     void setEditMode(bool editing);
 
+    // 当前模式：true = 编辑，false = 运行（DASH-09 协调器查询用）。
+    bool isEditMode() const { return m_editMode; }
+
     // 返回场景中所有 DashboardBaseItem 子类组件（过滤非看板图形项）。
     QList<DashboardBaseItem*> dashboardItems() const;
 

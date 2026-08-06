@@ -29,6 +29,12 @@
 			null
 		],
 		[
+			"/home/victor/c_proj/plc_host/src/dashboard/DashboardController.h",
+			"MU",
+			"DSNZRYT7KM/moc_DashboardController.cpp",
+			null
+		],
+		[
 			"/home/victor/c_proj/plc_host/src/dashboard/DashboardDocument.h",
 			"MU",
 			"DSNZRYT7KM/moc_DashboardDocument.cpp",
@@ -152,6 +158,12 @@
 			"/home/victor/c_proj/plc_host/src/dashboard/runtime/ButtonAction.h",
 			"MU",
 			"5EQDA4L2U4/moc_ButtonAction.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/runtime/ButtonActionExecutor.h",
+			"MU",
+			"5EQDA4L2U4/moc_ButtonActionExecutor.cpp",
 			null
 		],
 		[
@@ -322,6 +334,11 @@
 		[ "/home/victor/c_proj/plc_host/src/app/MainWindow.cpp", "MU", null ],
 		[ "/home/victor/c_proj/plc_host/src/app/main.cpp", "MU", null ],
 		[
+			"/home/victor/c_proj/plc_host/src/dashboard/DashboardController.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/victor/c_proj/plc_host/src/dashboard/DashboardRepository.cpp",
 			"MU",
 			null
@@ -413,6 +430,11 @@
 		],
 		[
 			"/home/victor/c_proj/plc_host/src/dashboard/items/ValueItem.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/runtime/ButtonActionExecutor.cpp",
 			"MU",
 			null
 		],

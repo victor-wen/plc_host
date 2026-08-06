@@ -18,6 +18,8 @@ set(DASHBOARD_SOURCES
     ${CMAKE_SOURCE_DIR}/src/dashboard/DashboardRepository.cpp
     ${CMAKE_SOURCE_DIR}/src/dashboard/DashboardScene.cpp
     ${CMAKE_SOURCE_DIR}/src/dashboard/DashboardView.cpp
+    ${CMAKE_SOURCE_DIR}/src/dashboard/DashboardController.cpp
+    ${CMAKE_SOURCE_DIR}/src/dashboard/runtime/ButtonActionExecutor.cpp
     ${CMAKE_SOURCE_DIR}/src/dashboard/commands/AddItemCommand.cpp
     ${CMAKE_SOURCE_DIR}/src/dashboard/commands/RemoveItemCommand.cpp
     ${CMAKE_SOURCE_DIR}/src/dashboard/commands/MoveCommand.cpp
@@ -41,6 +43,8 @@ set(DASHBOARD_HEADERS
     ${CMAKE_SOURCE_DIR}/src/dashboard/DashboardBaseItem.h
     ${CMAKE_SOURCE_DIR}/src/dashboard/DashboardScene.h
     ${CMAKE_SOURCE_DIR}/src/dashboard/DashboardView.h
+    ${CMAKE_SOURCE_DIR}/src/dashboard/DashboardController.h
+    ${CMAKE_SOURCE_DIR}/src/dashboard/runtime/ButtonActionExecutor.h
     ${CMAKE_SOURCE_DIR}/src/dashboard/commands/AddItemCommand.h
     ${CMAKE_SOURCE_DIR}/src/dashboard/commands/RemoveItemCommand.h
     ${CMAKE_SOURCE_DIR}/src/dashboard/commands/MoveCommand.h
@@ -99,3 +103,5 @@ add_qtest(ui/tst_DashboardScene)
 add_qtest(ui/tst_DashboardGeometry)
 add_qtest(ui/tst_DashboardItems)
 add_qtest(unit/tst_ButtonActionModel)
+add_qtest(unit/tst_ButtonActionExecutor)
+add_qtest(ui/tst_DashboardRuntime)
