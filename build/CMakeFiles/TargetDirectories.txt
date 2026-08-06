@@ -10,6 +10,8 @@
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_smoke.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_DomainModels.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_DatabaseMigrations.dir
+/home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_WriteQueue.dir
+/home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_TagCache.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/test.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/edit_cache.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/rebuild_cache.dir
@@ -19,3 +21,7 @@
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_DomainModels_autogen.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_DatabaseMigrations_autogen_timestamp_deps.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_DatabaseMigrations_autogen.dir
+/home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_WriteQueue_autogen_timestamp_deps.dir
+/home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_WriteQueue_autogen.dir
+/home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_TagCache_autogen_timestamp_deps.dir
+/home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_TagCache_autogen.dir

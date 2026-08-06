@@ -2,6 +2,10 @@ tests/tst_smoke_autogen/timestamp: \
   tests/tst_smoke_autogen/moc_predefs.h \
   /home/victor/c_proj/plc_host/src/domain/Tag.cpp \
   /home/victor/c_proj/plc_host/src/domain/Tag.h \
+  /home/victor/c_proj/plc_host/src/runtime/TagCache.cpp \
+  /home/victor/c_proj/plc_host/src/runtime/TagCache.h \
+  /home/victor/c_proj/plc_host/src/runtime/WriteQueue.cpp \
+  /home/victor/c_proj/plc_host/src/runtime/WriteQueue.h \
   /home/victor/c_proj/plc_host/src/storage/DatabaseMigrator.cpp \
   /home/victor/c_proj/plc_host/src/storage/DatabaseMigrator.h \
   /home/victor/c_proj/plc_host/tests/CMakeLists.txt \

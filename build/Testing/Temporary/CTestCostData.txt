@@ -1,4 +1,6 @@
-tst_smoke 4 0.000900902
-tst_DomainModels 3 0.00127595
-tst_DatabaseMigrations 1 0.0850325
+tst_smoke 7 0.000516576
+tst_DomainModels 6 0.000506918
+tst_DatabaseMigrations 4 0.0205425
+tst_WriteQueue 3 0.00125304
+tst_TagCache 1 0.00390584
 ---

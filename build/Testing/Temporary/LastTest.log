@@ -1,10 +1,10 @@
-Start testing: Aug 06 21:37 CST
+Start testing: Aug 06 21:40 CST
 ----------------------------------------------------------
-1/3 Testing: tst_smoke
-1/3 Test: tst_smoke
+1/5 Testing: tst_smoke
+1/5 Test: tst_smoke
 Command: "/home/victor/c_proj/plc_host/build/tests/tst_smoke"
 Directory: /home/victor/c_proj/plc_host/build/tests
-"tst_smoke" start time: Aug 06 21:37 CST
+"tst_smoke" start time: Aug 06 21:40 CST
 Output:
 ----------------------------------------------------------
 ********* Start testing of SmokeTest *********
@@ -18,15 +18,15 @@ Totals: 3 passed, 0 failed, 0 skipped, 0 blacklisted, 0ms
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"tst_smoke" end time: Aug 06 21:37 CST
+"tst_smoke" end time: Aug 06 21:40 CST
 "tst_smoke" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/3 Testing: tst_DomainModels
-2/3 Test: tst_DomainModels
+2/5 Testing: tst_DomainModels
+2/5 Test: tst_DomainModels
 Command: "/home/victor/c_proj/plc_host/build/tests/tst_DomainModels"
 Directory: /home/victor/c_proj/plc_host/build/tests
-"tst_DomainModels" start time: Aug 06 21:37 CST
+"tst_DomainModels" start time: Aug 06 21:40 CST
 Output:
 ----------------------------------------------------------
 ********* Start testing of DomainModelsTest *********
@@ -46,15 +46,15 @@ Totals: 9 passed, 0 failed, 0 skipped, 0 blacklisted, 0ms
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"tst_DomainModels" end time: Aug 06 21:37 CST
+"tst_DomainModels" end time: Aug 06 21:40 CST
 "tst_DomainModels" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-3/3 Testing: tst_DatabaseMigrations
-3/3 Test: tst_DatabaseMigrations
+3/5 Testing: tst_DatabaseMigrations
+3/5 Test: tst_DatabaseMigrations
 Command: "/home/victor/c_proj/plc_host/build/tests/tst_DatabaseMigrations"
 Directory: /home/victor/c_proj/plc_host/build/tests
-"tst_DatabaseMigrations" start time: Aug 06 21:37 CST
+"tst_DatabaseMigrations" start time: Aug 06 21:40 CST
 Output:
 ----------------------------------------------------------
 ********* Start testing of DatabaseMigrationsTest *********
@@ -64,14 +64,69 @@ PASS   : DatabaseMigrationsTest::migrate_creates_all_tables()
 PASS   : DatabaseMigrationsTest::migrate_idempotent()
 PASS   : DatabaseMigrationsTest::currentVersion_returns_1_after_migration()
 PASS   : DatabaseMigrationsTest::cleanupTestCase()
-Totals: 5 passed, 0 failed, 0 skipped, 0 blacklisted, 81ms
+Totals: 5 passed, 0 failed, 0 skipped, 0 blacklisted, 79ms
 ********* Finished testing of DatabaseMigrationsTest *********
 <end of output>
-Test time =   0.09 sec
+Test time =   0.08 sec
 ----------------------------------------------------------
 Test Passed.
-"tst_DatabaseMigrations" end time: Aug 06 21:37 CST
+"tst_DatabaseMigrations" end time: Aug 06 21:40 CST
 "tst_DatabaseMigrations" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Aug 06 21:37 CST
+4/5 Testing: tst_WriteQueue
+4/5 Test: tst_WriteQueue
+Command: "/home/victor/c_proj/plc_host/build/tests/tst_WriteQueue"
+Directory: /home/victor/c_proj/plc_host/build/tests
+"tst_WriteQueue" start time: Aug 06 21:40 CST
+Output:
+----------------------------------------------------------
+********* Start testing of WriteQueueTest *********
+Config: Using QtTest library 6.4.2, Qt 6.4.2 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 13.2.0), ubuntu 24.04
+PASS   : WriteQueueTest::initTestCase()
+PASS   : WriteQueueTest::emptyQueue_isEmpty_returnsTrue()
+PASS   : WriteQueueTest::enqueueDequeue_fifoOrder()
+PASS   : WriteQueueTest::highPriorityRelease_dequeuedBeforeNormal()
+PASS   : WriteQueueTest::samePriority_maintainsFifo()
+PASS   : WriteQueueTest::removeExpired_removesOnlyExpired()
+PASS   : WriteQueueTest::removeExpired_allExpired_emptiesQueue()
+PASS   : WriteQueueTest::clear_dropsAllPending()
+PASS   : WriteQueueTest::dequeueOnEmpty_returnsNullopt()
+PASS   : WriteQueueTest::cleanupTestCase()
+Totals: 10 passed, 0 failed, 0 skipped, 0 blacklisted, 0ms
+********* Finished testing of WriteQueueTest *********
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"tst_WriteQueue" end time: Aug 06 21:40 CST
+"tst_WriteQueue" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/5 Testing: tst_TagCache
+5/5 Test: tst_TagCache
+Command: "/home/victor/c_proj/plc_host/build/tests/tst_TagCache"
+Directory: /home/victor/c_proj/plc_host/build/tests
+"tst_TagCache" start time: Aug 06 21:40 CST
+Output:
+----------------------------------------------------------
+********* Start testing of TagCacheTest *********
+Config: Using QtTest library 6.4.2, Qt 6.4.2 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 13.2.0), ubuntu 24.04
+PASS   : TagCacheTest::initTestCase()
+PASS   : TagCacheTest::emptyCache_snapshot_returnsEmptyHash()
+PASS   : TagCacheTest::updateValues_snapshot_containsValuesWithQuality()
+PASS   : TagCacheTest::partialUpdate_keepsUnupdatedValues()
+PASS   : TagCacheTest::staleTagIds_identifiesOldTimestamps()
+PASS   : TagCacheTest::value_returnsDefault_forUnknownTagId()
+PASS   : TagCacheTest::cleanupTestCase()
+Totals: 7 passed, 0 failed, 0 skipped, 0 blacklisted, 0ms
+********* Finished testing of TagCacheTest *********
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"tst_TagCache" end time: Aug 06 21:40 CST
+"tst_TagCache" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 06 21:40 CST
