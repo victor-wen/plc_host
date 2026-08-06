@@ -10,11 +10,11 @@
 
 // 写命令：由 UI 线程构造，经 QueuedConnection 转发到通信线程后入队。
 struct WriteCommand {
-    QUuid id;                     // 唯一标识（点动释放与按下通过同 id 关联）
+    QUuid id = QUuid::createUuid();      // 唯一标识（点动释放与按下通过同 id 关联）
     int tagId = -1;
-    QVariant value;               // 目标值（工程值，编码在引擎内完成）
-    QDateTime createdAt;
-    int expiryMs = 5000;          // 存活时长，默认 5s
+    QVariant value;                      // 目标值（工程值，编码在引擎内完成）
+    QDateTime createdAt = QDateTime::currentDateTime();
+    int expiryMs = 5000;                 // 存活时长，默认 5s
     bool isRelease = false;       // 点动释放标志
     int priority = 0;             // 0=普通, 1=高（点动释放强制置 1）
 };

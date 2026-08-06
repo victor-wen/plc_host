@@ -155,6 +155,84 @@ private slots:
         auto cmd = q.dequeue();
         QVERIFY(!cmd.has_value());
     }
+
+    void testDefaultInitializedCommandHasValidId()
+    {
+        WriteCommand c;
+        QVERIFY(!c.id.isNull());
+    }
+
+    void testDefaultInitializedCommandHasValidTimestamp()
+    {
+        WriteCommand c;
+        QVERIFY(c.createdAt.isValid());
+    }
+
+    void testExpiredBoundary()
+    {
+        WriteQueue q;
+        const QDateTime now = QDateTime::currentDateTime();
+
+        WriteCommand c;
+        c.tagId = 1;
+        c.createdAt = now.addMSecs(-c.expiryMs);  // 恰好等于 expiryMs：严格 < 语义下未过期
+
+        q.enqueue(c);
+        q.removeExpired(now.toMSecsSinceEpoch());
+
+        auto cmd = q.dequeue();
+        QVERIFY(cmd.has_value());
+        QCOMPARE(cmd->tagId, 1);
+    }
+
+    void testMixedPriorityOrder()
+    {
+        WriteQueue q;
+
+        WriteCommand c0a;
+        c0a.tagId = 1;
+        c0a.priority = 0;
+
+        WriteCommand c1a;
+        c1a.tagId = 2;
+        c1a.priority = 1;
+
+        WriteCommand c0b;
+        c0b.tagId = 3;
+        c0b.priority = 0;
+
+        WriteCommand c1b;
+        c1b.tagId = 4;
+        c1b.priority = 1;
+
+        // 入队顺序 0,1,0,1 → 出队应为 1,1,0,0
+        q.enqueue(c0a);
+        q.enqueue(c1a);
+        q.enqueue(c0b);
+        q.enqueue(c1b);
+
+        auto first = q.dequeue();
+        QVERIFY(first.has_value());
+        QCOMPARE(first->priority, 1);
+        QCOMPARE(first->tagId, 2);
+
+        auto second = q.dequeue();
+        QVERIFY(second.has_value());
+        QCOMPARE(second->priority, 1);
+        QCOMPARE(second->tagId, 4);
+
+        auto third = q.dequeue();
+        QVERIFY(third.has_value());
+        QCOMPARE(third->priority, 0);
+        QCOMPARE(third->tagId, 1);
+
+        auto fourth = q.dequeue();
+        QVERIFY(fourth.has_value());
+        QCOMPARE(fourth->priority, 0);
+        QCOMPARE(fourth->tagId, 3);
+
+        QVERIFY(q.isEmpty());
+    }
 };
 
 QTEST_MAIN(WriteQueueTest)
