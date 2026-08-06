@@ -57,7 +57,13 @@ public:
     // 持有的按钮动作执行器（运行模式动作执行入口）。
     ButtonActionExecutor* actionExecutor() const { return m_executor; }
 
+    bool isDirty() const { return m_dirty; }
+    bool save();
+    void saveDraft();
+    bool restoreDraft();
+
 private:
+    void setDirty(bool dirty);
     DashboardScene* m_scene = nullptr;
     DashboardView* m_view = nullptr;
     DashboardRepository* m_repository = nullptr;
@@ -65,4 +71,5 @@ private:
 
     int m_currentPageId = -1;
     bool m_editMode = true; // 初始为编辑模式
+    bool m_dirty = false;
 };

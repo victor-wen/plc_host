@@ -519,7 +519,7 @@ build src/plc_host_autogen/timestamp src/plc_host_autogen/mocs_compilation.cpp |
 #############################################
 # Phony custom command for src/CMakeFiles/plc_host_autogen_timestamp_deps
 
-build src/CMakeFiles/plc_host_autogen_timestamp_deps | ${cmake_ninja_workdir}src/CMakeFiles/plc_host_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2
+build src/CMakeFiles/plc_host_autogen_timestamp_deps | ${cmake_ninja_workdir}src/CMakeFiles/plc_host_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
 
 
 #############################################
@@ -7193,6 +7193,376 @@ build tests/tst_DashboardRuntime: CXX_EXECUTABLE_LINKER__tst_DashboardRuntime_De
   TARGET_PDB = tst_DashboardRuntime.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target tst_DashboardRecovery
+
+
+#############################################
+# Order-only phony target for tst_DashboardRecovery
+
+build cmake_object_order_depends_target_tst_DashboardRecovery: phony || tests/tst_DashboardRecovery_autogen tests/tst_DashboardRecovery_autogen/mocs_compilation.cpp tests/tst_DashboardRecovery_autogen/timestamp tests/tst_DashboardRecovery_autogen_timestamp_deps
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/tst_DashboardRecovery_autogen/mocs_compilation.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/tst_DashboardRecovery_autogen/mocs_compilation.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/tst_DashboardRecovery_autogen
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/unit/tst_DashboardRecovery.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/tests/unit/tst_DashboardRecovery.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/unit/tst_DashboardRecovery.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/unit
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/domain/Tag.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/domain/Tag.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/domain/Tag.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/domain
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/storage/DatabaseMigrator.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/storage/DatabaseMigrator.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/storage/DatabaseMigrator.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/storage
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/storage/BackupService.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/storage/BackupService.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/storage/BackupService.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/storage
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/history/HistoryService.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/history/HistoryService.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/history/HistoryService.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/history
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/history/CsvExporter.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/history/CsvExporter.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/history/CsvExporter.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/history
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/history/TrendService.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/history/TrendService.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/history/TrendService.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/history
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/alarm/AlarmEngine.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/alarm/AlarmEngine.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/alarm/AlarmEngine.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/alarm
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/runtime/AcquisitionEngine.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/runtime/AcquisitionEngine.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/runtime/AcquisitionEngine.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/runtime
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/runtime/TagCache.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/runtime/TagCache.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/runtime/TagCache.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/runtime
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/runtime/WriteQueue.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/runtime/WriteQueue.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/runtime/WriteQueue.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/runtime
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/modbus/PollPlanner.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/modbus/PollPlanner.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/modbus/PollPlanner.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/modbus
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/modbus/QtModbusClient.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/modbus/QtModbusClient.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/modbus/QtModbusClient.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/modbus
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/modbus/ValueCodec.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/modbus/ValueCodec.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/modbus/ValueCodec.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/modbus
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/DashboardRepository.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/DashboardRepository.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/DashboardRepository.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/DashboardScene.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/DashboardScene.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/DashboardScene.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/DashboardView.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/DashboardView.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/DashboardView.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/DashboardController.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/DashboardController.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/DashboardController.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/runtime/ButtonActionExecutor.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/runtime/ButtonActionExecutor.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/runtime/ButtonActionExecutor.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/runtime
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/commands/AddItemCommand.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/commands/AddItemCommand.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/commands/AddItemCommand.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/commands
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/commands/RemoveItemCommand.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/commands/RemoveItemCommand.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/commands/RemoveItemCommand.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/commands
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/commands/MoveCommand.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/commands/MoveCommand.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/commands/MoveCommand.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/commands
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/commands/ResizeCommand.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/commands/ResizeCommand.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/commands/ResizeCommand.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/commands
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/commands/PropertyChangeCommand.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/commands/PropertyChangeCommand.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/commands/PropertyChangeCommand.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/commands
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/TextItem.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/items/TextItem.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/TextItem.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/RectItem.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/items/RectItem.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/RectItem.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/ImageItem.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/items/ImageItem.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/ImageItem.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/ValueItem.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/items/ValueItem.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/ValueItem.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/LedItem.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/items/LedItem.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/LedItem.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/SwitchItem.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/items/SwitchItem.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/SwitchItem.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/ProgressBarItem.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/items/ProgressBarItem.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/ProgressBarItem.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/GaugeItem.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/items/GaugeItem.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/GaugeItem.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/ValueInputItem.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/items/ValueInputItem.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/ValueInputItem.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/TrendItem.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/items/TrendItem.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/TrendItem.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/ButtonItem.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/items/ButtonItem.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/ButtonItem.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/ui/PlcConfigWidget.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/ui/PlcConfigWidget.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/ui/PlcConfigWidget.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/ui
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/ui/TagEditorWidget.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/ui/TagEditorWidget.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/ui/TagEditorWidget.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/ui
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/ui/TagMonitorWidget.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/ui/TagMonitorWidget.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/ui/TagMonitorWidget.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/ui
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/ui/TrendWidget.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/ui/TrendWidget.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/ui/TrendWidget.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/ui
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/app/MainWindow.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/app/MainWindow.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/app/MainWindow.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/app
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/recipe/RecipeService.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/recipe/RecipeService.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/recipe/RecipeService.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/recipe
+
+build tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/logging/LogService.cpp.o: CXX_COMPILER__tst_DashboardRecovery_unscanned_Debug /home/victor/c_proj/plc_host/src/logging/LogService.cpp || cmake_object_order_depends_target_tst_DashboardRecovery
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/logging/LogService.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/logging
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target tst_DashboardRecovery
+
+
+#############################################
+# Link the executable tests/tst_DashboardRecovery
+
+build tests/tst_DashboardRecovery: CXX_EXECUTABLE_LINKER__tst_DashboardRecovery_Debug tests/CMakeFiles/tst_DashboardRecovery.dir/tst_DashboardRecovery_autogen/mocs_compilation.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/unit/tst_DashboardRecovery.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/domain/Tag.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/storage/DatabaseMigrator.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/storage/BackupService.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/history/HistoryService.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/history/CsvExporter.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/history/TrendService.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/alarm/AlarmEngine.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/runtime/AcquisitionEngine.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/runtime/TagCache.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/runtime/WriteQueue.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/modbus/PollPlanner.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/modbus/QtModbusClient.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/modbus/ValueCodec.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/DashboardRepository.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/DashboardScene.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/DashboardView.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/DashboardController.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/runtime/ButtonActionExecutor.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/commands/AddItemCommand.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/commands/RemoveItemCommand.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/commands/MoveCommand.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/commands/ResizeCommand.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/commands/PropertyChangeCommand.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/TextItem.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/RectItem.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/ImageItem.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/ValueItem.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/LedItem.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/SwitchItem.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/ProgressBarItem.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/GaugeItem.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/ValueInputItem.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/TrendItem.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/dashboard/items/ButtonItem.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/ui/PlcConfigWidget.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/ui/TagEditorWidget.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/ui/TagMonitorWidget.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/ui/TrendWidget.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/app/MainWindow.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/recipe/RecipeService.cpp.o tests/CMakeFiles/tst_DashboardRecovery.dir/__/src/logging/LogService.cpp.o | /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6OpenGLWidgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so || tests/tst_DashboardRecovery_autogen tests/tst_DashboardRecovery_autogen_timestamp_deps
+  FLAGS = -g
+  LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6OpenGLWidgets.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2  /usr/lib/x86_64-linux-gnu/libGLX.so  /usr/lib/x86_64-linux-gnu/libOpenGL.so
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRecovery.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = tests/tst_DashboardRecovery
+  TARGET_PDB = tst_DashboardRecovery.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target tst_HistoryService
 
 
@@ -10035,6 +10405,18 @@ build tests/tst_DashboardRuntime_autogen: phony tests/CMakeFiles/tst_DashboardRu
 
 
 #############################################
+# Utility command for tst_DashboardRecovery_autogen_timestamp_deps
+
+build tests/tst_DashboardRecovery_autogen_timestamp_deps: phony tests/CMakeFiles/tst_DashboardRecovery_autogen_timestamp_deps
+
+
+#############################################
+# Utility command for tst_DashboardRecovery_autogen
+
+build tests/tst_DashboardRecovery_autogen: phony tests/CMakeFiles/tst_DashboardRecovery_autogen tests/tst_DashboardRecovery_autogen/timestamp tests/tst_DashboardRecovery_autogen/mocs_compilation.cpp tests/tst_DashboardRecovery_autogen_timestamp_deps
+
+
+#############################################
 # Utility command for tst_HistoryService_autogen_timestamp_deps
 
 build tests/tst_HistoryService_autogen_timestamp_deps: phony tests/CMakeFiles/tst_HistoryService_autogen_timestamp_deps
@@ -10299,6 +10681,16 @@ build tests/tst_DashboardRuntime_autogen/timestamp tests/tst_DashboardRuntime_au
 
 
 #############################################
+# Custom command for tests/tst_DashboardRecovery_autogen/timestamp
+
+build tests/tst_DashboardRecovery_autogen/timestamp tests/tst_DashboardRecovery_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}tests/tst_DashboardRecovery_autogen/timestamp ${cmake_ninja_workdir}tests/tst_DashboardRecovery_autogen/mocs_compilation.cpp: CUSTOM_COMMAND /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic || tests/tst_DashboardRecovery_autogen_timestamp_deps
+  COMMAND = cd /home/victor/c_proj/plc_host/build/tests && /usr/bin/cmake -E cmake_autogen /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_DashboardRecovery_autogen.dir/AutogenInfo.json Debug && /usr/bin/cmake -E touch /home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/timestamp && /usr/bin/cmake -E cmake_transform_depfile Ninja gccdepfile /home/victor/c_proj/plc_host /home/victor/c_proj/plc_host/tests /home/victor/c_proj/plc_host/build /home/victor/c_proj/plc_host/build/tests /home/victor/c_proj/plc_host/build/tests/tst_DashboardRecovery_autogen/deps /home/victor/c_proj/plc_host/build/CMakeFiles/d/34b44d95722da4298d3ca36bb7df87380591db6f549fde7de015e3679a8fafed.d
+  DESC = Automatic MOC and UIC for target tst_DashboardRecovery
+  depfile = /home/victor/c_proj/plc_host/build/CMakeFiles/d/34b44d95722da4298d3ca36bb7df87380591db6f549fde7de015e3679a8fafed.d
+  restat = 1
+
+
+#############################################
 # Custom command for tests/tst_HistoryService_autogen/timestamp
 
 build tests/tst_HistoryService_autogen/timestamp tests/tst_HistoryService_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}tests/tst_HistoryService_autogen/timestamp ${cmake_ninja_workdir}tests/tst_HistoryService_autogen/mocs_compilation.cpp: CUSTOM_COMMAND /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic || tests/tst_HistoryService_autogen_timestamp_deps
@@ -10371,7 +10763,7 @@ build tests/tst_BackupService_autogen/timestamp tests/tst_BackupService_autogen/
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_smoke_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_smoke_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_smoke_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2
+build tests/CMakeFiles/tst_smoke_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_smoke_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
 
 
 #############################################
@@ -10383,7 +10775,7 @@ build tests/CMakeFiles/tst_smoke_autogen | ${cmake_ninja_workdir}tests/CMakeFile
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_DomainModels_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_DomainModels_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_DomainModels_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2
+build tests/CMakeFiles/tst_DomainModels_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_DomainModels_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
 
 
 #############################################
@@ -10395,7 +10787,7 @@ build tests/CMakeFiles/tst_DomainModels_autogen | ${cmake_ninja_workdir}tests/CM
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_DatabaseMigrations_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_DatabaseMigrations_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_DatabaseMigrations_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2
+build tests/CMakeFiles/tst_DatabaseMigrations_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_DatabaseMigrations_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
 
 
 #############################################
@@ -10407,7 +10799,7 @@ build tests/CMakeFiles/tst_DatabaseMigrations_autogen | ${cmake_ninja_workdir}te
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_ValueCodec_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_ValueCodec_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_ValueCodec_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2
+build tests/CMakeFiles/tst_ValueCodec_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_ValueCodec_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
 
 
 #############################################
@@ -10419,7 +10811,7 @@ build tests/CMakeFiles/tst_ValueCodec_autogen | ${cmake_ninja_workdir}tests/CMak
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_WriteQueue_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_WriteQueue_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_WriteQueue_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2
+build tests/CMakeFiles/tst_WriteQueue_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_WriteQueue_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
 
 
 #############################################
@@ -10431,7 +10823,7 @@ build tests/CMakeFiles/tst_WriteQueue_autogen | ${cmake_ninja_workdir}tests/CMak
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_TagCache_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_TagCache_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_TagCache_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2
+build tests/CMakeFiles/tst_TagCache_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_TagCache_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
 
 
 #############################################
@@ -10443,7 +10835,7 @@ build tests/CMakeFiles/tst_TagCache_autogen | ${cmake_ninja_workdir}tests/CMakeF
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_PollPlanner_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_PollPlanner_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_PollPlanner_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2
+build tests/CMakeFiles/tst_PollPlanner_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_PollPlanner_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
 
 
 #############################################
@@ -10455,7 +10847,7 @@ build tests/CMakeFiles/tst_PollPlanner_autogen | ${cmake_ninja_workdir}tests/CMa
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_DashboardRepository_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_DashboardRepository_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_DashboardRepository_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2
+build tests/CMakeFiles/tst_DashboardRepository_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_DashboardRepository_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
 
 
 #############################################
@@ -10467,7 +10859,7 @@ build tests/CMakeFiles/tst_DashboardRepository_autogen | ${cmake_ninja_workdir}t
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_UndoCommands_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_UndoCommands_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_UndoCommands_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2
+build tests/CMakeFiles/tst_UndoCommands_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_UndoCommands_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
 
 
 #############################################
@@ -10479,7 +10871,7 @@ build tests/CMakeFiles/tst_UndoCommands_autogen | ${cmake_ninja_workdir}tests/CM
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_QtModbusClient_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_QtModbusClient_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_QtModbusClient_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2
+build tests/CMakeFiles/tst_QtModbusClient_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_QtModbusClient_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
 
 
 #############################################
@@ -10491,7 +10883,7 @@ build tests/CMakeFiles/tst_QtModbusClient_autogen | ${cmake_ninja_workdir}tests/
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_AcquisitionEngine_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_AcquisitionEngine_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_AcquisitionEngine_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2
+build tests/CMakeFiles/tst_AcquisitionEngine_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_AcquisitionEngine_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
 
 
 #############################################
@@ -10503,7 +10895,7 @@ build tests/CMakeFiles/tst_AcquisitionEngine_autogen | ${cmake_ninja_workdir}tes
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_UiSmoke_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_UiSmoke_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_UiSmoke_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2
+build tests/CMakeFiles/tst_UiSmoke_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_UiSmoke_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
 
 
 #############################################
@@ -10515,7 +10907,7 @@ build tests/CMakeFiles/tst_UiSmoke_autogen | ${cmake_ninja_workdir}tests/CMakeFi
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_DashboardScene_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_DashboardScene_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_DashboardScene_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2
+build tests/CMakeFiles/tst_DashboardScene_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_DashboardScene_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
 
 
 #############################################
@@ -10527,7 +10919,7 @@ build tests/CMakeFiles/tst_DashboardScene_autogen | ${cmake_ninja_workdir}tests/
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_DashboardGeometry_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_DashboardGeometry_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_DashboardGeometry_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2
+build tests/CMakeFiles/tst_DashboardGeometry_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_DashboardGeometry_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
 
 
 #############################################
@@ -10539,7 +10931,7 @@ build tests/CMakeFiles/tst_DashboardGeometry_autogen | ${cmake_ninja_workdir}tes
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_DashboardItems_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_DashboardItems_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_DashboardItems_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2
+build tests/CMakeFiles/tst_DashboardItems_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_DashboardItems_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
 
 
 #############################################
@@ -10551,7 +10943,7 @@ build tests/CMakeFiles/tst_DashboardItems_autogen | ${cmake_ninja_workdir}tests/
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_ButtonActionModel_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_ButtonActionModel_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_ButtonActionModel_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2
+build tests/CMakeFiles/tst_ButtonActionModel_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_ButtonActionModel_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
 
 
 #############################################
@@ -10563,7 +10955,7 @@ build tests/CMakeFiles/tst_ButtonActionModel_autogen | ${cmake_ninja_workdir}tes
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_ButtonActionExecutor_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_ButtonActionExecutor_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_ButtonActionExecutor_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2
+build tests/CMakeFiles/tst_ButtonActionExecutor_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_ButtonActionExecutor_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
 
 
 #############################################
@@ -10575,7 +10967,7 @@ build tests/CMakeFiles/tst_ButtonActionExecutor_autogen | ${cmake_ninja_workdir}
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_DashboardRuntime_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_DashboardRuntime_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_DashboardRuntime_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2
+build tests/CMakeFiles/tst_DashboardRuntime_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_DashboardRuntime_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
 
 
 #############################################
@@ -10585,9 +10977,21 @@ build tests/CMakeFiles/tst_DashboardRuntime_autogen | ${cmake_ninja_workdir}test
 
 
 #############################################
+# Phony custom command for tests/CMakeFiles/tst_DashboardRecovery_autogen_timestamp_deps
+
+build tests/CMakeFiles/tst_DashboardRecovery_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_DashboardRecovery_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
+
+
+#############################################
+# Phony custom command for tests/CMakeFiles/tst_DashboardRecovery_autogen
+
+build tests/CMakeFiles/tst_DashboardRecovery_autogen | ${cmake_ninja_workdir}tests/CMakeFiles/tst_DashboardRecovery_autogen: phony tests/tst_DashboardRecovery_autogen/timestamp || tests/tst_DashboardRecovery_autogen_timestamp_deps
+
+
+#############################################
 # Phony custom command for tests/CMakeFiles/tst_HistoryService_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_HistoryService_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_HistoryService_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2
+build tests/CMakeFiles/tst_HistoryService_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_HistoryService_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
 
 
 #############################################
@@ -10599,7 +11003,7 @@ build tests/CMakeFiles/tst_HistoryService_autogen | ${cmake_ninja_workdir}tests/
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_CsvExporter_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_CsvExporter_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_CsvExporter_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2
+build tests/CMakeFiles/tst_CsvExporter_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_CsvExporter_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
 
 
 #############################################
@@ -10611,7 +11015,7 @@ build tests/CMakeFiles/tst_CsvExporter_autogen | ${cmake_ninja_workdir}tests/CMa
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_TrendWidget_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_TrendWidget_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_TrendWidget_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2
+build tests/CMakeFiles/tst_TrendWidget_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_TrendWidget_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
 
 
 #############################################
@@ -10623,7 +11027,7 @@ build tests/CMakeFiles/tst_TrendWidget_autogen | ${cmake_ninja_workdir}tests/CMa
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_AlarmEngine_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_AlarmEngine_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_AlarmEngine_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2
+build tests/CMakeFiles/tst_AlarmEngine_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_AlarmEngine_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
 
 
 #############################################
@@ -10635,7 +11039,7 @@ build tests/CMakeFiles/tst_AlarmEngine_autogen | ${cmake_ninja_workdir}tests/CMa
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_RecipeService_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_RecipeService_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_RecipeService_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2
+build tests/CMakeFiles/tst_RecipeService_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_RecipeService_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
 
 
 #############################################
@@ -10647,7 +11051,7 @@ build tests/CMakeFiles/tst_RecipeService_autogen | ${cmake_ninja_workdir}tests/C
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_LogService_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_LogService_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_LogService_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2
+build tests/CMakeFiles/tst_LogService_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_LogService_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
 
 
 #############################################
@@ -10659,7 +11063,7 @@ build tests/CMakeFiles/tst_LogService_autogen | ${cmake_ninja_workdir}tests/CMak
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_BackupService_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_BackupService_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_BackupService_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2
+build tests/CMakeFiles/tst_BackupService_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_BackupService_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
 
 
 #############################################
@@ -10723,6 +11127,12 @@ build tst_DashboardItems: phony tests/tst_DashboardItems
 build tst_DashboardItems_autogen: phony tests/tst_DashboardItems_autogen
 
 build tst_DashboardItems_autogen_timestamp_deps: phony tests/tst_DashboardItems_autogen_timestamp_deps
+
+build tst_DashboardRecovery: phony tests/tst_DashboardRecovery
+
+build tst_DashboardRecovery_autogen: phony tests/tst_DashboardRecovery_autogen
+
+build tst_DashboardRecovery_autogen_timestamp_deps: phony tests/tst_DashboardRecovery_autogen_timestamp_deps
 
 build tst_DashboardRepository: phony tests/tst_DashboardRepository
 
@@ -10848,7 +11258,7 @@ build src/all: phony src/plc_host
 #############################################
 # Folder: /home/victor/c_proj/plc_host/build/tests
 
-build tests/all: phony tests/tst_smoke tests/tst_DomainModels tests/tst_DatabaseMigrations tests/tst_ValueCodec tests/tst_WriteQueue tests/tst_TagCache tests/tst_PollPlanner tests/tst_DashboardRepository tests/tst_UndoCommands tests/tst_QtModbusClient tests/tst_AcquisitionEngine tests/tst_UiSmoke tests/tst_DashboardScene tests/tst_DashboardGeometry tests/tst_DashboardItems tests/tst_ButtonActionModel tests/tst_ButtonActionExecutor tests/tst_DashboardRuntime tests/tst_HistoryService tests/tst_CsvExporter tests/tst_TrendWidget tests/tst_AlarmEngine tests/tst_RecipeService tests/tst_LogService tests/tst_BackupService
+build tests/all: phony tests/tst_smoke tests/tst_DomainModels tests/tst_DatabaseMigrations tests/tst_ValueCodec tests/tst_WriteQueue tests/tst_TagCache tests/tst_PollPlanner tests/tst_DashboardRepository tests/tst_UndoCommands tests/tst_QtModbusClient tests/tst_AcquisitionEngine tests/tst_UiSmoke tests/tst_DashboardScene tests/tst_DashboardGeometry tests/tst_DashboardItems tests/tst_ButtonActionModel tests/tst_ButtonActionExecutor tests/tst_DashboardRuntime tests/tst_DashboardRecovery tests/tst_HistoryService tests/tst_CsvExporter tests/tst_TrendWidget tests/tst_AlarmEngine tests/tst_RecipeService tests/tst_LogService tests/tst_BackupService
 
 # =============================================================================
 # Built-in targets

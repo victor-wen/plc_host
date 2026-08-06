@@ -4,6 +4,12 @@
 #include "dashboard/DashboardRepository.h"
 #include "dashboard/DashboardScene.h"
 #include "dashboard/DashboardView.h"
+#include "dashboard/DashboardBaseItem.h"
+
+#include <QSettings>
+#include <QJsonArray>
+#include <QJsonDocument>
+#include <QJsonObject>
 
 DashboardController::DashboardController(DashboardScene* scene, DashboardView* view,
                                          DashboardRepository* repository,
@@ -101,5 +107,114 @@ void DashboardController::deletePage(int pageId)
         m_scene->clear();
         m_scene->undoStack()->clear();
         m_currentPageId = -1;
+        m_dirty = false;
     }
+}
+
+void DashboardController::setDirty(bool dirty)
+{
+    m_dirty = dirty;
+}
+
+bool DashboardController::save()
+{
+    if (m_currentPageId < 0)
+        return false;
+
+    auto items = m_scene->dashboardItems();
+    QVector<DashboardItem> metaList;
+    for (auto* item : items) {
+        if (!item)
+            continue;
+
+        DashboardItem meta;
+        meta.id = item->itemId;
+        meta.pageId = m_currentPageId;
+        meta.itemType = item->itemType;
+        meta.x = item->pos().x();
+        meta.y = item->pos().y();
+        meta.width = item->boundingRect().width();
+        meta.height = item->boundingRect().height();
+        meta.zOrder = item->zValue();
+        meta.commonStyle = item->commonStyle;
+        meta.config = item->config;
+        meta.schemaVersion = item->schemaVersion;
+
+        if (meta.itemType.isEmpty())
+            return false;
+        if (meta.width < 1 || meta.height < 1)
+            return false;
+
+        metaList.append(meta);
+    }
+
+    if (!m_repository->saveItems(m_currentPageId, metaList))
+        return false;
+
+    m_dirty = false;
+    return true;
+}
+
+void DashboardController::saveDraft()
+{
+    if (m_currentPageId < 0)
+        return;
+
+    QJsonArray arr;
+    auto items = m_scene->dashboardItems();
+    for (auto* item : items) {
+        if (!item)
+            continue;
+        QJsonObject obj;
+        obj["itemType"] = item->itemType;
+        obj["x"] = item->pos().x();
+        obj["y"] = item->pos().y();
+        obj["w"] = item->boundingRect().width();
+        obj["h"] = item->boundingRect().height();
+        obj["z"] = item->zValue();
+        obj["style"] = item->commonStyle;
+        obj["config"] = item->config;
+        arr.append(obj);
+    }
+
+    QSettings settings;
+    settings.setValue(QString("dashboard/draft_%1").arg(m_currentPageId),
+                      QJsonDocument(arr).toJson(QJsonDocument::Compact));
+}
+
+bool DashboardController::restoreDraft()
+{
+    if (m_currentPageId < 0)
+        return false;
+
+    QSettings settings;
+    QByteArray data = settings.value(QString("dashboard/draft_%1").arg(m_currentPageId)).toByteArray();
+    if (data.isEmpty())
+        return false;
+
+    QJsonDocument doc = QJsonDocument::fromJson(data);
+    if (!doc.isArray())
+        return false;
+
+    m_scene->clear();
+    m_scene->undoStack()->clear();
+
+    for (const auto& val : doc.array()) {
+        QJsonObject obj = val.toObject();
+        DashboardItem meta;
+        meta.itemType = obj["itemType"].toString();
+        meta.x = obj["x"].toDouble();
+        meta.y = obj["y"].toDouble();
+        meta.width = obj["w"].toDouble();
+        meta.height = obj["h"].toDouble();
+        meta.zOrder = obj["z"].toDouble();
+        meta.commonStyle = obj["style"].toObject();
+        meta.config = obj["config"].toObject();
+        meta.pageId = m_currentPageId;
+        m_scene->addItem(meta);
+    }
+
+    m_scene->setEditMode(m_editMode);
+    m_dirty = true;
+    return true;
 }
