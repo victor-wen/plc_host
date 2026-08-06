@@ -53,6 +53,36 @@
 			null
 		],
 		[
+			"/home/victor/c_proj/plc_host/src/dashboard/commands/AddItemCommand.h",
+			"MU",
+			"VBTA6OUV2I/moc_AddItemCommand.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/commands/MoveCommand.h",
+			"MU",
+			"VBTA6OUV2I/moc_MoveCommand.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/commands/PropertyChangeCommand.h",
+			"MU",
+			"VBTA6OUV2I/moc_PropertyChangeCommand.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/commands/RemoveItemCommand.h",
+			"MU",
+			"VBTA6OUV2I/moc_RemoveItemCommand.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/commands/ResizeCommand.h",
+			"MU",
+			"VBTA6OUV2I/moc_ResizeCommand.cpp",
+			null
+		],
+		[
 			"/home/victor/c_proj/plc_host/src/domain/PlcConfig.h",
 			"MU",
 			"ZIYP446TXO/moc_PlcConfig.cpp",
@@ -231,6 +261,31 @@
 		],
 		[
 			"/home/victor/c_proj/plc_host/src/dashboard/DashboardView.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/commands/AddItemCommand.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/commands/MoveCommand.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/commands/PropertyChangeCommand.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/commands/RemoveItemCommand.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/commands/ResizeCommand.cpp",
 			"MU",
 			null
 		],

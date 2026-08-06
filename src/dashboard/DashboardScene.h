@@ -3,6 +3,7 @@
 #include <QGraphicsScene>
 #include <QList>
 #include <QPointF>
+#include <QUndoStack>
 
 #include "DashboardBaseItem.h"
 #include "DashboardDocument.h"
@@ -27,7 +28,20 @@ public:
     void setPage(const DashboardPage& page);
 
     // 工厂方法：按 meta.itemType 创建组件并应用几何与元数据。返回场景拥有的组件。
+    // 这是底层工厂（加载页面/命令 redo 使用），不经过撤销栈。
     DashboardBaseItem* addItem(const DashboardItem& meta);
+
+    // 经撤销栈添加组件：push AddItemCommand 并返回其创建的组件。
+    // 后续 undo 会将其从场景移除，redo 原样放回。
+    DashboardBaseItem* addItemWithUndo(const DashboardItem& meta);
+
+    // 经撤销栈移动/缩放组件（DASH-04）：连续调用会由 MoveCommand/ResizeCommand
+    // 的 mergeWith 合并为一次撤销步。
+    void moveItem(DashboardBaseItem* item, const QPointF& newPos);
+    void resizeItem(DashboardBaseItem* item, const QRectF& newRect);
+
+    // 场景持有的撤销栈（UI 主线程专用，见 docs/architecture/threading.md）。
+    QUndoStack* undoStack() { return &m_undoStack; }
 
     // 切换全部组件的编辑/运行模式。
     void setEditMode(bool editing);
@@ -53,6 +67,9 @@ public:
     QList<DashboardBaseItem*> selectedItems() const;
 
 private:
+    // 撤销/重做栈：所有编辑操作（添加/删除/移动/缩放/属性修改）经命令入栈。
+    QUndoStack m_undoStack;
+
     // 运行模式标记：新加入的组件应用当前模式。
     bool m_editMode = true;
 };

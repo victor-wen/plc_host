@@ -13,6 +13,11 @@ set(SOURCES
     dashboard/DashboardRepository.cpp
     dashboard/DashboardScene.cpp
     dashboard/DashboardView.cpp
+    dashboard/commands/AddItemCommand.cpp
+    dashboard/commands/RemoveItemCommand.cpp
+    dashboard/commands/MoveCommand.cpp
+    dashboard/commands/ResizeCommand.cpp
+    dashboard/commands/PropertyChangeCommand.cpp
     ui/PlcConfigWidget.cpp
     ui/TagEditorWidget.cpp
     ui/TagMonitorWidget.cpp
@@ -37,6 +42,11 @@ set(HEADERS
     dashboard/DashboardBaseItem.h
     dashboard/DashboardScene.h
     dashboard/DashboardView.h
+    dashboard/commands/AddItemCommand.h
+    dashboard/commands/RemoveItemCommand.h
+    dashboard/commands/MoveCommand.h
+    dashboard/commands/ResizeCommand.h
+    dashboard/commands/PropertyChangeCommand.h
     ui/PlcConfigWidget.h
     ui/TagEditorWidget.h
     ui/TagMonitorWidget.h

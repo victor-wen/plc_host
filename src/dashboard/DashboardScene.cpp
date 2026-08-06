@@ -5,6 +5,11 @@
 #include <QPainterPath>
 #include <QStyleOptionGraphicsItem>
 
+#include "dashboard/commands/AddItemCommand.h"
+#include "dashboard/commands/MoveCommand.h"
+#include "dashboard/commands/RemoveItemCommand.h"
+#include "dashboard/commands/ResizeCommand.h"
+
 #include <algorithm>
 
 namespace {
@@ -213,11 +218,41 @@ void DashboardScene::alignSelected(Qt::Alignment alignment)
 void DashboardScene::deleteSelected()
 {
     const auto sel = selectedItems();
+    if (sel.isEmpty())
+        return;
+
+    // 批量删除作为一个宏命令：一次撤销恢复全部被删组件（QUndoCommand 子命令）。
+    auto* macro = new QUndoCommand;
+    macro->setText(QStringLiteral("删除 %1 个组件").arg(sel.size()));
     for (auto* item : sel) {
         item->setSelected(false);
-        QGraphicsScene::removeItem(item);
-        delete item; // scene 持有组件所有权
+        new RemoveItemCommand(this, item, dashboardItemToJson(item), macro);
     }
+    m_undoStack.push(macro);
+}
+
+DashboardBaseItem* DashboardScene::addItemWithUndo(const DashboardItem& meta)
+{
+    auto* cmd = new AddItemCommand(this, meta);
+    m_undoStack.push(cmd); // push 即执行 redo
+    return cmd->item();
+}
+
+void DashboardScene::moveItem(DashboardBaseItem* item, const QPointF& newPos)
+{
+    if (!item || item->pos() == newPos)
+        return;
+    m_undoStack.push(new MoveCommand(item, item->pos(), newPos));
+}
+
+void DashboardScene::resizeItem(DashboardBaseItem* item, const QRectF& newRect)
+{
+    if (!item)
+        return;
+    const QRectF oldRect(item->pos(), item->boundingRect().size());
+    if (oldRect == newRect)
+        return;
+    m_undoStack.push(new ResizeCommand(item, oldRect, newRect));
 }
 
 QList<DashboardBaseItem*> DashboardScene::selectedItems() const

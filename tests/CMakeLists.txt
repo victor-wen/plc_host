@@ -18,6 +18,11 @@ set(DASHBOARD_SOURCES
     ${CMAKE_SOURCE_DIR}/src/dashboard/DashboardRepository.cpp
     ${CMAKE_SOURCE_DIR}/src/dashboard/DashboardScene.cpp
     ${CMAKE_SOURCE_DIR}/src/dashboard/DashboardView.cpp
+    ${CMAKE_SOURCE_DIR}/src/dashboard/commands/AddItemCommand.cpp
+    ${CMAKE_SOURCE_DIR}/src/dashboard/commands/RemoveItemCommand.cpp
+    ${CMAKE_SOURCE_DIR}/src/dashboard/commands/MoveCommand.cpp
+    ${CMAKE_SOURCE_DIR}/src/dashboard/commands/ResizeCommand.cpp
+    ${CMAKE_SOURCE_DIR}/src/dashboard/commands/PropertyChangeCommand.cpp
 )
 set(DASHBOARD_HEADERS
     ${CMAKE_SOURCE_DIR}/src/dashboard/DashboardDocument.h
@@ -25,6 +30,11 @@ set(DASHBOARD_HEADERS
     ${CMAKE_SOURCE_DIR}/src/dashboard/DashboardBaseItem.h
     ${CMAKE_SOURCE_DIR}/src/dashboard/DashboardScene.h
     ${CMAKE_SOURCE_DIR}/src/dashboard/DashboardView.h
+    ${CMAKE_SOURCE_DIR}/src/dashboard/commands/AddItemCommand.h
+    ${CMAKE_SOURCE_DIR}/src/dashboard/commands/RemoveItemCommand.h
+    ${CMAKE_SOURCE_DIR}/src/dashboard/commands/MoveCommand.h
+    ${CMAKE_SOURCE_DIR}/src/dashboard/commands/ResizeCommand.h
+    ${CMAKE_SOURCE_DIR}/src/dashboard/commands/PropertyChangeCommand.h
 )
 set(UI_SOURCES
     ${CMAKE_SOURCE_DIR}/src/ui/PlcConfigWidget.cpp
@@ -58,6 +68,7 @@ add_qtest(unit/tst_WriteQueue)
 add_qtest(unit/tst_TagCache)
 add_qtest(unit/tst_PollPlanner)
 add_qtest(unit/tst_DashboardRepository)
+add_qtest(unit/tst_UndoCommands)
 add_qtest(integration/tst_QtModbusClient)
 add_qtest(integration/tst_AcquisitionEngine)
 add_qtest(ui/tst_UiSmoke)

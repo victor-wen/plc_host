@@ -10,6 +10,16 @@ tests/tst_smoke_autogen/timestamp: \
   /home/victor/c_proj/plc_host/src/dashboard/DashboardScene.h \
   /home/victor/c_proj/plc_host/src/dashboard/DashboardView.cpp \
   /home/victor/c_proj/plc_host/src/dashboard/DashboardView.h \
+  /home/victor/c_proj/plc_host/src/dashboard/commands/AddItemCommand.cpp \
+  /home/victor/c_proj/plc_host/src/dashboard/commands/AddItemCommand.h \
+  /home/victor/c_proj/plc_host/src/dashboard/commands/MoveCommand.cpp \
+  /home/victor/c_proj/plc_host/src/dashboard/commands/MoveCommand.h \
+  /home/victor/c_proj/plc_host/src/dashboard/commands/PropertyChangeCommand.cpp \
+  /home/victor/c_proj/plc_host/src/dashboard/commands/PropertyChangeCommand.h \
+  /home/victor/c_proj/plc_host/src/dashboard/commands/RemoveItemCommand.cpp \
+  /home/victor/c_proj/plc_host/src/dashboard/commands/RemoveItemCommand.h \
+  /home/victor/c_proj/plc_host/src/dashboard/commands/ResizeCommand.cpp \
+  /home/victor/c_proj/plc_host/src/dashboard/commands/ResizeCommand.h \
   /home/victor/c_proj/plc_host/src/domain/PlcConfig.h \
   /home/victor/c_proj/plc_host/src/domain/Tag.cpp \
   /home/victor/c_proj/plc_host/src/domain/Tag.h \
@@ -493,6 +503,7 @@ tests/tst_smoke_autogen/timestamp: \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qxpfunctional.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QUndoStack \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qbrush.h \
@@ -531,6 +542,7 @@ tests/tst_smoke_autogen/timestamp: \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qundostack.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qvalidator.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qvector2d.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qvector3d.h \
