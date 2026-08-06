@@ -10,6 +10,7 @@ set(SOURCES
     runtime/TagCache.cpp
     runtime/WriteQueue.cpp
     storage/DatabaseMigrator.cpp
+    dashboard/DashboardRepository.cpp
 )
 
 set(HEADERS
@@ -26,6 +27,8 @@ set(HEADERS
     runtime/TagCache.h
     runtime/WriteQueue.h
     storage/DatabaseMigrator.h
+    dashboard/DashboardDocument.h
+    dashboard/DashboardRepository.h
 )
 
 qt_add_executable(plc_host ${SOURCES} ${HEADERS})

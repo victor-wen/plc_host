@@ -11,6 +11,18 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/victor/c_proj/plc_host/src/dashboard/DashboardDocument.h",
+			"MU",
+			"GOJBEEH4MY/moc_DashboardDocument.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/DashboardRepository.h",
+			"MU",
+			"GOJBEEH4MY/moc_DashboardRepository.cpp",
+			null
+		],
+		[
 			"/home/victor/c_proj/plc_host/src/domain/Tag.h",
 			"MU",
 			"RCFEFXN5P7/moc_Tag.cpp",
@@ -138,6 +150,11 @@
 	"SETTINGS_FILE" : "/home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_smoke_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/DashboardRepository.cpp",
+			"MU",
+			null
+		],
 		[ "/home/victor/c_proj/plc_host/src/domain/Tag.cpp", "MU", null ],
 		[ "/home/victor/c_proj/plc_host/src/modbus/PollPlanner.cpp", "MU", null ],
 		[

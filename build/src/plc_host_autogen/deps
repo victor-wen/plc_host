@@ -6,6 +6,9 @@ plc_host_autogen/timestamp: \
 	/home/victor/c_proj/plc_host/src/app/MainWindow.cpp \
 	/home/victor/c_proj/plc_host/src/app/MainWindow.h \
 	/home/victor/c_proj/plc_host/src/app/main.cpp \
+	/home/victor/c_proj/plc_host/src/dashboard/DashboardDocument.h \
+	/home/victor/c_proj/plc_host/src/dashboard/DashboardRepository.cpp \
+	/home/victor/c_proj/plc_host/src/dashboard/DashboardRepository.h \
 	/home/victor/c_proj/plc_host/src/domain/PlcConfig.h \
 	/home/victor/c_proj/plc_host/src/domain/Tag.cpp \
 	/home/victor/c_proj/plc_host/src/domain/Tag.h \
@@ -310,6 +313,7 @@ plc_host_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/gnu/stubs.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QDateTime \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QHash \
+	/usr/include/x86_64-linux-gnu/qt6/QtCore/QJsonObject \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QMutex \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
@@ -332,6 +336,8 @@ plc_host_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearraylist.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayview.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtCore/qcborcommon.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtCore/qcborvalue.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qcompare.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qcompare_impl.h \
@@ -355,6 +361,8 @@ plc_host_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevicebase.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qiterator.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonobject.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonvalue.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
@@ -376,6 +384,7 @@ plc_host_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qprocessordetection.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qscopeguard.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h \
@@ -404,6 +413,7 @@ plc_host_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qtsan_impl.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qutf8stringview.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/quuid.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \

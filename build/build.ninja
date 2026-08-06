@@ -180,6 +180,14 @@ build src/CMakeFiles/plc_host.dir/storage/DatabaseMigrator.cpp.o: CXX_COMPILER__
   OBJECT_DIR = src/CMakeFiles/plc_host.dir
   OBJECT_FILE_DIR = src/CMakeFiles/plc_host.dir/storage
 
+build src/CMakeFiles/plc_host.dir/dashboard/DashboardRepository.cpp.o: CXX_COMPILER__plc_host_unscanned_ /home/victor/c_proj/plc_host/src/dashboard/DashboardRepository.cpp || cmake_object_order_depends_target_plc_host
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = src/CMakeFiles/plc_host.dir/dashboard/DashboardRepository.cpp.o.d
+  FLAGS = -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/src/plc_host_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = src/CMakeFiles/plc_host.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/plc_host.dir/dashboard
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target plc_host
@@ -188,7 +196,7 @@ build src/CMakeFiles/plc_host.dir/storage/DatabaseMigrator.cpp.o: CXX_COMPILER__
 #############################################
 # Link the executable src/plc_host
 
-build src/plc_host: CXX_EXECUTABLE_LINKER__plc_host_ src/CMakeFiles/plc_host.dir/plc_host_autogen/mocs_compilation.cpp.o src/CMakeFiles/plc_host.dir/app/main.cpp.o src/CMakeFiles/plc_host.dir/app/MainWindow.cpp.o src/CMakeFiles/plc_host.dir/app/AppContext.cpp.o src/CMakeFiles/plc_host.dir/domain/Tag.cpp.o src/CMakeFiles/plc_host.dir/modbus/PollPlanner.cpp.o src/CMakeFiles/plc_host.dir/modbus/QtModbusClient.cpp.o src/CMakeFiles/plc_host.dir/modbus/ValueCodec.cpp.o src/CMakeFiles/plc_host.dir/runtime/AcquisitionEngine.cpp.o src/CMakeFiles/plc_host.dir/runtime/TagCache.cpp.o src/CMakeFiles/plc_host.dir/runtime/WriteQueue.cpp.o src/CMakeFiles/plc_host.dir/storage/DatabaseMigrator.cpp.o | /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6OpenGLWidgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so || src/plc_host_autogen src/plc_host_autogen_timestamp_deps
+build src/plc_host: CXX_EXECUTABLE_LINKER__plc_host_ src/CMakeFiles/plc_host.dir/plc_host_autogen/mocs_compilation.cpp.o src/CMakeFiles/plc_host.dir/app/main.cpp.o src/CMakeFiles/plc_host.dir/app/MainWindow.cpp.o src/CMakeFiles/plc_host.dir/app/AppContext.cpp.o src/CMakeFiles/plc_host.dir/domain/Tag.cpp.o src/CMakeFiles/plc_host.dir/modbus/PollPlanner.cpp.o src/CMakeFiles/plc_host.dir/modbus/QtModbusClient.cpp.o src/CMakeFiles/plc_host.dir/modbus/ValueCodec.cpp.o src/CMakeFiles/plc_host.dir/runtime/AcquisitionEngine.cpp.o src/CMakeFiles/plc_host.dir/runtime/TagCache.cpp.o src/CMakeFiles/plc_host.dir/runtime/WriteQueue.cpp.o src/CMakeFiles/plc_host.dir/storage/DatabaseMigrator.cpp.o src/CMakeFiles/plc_host.dir/dashboard/DashboardRepository.cpp.o | /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6OpenGLWidgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so || src/plc_host_autogen src/plc_host_autogen_timestamp_deps
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6OpenGLWidgets.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2  /usr/lib/x86_64-linux-gnu/libGLX.so  /usr/lib/x86_64-linux-gnu/libOpenGL.so
   OBJECT_DIR = src/CMakeFiles/plc_host.dir
   POST_BUILD = :
@@ -257,7 +265,7 @@ build src/plc_host_autogen/timestamp src/plc_host_autogen/mocs_compilation.cpp |
 #############################################
 # Phony custom command for src/CMakeFiles/plc_host_autogen_timestamp_deps
 
-build src/CMakeFiles/plc_host_autogen_timestamp_deps | ${cmake_ninja_workdir}src/CMakeFiles/plc_host_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2
+build src/CMakeFiles/plc_host_autogen_timestamp_deps | ${cmake_ninja_workdir}src/CMakeFiles/plc_host_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/qt6/libexec/uic /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2
 
 
 #############################################
@@ -359,6 +367,14 @@ build tests/CMakeFiles/tst_smoke.dir/__/src/modbus/ValueCodec.cpp.o: CXX_COMPILE
   OBJECT_DIR = tests/CMakeFiles/tst_smoke.dir
   OBJECT_FILE_DIR = tests/CMakeFiles/tst_smoke.dir/__/src/modbus
 
+build tests/CMakeFiles/tst_smoke.dir/__/src/dashboard/DashboardRepository.cpp.o: CXX_COMPILER__tst_smoke_unscanned_ /home/victor/c_proj/plc_host/src/dashboard/DashboardRepository.cpp || cmake_object_order_depends_target_tst_smoke
+  DEFINES = -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB
+  DEP_FILE = tests/CMakeFiles/tst_smoke.dir/__/src/dashboard/DashboardRepository.cpp.o.d
+  FLAGS = -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_smoke_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort
+  OBJECT_DIR = tests/CMakeFiles/tst_smoke.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_smoke.dir/__/src/dashboard
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target tst_smoke
@@ -367,7 +383,7 @@ build tests/CMakeFiles/tst_smoke.dir/__/src/modbus/ValueCodec.cpp.o: CXX_COMPILE
 #############################################
 # Link the executable tests/tst_smoke
 
-build tests/tst_smoke: CXX_EXECUTABLE_LINKER__tst_smoke_ tests/CMakeFiles/tst_smoke.dir/tst_smoke_autogen/mocs_compilation.cpp.o tests/CMakeFiles/tst_smoke.dir/unit/tst_smoke.cpp.o tests/CMakeFiles/tst_smoke.dir/__/src/domain/Tag.cpp.o tests/CMakeFiles/tst_smoke.dir/__/src/storage/DatabaseMigrator.cpp.o tests/CMakeFiles/tst_smoke.dir/__/src/runtime/AcquisitionEngine.cpp.o tests/CMakeFiles/tst_smoke.dir/__/src/runtime/TagCache.cpp.o tests/CMakeFiles/tst_smoke.dir/__/src/runtime/WriteQueue.cpp.o tests/CMakeFiles/tst_smoke.dir/__/src/modbus/PollPlanner.cpp.o tests/CMakeFiles/tst_smoke.dir/__/src/modbus/QtModbusClient.cpp.o tests/CMakeFiles/tst_smoke.dir/__/src/modbus/ValueCodec.cpp.o | /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 || tests/tst_smoke_autogen tests/tst_smoke_autogen_timestamp_deps
+build tests/tst_smoke: CXX_EXECUTABLE_LINKER__tst_smoke_ tests/CMakeFiles/tst_smoke.dir/tst_smoke_autogen/mocs_compilation.cpp.o tests/CMakeFiles/tst_smoke.dir/unit/tst_smoke.cpp.o tests/CMakeFiles/tst_smoke.dir/__/src/domain/Tag.cpp.o tests/CMakeFiles/tst_smoke.dir/__/src/storage/DatabaseMigrator.cpp.o tests/CMakeFiles/tst_smoke.dir/__/src/runtime/AcquisitionEngine.cpp.o tests/CMakeFiles/tst_smoke.dir/__/src/runtime/TagCache.cpp.o tests/CMakeFiles/tst_smoke.dir/__/src/runtime/WriteQueue.cpp.o tests/CMakeFiles/tst_smoke.dir/__/src/modbus/PollPlanner.cpp.o tests/CMakeFiles/tst_smoke.dir/__/src/modbus/QtModbusClient.cpp.o tests/CMakeFiles/tst_smoke.dir/__/src/modbus/ValueCodec.cpp.o tests/CMakeFiles/tst_smoke.dir/__/src/dashboard/DashboardRepository.cpp.o | /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 || tests/tst_smoke_autogen tests/tst_smoke_autogen_timestamp_deps
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
   OBJECT_DIR = tests/CMakeFiles/tst_smoke.dir
   POST_BUILD = :
@@ -464,6 +480,14 @@ build tests/CMakeFiles/tst_DomainModels.dir/__/src/modbus/ValueCodec.cpp.o: CXX_
   OBJECT_DIR = tests/CMakeFiles/tst_DomainModels.dir
   OBJECT_FILE_DIR = tests/CMakeFiles/tst_DomainModels.dir/__/src/modbus
 
+build tests/CMakeFiles/tst_DomainModels.dir/__/src/dashboard/DashboardRepository.cpp.o: CXX_COMPILER__tst_DomainModels_unscanned_ /home/victor/c_proj/plc_host/src/dashboard/DashboardRepository.cpp || cmake_object_order_depends_target_tst_DomainModels
+  DEFINES = -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DomainModels.dir/__/src/dashboard/DashboardRepository.cpp.o.d
+  FLAGS = -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DomainModels_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort
+  OBJECT_DIR = tests/CMakeFiles/tst_DomainModels.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DomainModels.dir/__/src/dashboard
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target tst_DomainModels
@@ -472,7 +496,7 @@ build tests/CMakeFiles/tst_DomainModels.dir/__/src/modbus/ValueCodec.cpp.o: CXX_
 #############################################
 # Link the executable tests/tst_DomainModels
 
-build tests/tst_DomainModels: CXX_EXECUTABLE_LINKER__tst_DomainModels_ tests/CMakeFiles/tst_DomainModels.dir/tst_DomainModels_autogen/mocs_compilation.cpp.o tests/CMakeFiles/tst_DomainModels.dir/unit/tst_DomainModels.cpp.o tests/CMakeFiles/tst_DomainModels.dir/__/src/domain/Tag.cpp.o tests/CMakeFiles/tst_DomainModels.dir/__/src/storage/DatabaseMigrator.cpp.o tests/CMakeFiles/tst_DomainModels.dir/__/src/runtime/AcquisitionEngine.cpp.o tests/CMakeFiles/tst_DomainModels.dir/__/src/runtime/TagCache.cpp.o tests/CMakeFiles/tst_DomainModels.dir/__/src/runtime/WriteQueue.cpp.o tests/CMakeFiles/tst_DomainModels.dir/__/src/modbus/PollPlanner.cpp.o tests/CMakeFiles/tst_DomainModels.dir/__/src/modbus/QtModbusClient.cpp.o tests/CMakeFiles/tst_DomainModels.dir/__/src/modbus/ValueCodec.cpp.o | /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 || tests/tst_DomainModels_autogen tests/tst_DomainModels_autogen_timestamp_deps
+build tests/tst_DomainModels: CXX_EXECUTABLE_LINKER__tst_DomainModels_ tests/CMakeFiles/tst_DomainModels.dir/tst_DomainModels_autogen/mocs_compilation.cpp.o tests/CMakeFiles/tst_DomainModels.dir/unit/tst_DomainModels.cpp.o tests/CMakeFiles/tst_DomainModels.dir/__/src/domain/Tag.cpp.o tests/CMakeFiles/tst_DomainModels.dir/__/src/storage/DatabaseMigrator.cpp.o tests/CMakeFiles/tst_DomainModels.dir/__/src/runtime/AcquisitionEngine.cpp.o tests/CMakeFiles/tst_DomainModels.dir/__/src/runtime/TagCache.cpp.o tests/CMakeFiles/tst_DomainModels.dir/__/src/runtime/WriteQueue.cpp.o tests/CMakeFiles/tst_DomainModels.dir/__/src/modbus/PollPlanner.cpp.o tests/CMakeFiles/tst_DomainModels.dir/__/src/modbus/QtModbusClient.cpp.o tests/CMakeFiles/tst_DomainModels.dir/__/src/modbus/ValueCodec.cpp.o tests/CMakeFiles/tst_DomainModels.dir/__/src/dashboard/DashboardRepository.cpp.o | /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 || tests/tst_DomainModels_autogen tests/tst_DomainModels_autogen_timestamp_deps
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
   OBJECT_DIR = tests/CMakeFiles/tst_DomainModels.dir
   POST_BUILD = :
@@ -569,6 +593,14 @@ build tests/CMakeFiles/tst_DatabaseMigrations.dir/__/src/modbus/ValueCodec.cpp.o
   OBJECT_DIR = tests/CMakeFiles/tst_DatabaseMigrations.dir
   OBJECT_FILE_DIR = tests/CMakeFiles/tst_DatabaseMigrations.dir/__/src/modbus
 
+build tests/CMakeFiles/tst_DatabaseMigrations.dir/__/src/dashboard/DashboardRepository.cpp.o: CXX_COMPILER__tst_DatabaseMigrations_unscanned_ /home/victor/c_proj/plc_host/src/dashboard/DashboardRepository.cpp || cmake_object_order_depends_target_tst_DatabaseMigrations
+  DEFINES = -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DatabaseMigrations.dir/__/src/dashboard/DashboardRepository.cpp.o.d
+  FLAGS = -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DatabaseMigrations_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort
+  OBJECT_DIR = tests/CMakeFiles/tst_DatabaseMigrations.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DatabaseMigrations.dir/__/src/dashboard
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target tst_DatabaseMigrations
@@ -577,7 +609,7 @@ build tests/CMakeFiles/tst_DatabaseMigrations.dir/__/src/modbus/ValueCodec.cpp.o
 #############################################
 # Link the executable tests/tst_DatabaseMigrations
 
-build tests/tst_DatabaseMigrations: CXX_EXECUTABLE_LINKER__tst_DatabaseMigrations_ tests/CMakeFiles/tst_DatabaseMigrations.dir/tst_DatabaseMigrations_autogen/mocs_compilation.cpp.o tests/CMakeFiles/tst_DatabaseMigrations.dir/unit/tst_DatabaseMigrations.cpp.o tests/CMakeFiles/tst_DatabaseMigrations.dir/__/src/domain/Tag.cpp.o tests/CMakeFiles/tst_DatabaseMigrations.dir/__/src/storage/DatabaseMigrator.cpp.o tests/CMakeFiles/tst_DatabaseMigrations.dir/__/src/runtime/AcquisitionEngine.cpp.o tests/CMakeFiles/tst_DatabaseMigrations.dir/__/src/runtime/TagCache.cpp.o tests/CMakeFiles/tst_DatabaseMigrations.dir/__/src/runtime/WriteQueue.cpp.o tests/CMakeFiles/tst_DatabaseMigrations.dir/__/src/modbus/PollPlanner.cpp.o tests/CMakeFiles/tst_DatabaseMigrations.dir/__/src/modbus/QtModbusClient.cpp.o tests/CMakeFiles/tst_DatabaseMigrations.dir/__/src/modbus/ValueCodec.cpp.o | /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 || tests/tst_DatabaseMigrations_autogen tests/tst_DatabaseMigrations_autogen_timestamp_deps
+build tests/tst_DatabaseMigrations: CXX_EXECUTABLE_LINKER__tst_DatabaseMigrations_ tests/CMakeFiles/tst_DatabaseMigrations.dir/tst_DatabaseMigrations_autogen/mocs_compilation.cpp.o tests/CMakeFiles/tst_DatabaseMigrations.dir/unit/tst_DatabaseMigrations.cpp.o tests/CMakeFiles/tst_DatabaseMigrations.dir/__/src/domain/Tag.cpp.o tests/CMakeFiles/tst_DatabaseMigrations.dir/__/src/storage/DatabaseMigrator.cpp.o tests/CMakeFiles/tst_DatabaseMigrations.dir/__/src/runtime/AcquisitionEngine.cpp.o tests/CMakeFiles/tst_DatabaseMigrations.dir/__/src/runtime/TagCache.cpp.o tests/CMakeFiles/tst_DatabaseMigrations.dir/__/src/runtime/WriteQueue.cpp.o tests/CMakeFiles/tst_DatabaseMigrations.dir/__/src/modbus/PollPlanner.cpp.o tests/CMakeFiles/tst_DatabaseMigrations.dir/__/src/modbus/QtModbusClient.cpp.o tests/CMakeFiles/tst_DatabaseMigrations.dir/__/src/modbus/ValueCodec.cpp.o tests/CMakeFiles/tst_DatabaseMigrations.dir/__/src/dashboard/DashboardRepository.cpp.o | /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 || tests/tst_DatabaseMigrations_autogen tests/tst_DatabaseMigrations_autogen_timestamp_deps
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
   OBJECT_DIR = tests/CMakeFiles/tst_DatabaseMigrations.dir
   POST_BUILD = :
@@ -674,6 +706,14 @@ build tests/CMakeFiles/tst_ValueCodec.dir/__/src/modbus/ValueCodec.cpp.o: CXX_CO
   OBJECT_DIR = tests/CMakeFiles/tst_ValueCodec.dir
   OBJECT_FILE_DIR = tests/CMakeFiles/tst_ValueCodec.dir/__/src/modbus
 
+build tests/CMakeFiles/tst_ValueCodec.dir/__/src/dashboard/DashboardRepository.cpp.o: CXX_COMPILER__tst_ValueCodec_unscanned_ /home/victor/c_proj/plc_host/src/dashboard/DashboardRepository.cpp || cmake_object_order_depends_target_tst_ValueCodec
+  DEFINES = -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB
+  DEP_FILE = tests/CMakeFiles/tst_ValueCodec.dir/__/src/dashboard/DashboardRepository.cpp.o.d
+  FLAGS = -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_ValueCodec_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort
+  OBJECT_DIR = tests/CMakeFiles/tst_ValueCodec.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_ValueCodec.dir/__/src/dashboard
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target tst_ValueCodec
@@ -682,7 +722,7 @@ build tests/CMakeFiles/tst_ValueCodec.dir/__/src/modbus/ValueCodec.cpp.o: CXX_CO
 #############################################
 # Link the executable tests/tst_ValueCodec
 
-build tests/tst_ValueCodec: CXX_EXECUTABLE_LINKER__tst_ValueCodec_ tests/CMakeFiles/tst_ValueCodec.dir/tst_ValueCodec_autogen/mocs_compilation.cpp.o tests/CMakeFiles/tst_ValueCodec.dir/unit/tst_ValueCodec.cpp.o tests/CMakeFiles/tst_ValueCodec.dir/__/src/domain/Tag.cpp.o tests/CMakeFiles/tst_ValueCodec.dir/__/src/storage/DatabaseMigrator.cpp.o tests/CMakeFiles/tst_ValueCodec.dir/__/src/runtime/AcquisitionEngine.cpp.o tests/CMakeFiles/tst_ValueCodec.dir/__/src/runtime/TagCache.cpp.o tests/CMakeFiles/tst_ValueCodec.dir/__/src/runtime/WriteQueue.cpp.o tests/CMakeFiles/tst_ValueCodec.dir/__/src/modbus/PollPlanner.cpp.o tests/CMakeFiles/tst_ValueCodec.dir/__/src/modbus/QtModbusClient.cpp.o tests/CMakeFiles/tst_ValueCodec.dir/__/src/modbus/ValueCodec.cpp.o | /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 || tests/tst_ValueCodec_autogen tests/tst_ValueCodec_autogen_timestamp_deps
+build tests/tst_ValueCodec: CXX_EXECUTABLE_LINKER__tst_ValueCodec_ tests/CMakeFiles/tst_ValueCodec.dir/tst_ValueCodec_autogen/mocs_compilation.cpp.o tests/CMakeFiles/tst_ValueCodec.dir/unit/tst_ValueCodec.cpp.o tests/CMakeFiles/tst_ValueCodec.dir/__/src/domain/Tag.cpp.o tests/CMakeFiles/tst_ValueCodec.dir/__/src/storage/DatabaseMigrator.cpp.o tests/CMakeFiles/tst_ValueCodec.dir/__/src/runtime/AcquisitionEngine.cpp.o tests/CMakeFiles/tst_ValueCodec.dir/__/src/runtime/TagCache.cpp.o tests/CMakeFiles/tst_ValueCodec.dir/__/src/runtime/WriteQueue.cpp.o tests/CMakeFiles/tst_ValueCodec.dir/__/src/modbus/PollPlanner.cpp.o tests/CMakeFiles/tst_ValueCodec.dir/__/src/modbus/QtModbusClient.cpp.o tests/CMakeFiles/tst_ValueCodec.dir/__/src/modbus/ValueCodec.cpp.o tests/CMakeFiles/tst_ValueCodec.dir/__/src/dashboard/DashboardRepository.cpp.o | /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 || tests/tst_ValueCodec_autogen tests/tst_ValueCodec_autogen_timestamp_deps
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
   OBJECT_DIR = tests/CMakeFiles/tst_ValueCodec.dir
   POST_BUILD = :
@@ -779,6 +819,14 @@ build tests/CMakeFiles/tst_WriteQueue.dir/__/src/modbus/ValueCodec.cpp.o: CXX_CO
   OBJECT_DIR = tests/CMakeFiles/tst_WriteQueue.dir
   OBJECT_FILE_DIR = tests/CMakeFiles/tst_WriteQueue.dir/__/src/modbus
 
+build tests/CMakeFiles/tst_WriteQueue.dir/__/src/dashboard/DashboardRepository.cpp.o: CXX_COMPILER__tst_WriteQueue_unscanned_ /home/victor/c_proj/plc_host/src/dashboard/DashboardRepository.cpp || cmake_object_order_depends_target_tst_WriteQueue
+  DEFINES = -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB
+  DEP_FILE = tests/CMakeFiles/tst_WriteQueue.dir/__/src/dashboard/DashboardRepository.cpp.o.d
+  FLAGS = -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_WriteQueue_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort
+  OBJECT_DIR = tests/CMakeFiles/tst_WriteQueue.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_WriteQueue.dir/__/src/dashboard
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target tst_WriteQueue
@@ -787,7 +835,7 @@ build tests/CMakeFiles/tst_WriteQueue.dir/__/src/modbus/ValueCodec.cpp.o: CXX_CO
 #############################################
 # Link the executable tests/tst_WriteQueue
 
-build tests/tst_WriteQueue: CXX_EXECUTABLE_LINKER__tst_WriteQueue_ tests/CMakeFiles/tst_WriteQueue.dir/tst_WriteQueue_autogen/mocs_compilation.cpp.o tests/CMakeFiles/tst_WriteQueue.dir/unit/tst_WriteQueue.cpp.o tests/CMakeFiles/tst_WriteQueue.dir/__/src/domain/Tag.cpp.o tests/CMakeFiles/tst_WriteQueue.dir/__/src/storage/DatabaseMigrator.cpp.o tests/CMakeFiles/tst_WriteQueue.dir/__/src/runtime/AcquisitionEngine.cpp.o tests/CMakeFiles/tst_WriteQueue.dir/__/src/runtime/TagCache.cpp.o tests/CMakeFiles/tst_WriteQueue.dir/__/src/runtime/WriteQueue.cpp.o tests/CMakeFiles/tst_WriteQueue.dir/__/src/modbus/PollPlanner.cpp.o tests/CMakeFiles/tst_WriteQueue.dir/__/src/modbus/QtModbusClient.cpp.o tests/CMakeFiles/tst_WriteQueue.dir/__/src/modbus/ValueCodec.cpp.o | /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 || tests/tst_WriteQueue_autogen tests/tst_WriteQueue_autogen_timestamp_deps
+build tests/tst_WriteQueue: CXX_EXECUTABLE_LINKER__tst_WriteQueue_ tests/CMakeFiles/tst_WriteQueue.dir/tst_WriteQueue_autogen/mocs_compilation.cpp.o tests/CMakeFiles/tst_WriteQueue.dir/unit/tst_WriteQueue.cpp.o tests/CMakeFiles/tst_WriteQueue.dir/__/src/domain/Tag.cpp.o tests/CMakeFiles/tst_WriteQueue.dir/__/src/storage/DatabaseMigrator.cpp.o tests/CMakeFiles/tst_WriteQueue.dir/__/src/runtime/AcquisitionEngine.cpp.o tests/CMakeFiles/tst_WriteQueue.dir/__/src/runtime/TagCache.cpp.o tests/CMakeFiles/tst_WriteQueue.dir/__/src/runtime/WriteQueue.cpp.o tests/CMakeFiles/tst_WriteQueue.dir/__/src/modbus/PollPlanner.cpp.o tests/CMakeFiles/tst_WriteQueue.dir/__/src/modbus/QtModbusClient.cpp.o tests/CMakeFiles/tst_WriteQueue.dir/__/src/modbus/ValueCodec.cpp.o tests/CMakeFiles/tst_WriteQueue.dir/__/src/dashboard/DashboardRepository.cpp.o | /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 || tests/tst_WriteQueue_autogen tests/tst_WriteQueue_autogen_timestamp_deps
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
   OBJECT_DIR = tests/CMakeFiles/tst_WriteQueue.dir
   POST_BUILD = :
@@ -884,6 +932,14 @@ build tests/CMakeFiles/tst_TagCache.dir/__/src/modbus/ValueCodec.cpp.o: CXX_COMP
   OBJECT_DIR = tests/CMakeFiles/tst_TagCache.dir
   OBJECT_FILE_DIR = tests/CMakeFiles/tst_TagCache.dir/__/src/modbus
 
+build tests/CMakeFiles/tst_TagCache.dir/__/src/dashboard/DashboardRepository.cpp.o: CXX_COMPILER__tst_TagCache_unscanned_ /home/victor/c_proj/plc_host/src/dashboard/DashboardRepository.cpp || cmake_object_order_depends_target_tst_TagCache
+  DEFINES = -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB
+  DEP_FILE = tests/CMakeFiles/tst_TagCache.dir/__/src/dashboard/DashboardRepository.cpp.o.d
+  FLAGS = -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_TagCache_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort
+  OBJECT_DIR = tests/CMakeFiles/tst_TagCache.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_TagCache.dir/__/src/dashboard
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target tst_TagCache
@@ -892,7 +948,7 @@ build tests/CMakeFiles/tst_TagCache.dir/__/src/modbus/ValueCodec.cpp.o: CXX_COMP
 #############################################
 # Link the executable tests/tst_TagCache
 
-build tests/tst_TagCache: CXX_EXECUTABLE_LINKER__tst_TagCache_ tests/CMakeFiles/tst_TagCache.dir/tst_TagCache_autogen/mocs_compilation.cpp.o tests/CMakeFiles/tst_TagCache.dir/unit/tst_TagCache.cpp.o tests/CMakeFiles/tst_TagCache.dir/__/src/domain/Tag.cpp.o tests/CMakeFiles/tst_TagCache.dir/__/src/storage/DatabaseMigrator.cpp.o tests/CMakeFiles/tst_TagCache.dir/__/src/runtime/AcquisitionEngine.cpp.o tests/CMakeFiles/tst_TagCache.dir/__/src/runtime/TagCache.cpp.o tests/CMakeFiles/tst_TagCache.dir/__/src/runtime/WriteQueue.cpp.o tests/CMakeFiles/tst_TagCache.dir/__/src/modbus/PollPlanner.cpp.o tests/CMakeFiles/tst_TagCache.dir/__/src/modbus/QtModbusClient.cpp.o tests/CMakeFiles/tst_TagCache.dir/__/src/modbus/ValueCodec.cpp.o | /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 || tests/tst_TagCache_autogen tests/tst_TagCache_autogen_timestamp_deps
+build tests/tst_TagCache: CXX_EXECUTABLE_LINKER__tst_TagCache_ tests/CMakeFiles/tst_TagCache.dir/tst_TagCache_autogen/mocs_compilation.cpp.o tests/CMakeFiles/tst_TagCache.dir/unit/tst_TagCache.cpp.o tests/CMakeFiles/tst_TagCache.dir/__/src/domain/Tag.cpp.o tests/CMakeFiles/tst_TagCache.dir/__/src/storage/DatabaseMigrator.cpp.o tests/CMakeFiles/tst_TagCache.dir/__/src/runtime/AcquisitionEngine.cpp.o tests/CMakeFiles/tst_TagCache.dir/__/src/runtime/TagCache.cpp.o tests/CMakeFiles/tst_TagCache.dir/__/src/runtime/WriteQueue.cpp.o tests/CMakeFiles/tst_TagCache.dir/__/src/modbus/PollPlanner.cpp.o tests/CMakeFiles/tst_TagCache.dir/__/src/modbus/QtModbusClient.cpp.o tests/CMakeFiles/tst_TagCache.dir/__/src/modbus/ValueCodec.cpp.o tests/CMakeFiles/tst_TagCache.dir/__/src/dashboard/DashboardRepository.cpp.o | /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 || tests/tst_TagCache_autogen tests/tst_TagCache_autogen_timestamp_deps
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
   OBJECT_DIR = tests/CMakeFiles/tst_TagCache.dir
   POST_BUILD = :
@@ -989,6 +1045,14 @@ build tests/CMakeFiles/tst_PollPlanner.dir/__/src/modbus/ValueCodec.cpp.o: CXX_C
   OBJECT_DIR = tests/CMakeFiles/tst_PollPlanner.dir
   OBJECT_FILE_DIR = tests/CMakeFiles/tst_PollPlanner.dir/__/src/modbus
 
+build tests/CMakeFiles/tst_PollPlanner.dir/__/src/dashboard/DashboardRepository.cpp.o: CXX_COMPILER__tst_PollPlanner_unscanned_ /home/victor/c_proj/plc_host/src/dashboard/DashboardRepository.cpp || cmake_object_order_depends_target_tst_PollPlanner
+  DEFINES = -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB
+  DEP_FILE = tests/CMakeFiles/tst_PollPlanner.dir/__/src/dashboard/DashboardRepository.cpp.o.d
+  FLAGS = -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_PollPlanner_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort
+  OBJECT_DIR = tests/CMakeFiles/tst_PollPlanner.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_PollPlanner.dir/__/src/dashboard
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target tst_PollPlanner
@@ -997,13 +1061,126 @@ build tests/CMakeFiles/tst_PollPlanner.dir/__/src/modbus/ValueCodec.cpp.o: CXX_C
 #############################################
 # Link the executable tests/tst_PollPlanner
 
-build tests/tst_PollPlanner: CXX_EXECUTABLE_LINKER__tst_PollPlanner_ tests/CMakeFiles/tst_PollPlanner.dir/tst_PollPlanner_autogen/mocs_compilation.cpp.o tests/CMakeFiles/tst_PollPlanner.dir/unit/tst_PollPlanner.cpp.o tests/CMakeFiles/tst_PollPlanner.dir/__/src/domain/Tag.cpp.o tests/CMakeFiles/tst_PollPlanner.dir/__/src/storage/DatabaseMigrator.cpp.o tests/CMakeFiles/tst_PollPlanner.dir/__/src/runtime/AcquisitionEngine.cpp.o tests/CMakeFiles/tst_PollPlanner.dir/__/src/runtime/TagCache.cpp.o tests/CMakeFiles/tst_PollPlanner.dir/__/src/runtime/WriteQueue.cpp.o tests/CMakeFiles/tst_PollPlanner.dir/__/src/modbus/PollPlanner.cpp.o tests/CMakeFiles/tst_PollPlanner.dir/__/src/modbus/QtModbusClient.cpp.o tests/CMakeFiles/tst_PollPlanner.dir/__/src/modbus/ValueCodec.cpp.o | /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 || tests/tst_PollPlanner_autogen tests/tst_PollPlanner_autogen_timestamp_deps
+build tests/tst_PollPlanner: CXX_EXECUTABLE_LINKER__tst_PollPlanner_ tests/CMakeFiles/tst_PollPlanner.dir/tst_PollPlanner_autogen/mocs_compilation.cpp.o tests/CMakeFiles/tst_PollPlanner.dir/unit/tst_PollPlanner.cpp.o tests/CMakeFiles/tst_PollPlanner.dir/__/src/domain/Tag.cpp.o tests/CMakeFiles/tst_PollPlanner.dir/__/src/storage/DatabaseMigrator.cpp.o tests/CMakeFiles/tst_PollPlanner.dir/__/src/runtime/AcquisitionEngine.cpp.o tests/CMakeFiles/tst_PollPlanner.dir/__/src/runtime/TagCache.cpp.o tests/CMakeFiles/tst_PollPlanner.dir/__/src/runtime/WriteQueue.cpp.o tests/CMakeFiles/tst_PollPlanner.dir/__/src/modbus/PollPlanner.cpp.o tests/CMakeFiles/tst_PollPlanner.dir/__/src/modbus/QtModbusClient.cpp.o tests/CMakeFiles/tst_PollPlanner.dir/__/src/modbus/ValueCodec.cpp.o tests/CMakeFiles/tst_PollPlanner.dir/__/src/dashboard/DashboardRepository.cpp.o | /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 || tests/tst_PollPlanner_autogen tests/tst_PollPlanner_autogen_timestamp_deps
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
   OBJECT_DIR = tests/CMakeFiles/tst_PollPlanner.dir
   POST_BUILD = :
   PRE_LINK = :
   TARGET_FILE = tests/tst_PollPlanner
   TARGET_PDB = tst_PollPlanner.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target tst_DashboardRepository
+
+
+#############################################
+# Order-only phony target for tst_DashboardRepository
+
+build cmake_object_order_depends_target_tst_DashboardRepository: phony || tests/tst_DashboardRepository_autogen tests/tst_DashboardRepository_autogen/mocs_compilation.cpp tests/tst_DashboardRepository_autogen/timestamp tests/tst_DashboardRepository_autogen_timestamp_deps
+
+build tests/CMakeFiles/tst_DashboardRepository.dir/tst_DashboardRepository_autogen/mocs_compilation.cpp.o: CXX_COMPILER__tst_DashboardRepository_unscanned_ /home/victor/c_proj/plc_host/build/tests/tst_DashboardRepository_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_tst_DashboardRepository
+  DEFINES = -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRepository.dir/tst_DashboardRepository_autogen/mocs_compilation.cpp.o.d
+  FLAGS = -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRepository_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRepository.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRepository.dir/tst_DashboardRepository_autogen
+
+build tests/CMakeFiles/tst_DashboardRepository.dir/unit/tst_DashboardRepository.cpp.o: CXX_COMPILER__tst_DashboardRepository_unscanned_ /home/victor/c_proj/plc_host/tests/unit/tst_DashboardRepository.cpp || cmake_object_order_depends_target_tst_DashboardRepository
+  DEFINES = -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRepository.dir/unit/tst_DashboardRepository.cpp.o.d
+  FLAGS = -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRepository_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRepository.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRepository.dir/unit
+
+build tests/CMakeFiles/tst_DashboardRepository.dir/__/src/domain/Tag.cpp.o: CXX_COMPILER__tst_DashboardRepository_unscanned_ /home/victor/c_proj/plc_host/src/domain/Tag.cpp || cmake_object_order_depends_target_tst_DashboardRepository
+  DEFINES = -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRepository.dir/__/src/domain/Tag.cpp.o.d
+  FLAGS = -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRepository_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRepository.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRepository.dir/__/src/domain
+
+build tests/CMakeFiles/tst_DashboardRepository.dir/__/src/storage/DatabaseMigrator.cpp.o: CXX_COMPILER__tst_DashboardRepository_unscanned_ /home/victor/c_proj/plc_host/src/storage/DatabaseMigrator.cpp || cmake_object_order_depends_target_tst_DashboardRepository
+  DEFINES = -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRepository.dir/__/src/storage/DatabaseMigrator.cpp.o.d
+  FLAGS = -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRepository_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRepository.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRepository.dir/__/src/storage
+
+build tests/CMakeFiles/tst_DashboardRepository.dir/__/src/runtime/AcquisitionEngine.cpp.o: CXX_COMPILER__tst_DashboardRepository_unscanned_ /home/victor/c_proj/plc_host/src/runtime/AcquisitionEngine.cpp || cmake_object_order_depends_target_tst_DashboardRepository
+  DEFINES = -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRepository.dir/__/src/runtime/AcquisitionEngine.cpp.o.d
+  FLAGS = -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRepository_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRepository.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRepository.dir/__/src/runtime
+
+build tests/CMakeFiles/tst_DashboardRepository.dir/__/src/runtime/TagCache.cpp.o: CXX_COMPILER__tst_DashboardRepository_unscanned_ /home/victor/c_proj/plc_host/src/runtime/TagCache.cpp || cmake_object_order_depends_target_tst_DashboardRepository
+  DEFINES = -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRepository.dir/__/src/runtime/TagCache.cpp.o.d
+  FLAGS = -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRepository_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRepository.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRepository.dir/__/src/runtime
+
+build tests/CMakeFiles/tst_DashboardRepository.dir/__/src/runtime/WriteQueue.cpp.o: CXX_COMPILER__tst_DashboardRepository_unscanned_ /home/victor/c_proj/plc_host/src/runtime/WriteQueue.cpp || cmake_object_order_depends_target_tst_DashboardRepository
+  DEFINES = -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRepository.dir/__/src/runtime/WriteQueue.cpp.o.d
+  FLAGS = -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRepository_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRepository.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRepository.dir/__/src/runtime
+
+build tests/CMakeFiles/tst_DashboardRepository.dir/__/src/modbus/PollPlanner.cpp.o: CXX_COMPILER__tst_DashboardRepository_unscanned_ /home/victor/c_proj/plc_host/src/modbus/PollPlanner.cpp || cmake_object_order_depends_target_tst_DashboardRepository
+  DEFINES = -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRepository.dir/__/src/modbus/PollPlanner.cpp.o.d
+  FLAGS = -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRepository_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRepository.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRepository.dir/__/src/modbus
+
+build tests/CMakeFiles/tst_DashboardRepository.dir/__/src/modbus/QtModbusClient.cpp.o: CXX_COMPILER__tst_DashboardRepository_unscanned_ /home/victor/c_proj/plc_host/src/modbus/QtModbusClient.cpp || cmake_object_order_depends_target_tst_DashboardRepository
+  DEFINES = -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRepository.dir/__/src/modbus/QtModbusClient.cpp.o.d
+  FLAGS = -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRepository_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRepository.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRepository.dir/__/src/modbus
+
+build tests/CMakeFiles/tst_DashboardRepository.dir/__/src/modbus/ValueCodec.cpp.o: CXX_COMPILER__tst_DashboardRepository_unscanned_ /home/victor/c_proj/plc_host/src/modbus/ValueCodec.cpp || cmake_object_order_depends_target_tst_DashboardRepository
+  DEFINES = -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRepository.dir/__/src/modbus/ValueCodec.cpp.o.d
+  FLAGS = -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRepository_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRepository.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRepository.dir/__/src/modbus
+
+build tests/CMakeFiles/tst_DashboardRepository.dir/__/src/dashboard/DashboardRepository.cpp.o: CXX_COMPILER__tst_DashboardRepository_unscanned_ /home/victor/c_proj/plc_host/src/dashboard/DashboardRepository.cpp || cmake_object_order_depends_target_tst_DashboardRepository
+  DEFINES = -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB
+  DEP_FILE = tests/CMakeFiles/tst_DashboardRepository.dir/__/src/dashboard/DashboardRepository.cpp.o.d
+  FLAGS = -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_DashboardRepository_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRepository.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_DashboardRepository.dir/__/src/dashboard
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target tst_DashboardRepository
+
+
+#############################################
+# Link the executable tests/tst_DashboardRepository
+
+build tests/tst_DashboardRepository: CXX_EXECUTABLE_LINKER__tst_DashboardRepository_ tests/CMakeFiles/tst_DashboardRepository.dir/tst_DashboardRepository_autogen/mocs_compilation.cpp.o tests/CMakeFiles/tst_DashboardRepository.dir/unit/tst_DashboardRepository.cpp.o tests/CMakeFiles/tst_DashboardRepository.dir/__/src/domain/Tag.cpp.o tests/CMakeFiles/tst_DashboardRepository.dir/__/src/storage/DatabaseMigrator.cpp.o tests/CMakeFiles/tst_DashboardRepository.dir/__/src/runtime/AcquisitionEngine.cpp.o tests/CMakeFiles/tst_DashboardRepository.dir/__/src/runtime/TagCache.cpp.o tests/CMakeFiles/tst_DashboardRepository.dir/__/src/runtime/WriteQueue.cpp.o tests/CMakeFiles/tst_DashboardRepository.dir/__/src/modbus/PollPlanner.cpp.o tests/CMakeFiles/tst_DashboardRepository.dir/__/src/modbus/QtModbusClient.cpp.o tests/CMakeFiles/tst_DashboardRepository.dir/__/src/modbus/ValueCodec.cpp.o tests/CMakeFiles/tst_DashboardRepository.dir/__/src/dashboard/DashboardRepository.cpp.o | /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 || tests/tst_DashboardRepository_autogen tests/tst_DashboardRepository_autogen_timestamp_deps
+  LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
+  OBJECT_DIR = tests/CMakeFiles/tst_DashboardRepository.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = tests/tst_DashboardRepository
+  TARGET_PDB = tst_DashboardRepository.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target tst_QtModbusClient
@@ -1094,6 +1271,14 @@ build tests/CMakeFiles/tst_QtModbusClient.dir/__/src/modbus/ValueCodec.cpp.o: CX
   OBJECT_DIR = tests/CMakeFiles/tst_QtModbusClient.dir
   OBJECT_FILE_DIR = tests/CMakeFiles/tst_QtModbusClient.dir/__/src/modbus
 
+build tests/CMakeFiles/tst_QtModbusClient.dir/__/src/dashboard/DashboardRepository.cpp.o: CXX_COMPILER__tst_QtModbusClient_unscanned_ /home/victor/c_proj/plc_host/src/dashboard/DashboardRepository.cpp || cmake_object_order_depends_target_tst_QtModbusClient
+  DEFINES = -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB
+  DEP_FILE = tests/CMakeFiles/tst_QtModbusClient.dir/__/src/dashboard/DashboardRepository.cpp.o.d
+  FLAGS = -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_QtModbusClient_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort
+  OBJECT_DIR = tests/CMakeFiles/tst_QtModbusClient.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_QtModbusClient.dir/__/src/dashboard
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target tst_QtModbusClient
@@ -1102,7 +1287,7 @@ build tests/CMakeFiles/tst_QtModbusClient.dir/__/src/modbus/ValueCodec.cpp.o: CX
 #############################################
 # Link the executable tests/tst_QtModbusClient
 
-build tests/tst_QtModbusClient: CXX_EXECUTABLE_LINKER__tst_QtModbusClient_ tests/CMakeFiles/tst_QtModbusClient.dir/tst_QtModbusClient_autogen/mocs_compilation.cpp.o tests/CMakeFiles/tst_QtModbusClient.dir/integration/tst_QtModbusClient.cpp.o tests/CMakeFiles/tst_QtModbusClient.dir/__/src/domain/Tag.cpp.o tests/CMakeFiles/tst_QtModbusClient.dir/__/src/storage/DatabaseMigrator.cpp.o tests/CMakeFiles/tst_QtModbusClient.dir/__/src/runtime/AcquisitionEngine.cpp.o tests/CMakeFiles/tst_QtModbusClient.dir/__/src/runtime/TagCache.cpp.o tests/CMakeFiles/tst_QtModbusClient.dir/__/src/runtime/WriteQueue.cpp.o tests/CMakeFiles/tst_QtModbusClient.dir/__/src/modbus/PollPlanner.cpp.o tests/CMakeFiles/tst_QtModbusClient.dir/__/src/modbus/QtModbusClient.cpp.o tests/CMakeFiles/tst_QtModbusClient.dir/__/src/modbus/ValueCodec.cpp.o | /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 || tests/tst_QtModbusClient_autogen tests/tst_QtModbusClient_autogen_timestamp_deps
+build tests/tst_QtModbusClient: CXX_EXECUTABLE_LINKER__tst_QtModbusClient_ tests/CMakeFiles/tst_QtModbusClient.dir/tst_QtModbusClient_autogen/mocs_compilation.cpp.o tests/CMakeFiles/tst_QtModbusClient.dir/integration/tst_QtModbusClient.cpp.o tests/CMakeFiles/tst_QtModbusClient.dir/__/src/domain/Tag.cpp.o tests/CMakeFiles/tst_QtModbusClient.dir/__/src/storage/DatabaseMigrator.cpp.o tests/CMakeFiles/tst_QtModbusClient.dir/__/src/runtime/AcquisitionEngine.cpp.o tests/CMakeFiles/tst_QtModbusClient.dir/__/src/runtime/TagCache.cpp.o tests/CMakeFiles/tst_QtModbusClient.dir/__/src/runtime/WriteQueue.cpp.o tests/CMakeFiles/tst_QtModbusClient.dir/__/src/modbus/PollPlanner.cpp.o tests/CMakeFiles/tst_QtModbusClient.dir/__/src/modbus/QtModbusClient.cpp.o tests/CMakeFiles/tst_QtModbusClient.dir/__/src/modbus/ValueCodec.cpp.o tests/CMakeFiles/tst_QtModbusClient.dir/__/src/dashboard/DashboardRepository.cpp.o | /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 || tests/tst_QtModbusClient_autogen tests/tst_QtModbusClient_autogen_timestamp_deps
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
   OBJECT_DIR = tests/CMakeFiles/tst_QtModbusClient.dir
   POST_BUILD = :
@@ -1199,6 +1384,14 @@ build tests/CMakeFiles/tst_AcquisitionEngine.dir/__/src/modbus/ValueCodec.cpp.o:
   OBJECT_DIR = tests/CMakeFiles/tst_AcquisitionEngine.dir
   OBJECT_FILE_DIR = tests/CMakeFiles/tst_AcquisitionEngine.dir/__/src/modbus
 
+build tests/CMakeFiles/tst_AcquisitionEngine.dir/__/src/dashboard/DashboardRepository.cpp.o: CXX_COMPILER__tst_AcquisitionEngine_unscanned_ /home/victor/c_proj/plc_host/src/dashboard/DashboardRepository.cpp || cmake_object_order_depends_target_tst_AcquisitionEngine
+  DEFINES = -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB
+  DEP_FILE = tests/CMakeFiles/tst_AcquisitionEngine.dir/__/src/dashboard/DashboardRepository.cpp.o.d
+  FLAGS = -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_AcquisitionEngine_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort
+  OBJECT_DIR = tests/CMakeFiles/tst_AcquisitionEngine.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_AcquisitionEngine.dir/__/src/dashboard
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target tst_AcquisitionEngine
@@ -1207,7 +1400,7 @@ build tests/CMakeFiles/tst_AcquisitionEngine.dir/__/src/modbus/ValueCodec.cpp.o:
 #############################################
 # Link the executable tests/tst_AcquisitionEngine
 
-build tests/tst_AcquisitionEngine: CXX_EXECUTABLE_LINKER__tst_AcquisitionEngine_ tests/CMakeFiles/tst_AcquisitionEngine.dir/tst_AcquisitionEngine_autogen/mocs_compilation.cpp.o tests/CMakeFiles/tst_AcquisitionEngine.dir/integration/tst_AcquisitionEngine.cpp.o tests/CMakeFiles/tst_AcquisitionEngine.dir/__/src/domain/Tag.cpp.o tests/CMakeFiles/tst_AcquisitionEngine.dir/__/src/storage/DatabaseMigrator.cpp.o tests/CMakeFiles/tst_AcquisitionEngine.dir/__/src/runtime/AcquisitionEngine.cpp.o tests/CMakeFiles/tst_AcquisitionEngine.dir/__/src/runtime/TagCache.cpp.o tests/CMakeFiles/tst_AcquisitionEngine.dir/__/src/runtime/WriteQueue.cpp.o tests/CMakeFiles/tst_AcquisitionEngine.dir/__/src/modbus/PollPlanner.cpp.o tests/CMakeFiles/tst_AcquisitionEngine.dir/__/src/modbus/QtModbusClient.cpp.o tests/CMakeFiles/tst_AcquisitionEngine.dir/__/src/modbus/ValueCodec.cpp.o | /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 || tests/tst_AcquisitionEngine_autogen tests/tst_AcquisitionEngine_autogen_timestamp_deps
+build tests/tst_AcquisitionEngine: CXX_EXECUTABLE_LINKER__tst_AcquisitionEngine_ tests/CMakeFiles/tst_AcquisitionEngine.dir/tst_AcquisitionEngine_autogen/mocs_compilation.cpp.o tests/CMakeFiles/tst_AcquisitionEngine.dir/integration/tst_AcquisitionEngine.cpp.o tests/CMakeFiles/tst_AcquisitionEngine.dir/__/src/domain/Tag.cpp.o tests/CMakeFiles/tst_AcquisitionEngine.dir/__/src/storage/DatabaseMigrator.cpp.o tests/CMakeFiles/tst_AcquisitionEngine.dir/__/src/runtime/AcquisitionEngine.cpp.o tests/CMakeFiles/tst_AcquisitionEngine.dir/__/src/runtime/TagCache.cpp.o tests/CMakeFiles/tst_AcquisitionEngine.dir/__/src/runtime/WriteQueue.cpp.o tests/CMakeFiles/tst_AcquisitionEngine.dir/__/src/modbus/PollPlanner.cpp.o tests/CMakeFiles/tst_AcquisitionEngine.dir/__/src/modbus/QtModbusClient.cpp.o tests/CMakeFiles/tst_AcquisitionEngine.dir/__/src/modbus/ValueCodec.cpp.o tests/CMakeFiles/tst_AcquisitionEngine.dir/__/src/dashboard/DashboardRepository.cpp.o | /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 || tests/tst_AcquisitionEngine_autogen tests/tst_AcquisitionEngine_autogen_timestamp_deps
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
   OBJECT_DIR = tests/CMakeFiles/tst_AcquisitionEngine.dir
   POST_BUILD = :
@@ -1336,6 +1529,18 @@ build tests/tst_PollPlanner_autogen: phony tests/CMakeFiles/tst_PollPlanner_auto
 
 
 #############################################
+# Utility command for tst_DashboardRepository_autogen_timestamp_deps
+
+build tests/tst_DashboardRepository_autogen_timestamp_deps: phony tests/CMakeFiles/tst_DashboardRepository_autogen_timestamp_deps
+
+
+#############################################
+# Utility command for tst_DashboardRepository_autogen
+
+build tests/tst_DashboardRepository_autogen: phony tests/CMakeFiles/tst_DashboardRepository_autogen tests/tst_DashboardRepository_autogen/timestamp tests/tst_DashboardRepository_autogen/mocs_compilation.cpp tests/tst_DashboardRepository_autogen_timestamp_deps
+
+
+#############################################
 # Utility command for tst_QtModbusClient_autogen_timestamp_deps
 
 build tests/tst_QtModbusClient_autogen_timestamp_deps: phony tests/CMakeFiles/tst_QtModbusClient_autogen_timestamp_deps
@@ -1430,6 +1635,16 @@ build tests/tst_PollPlanner_autogen/timestamp tests/tst_PollPlanner_autogen/mocs
 
 
 #############################################
+# Custom command for tests/tst_DashboardRepository_autogen/timestamp
+
+build tests/tst_DashboardRepository_autogen/timestamp tests/tst_DashboardRepository_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}tests/tst_DashboardRepository_autogen/timestamp ${cmake_ninja_workdir}tests/tst_DashboardRepository_autogen/mocs_compilation.cpp: CUSTOM_COMMAND /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic || tests/tst_DashboardRepository_autogen_timestamp_deps
+  COMMAND = cd /home/victor/c_proj/plc_host/build/tests && /usr/bin/cmake -E cmake_autogen /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_DashboardRepository_autogen.dir/AutogenInfo.json "" && /usr/bin/cmake -E touch /home/victor/c_proj/plc_host/build/tests/tst_DashboardRepository_autogen/timestamp && /usr/bin/cmake -E cmake_transform_depfile Ninja gccdepfile /home/victor/c_proj/plc_host /home/victor/c_proj/plc_host/tests /home/victor/c_proj/plc_host/build /home/victor/c_proj/plc_host/build/tests /home/victor/c_proj/plc_host/build/tests/tst_DashboardRepository_autogen/deps /home/victor/c_proj/plc_host/build/CMakeFiles/d/9035dd9c803fe2ff5415febaa0f39847ecf2ed7a40dac50c374050831e0accf3.d
+  DESC = Automatic MOC and UIC for target tst_DashboardRepository
+  depfile = /home/victor/c_proj/plc_host/build/CMakeFiles/d/9035dd9c803fe2ff5415febaa0f39847ecf2ed7a40dac50c374050831e0accf3.d
+  restat = 1
+
+
+#############################################
 # Custom command for tests/tst_QtModbusClient_autogen/timestamp
 
 build tests/tst_QtModbusClient_autogen/timestamp tests/tst_QtModbusClient_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}tests/tst_QtModbusClient_autogen/timestamp ${cmake_ninja_workdir}tests/tst_QtModbusClient_autogen/mocs_compilation.cpp: CUSTOM_COMMAND /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic || tests/tst_QtModbusClient_autogen_timestamp_deps
@@ -1452,7 +1667,7 @@ build tests/tst_AcquisitionEngine_autogen/timestamp tests/tst_AcquisitionEngine_
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_smoke_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_smoke_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_smoke_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/qt6/libexec/uic /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
+build tests/CMakeFiles/tst_smoke_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_smoke_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/qt6/libexec/uic /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2
 
 
 #############################################
@@ -1464,7 +1679,7 @@ build tests/CMakeFiles/tst_smoke_autogen | ${cmake_ninja_workdir}tests/CMakeFile
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_DomainModels_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_DomainModels_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_DomainModels_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/qt6/libexec/uic /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
+build tests/CMakeFiles/tst_DomainModels_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_DomainModels_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/qt6/libexec/uic /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2
 
 
 #############################################
@@ -1476,7 +1691,7 @@ build tests/CMakeFiles/tst_DomainModels_autogen | ${cmake_ninja_workdir}tests/CM
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_DatabaseMigrations_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_DatabaseMigrations_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_DatabaseMigrations_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/qt6/libexec/uic /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
+build tests/CMakeFiles/tst_DatabaseMigrations_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_DatabaseMigrations_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/qt6/libexec/uic /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2
 
 
 #############################################
@@ -1488,7 +1703,7 @@ build tests/CMakeFiles/tst_DatabaseMigrations_autogen | ${cmake_ninja_workdir}te
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_ValueCodec_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_ValueCodec_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_ValueCodec_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/qt6/libexec/uic /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
+build tests/CMakeFiles/tst_ValueCodec_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_ValueCodec_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/qt6/libexec/uic /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2
 
 
 #############################################
@@ -1500,7 +1715,7 @@ build tests/CMakeFiles/tst_ValueCodec_autogen | ${cmake_ninja_workdir}tests/CMak
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_WriteQueue_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_WriteQueue_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_WriteQueue_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/qt6/libexec/uic /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
+build tests/CMakeFiles/tst_WriteQueue_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_WriteQueue_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/qt6/libexec/uic /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2
 
 
 #############################################
@@ -1512,7 +1727,7 @@ build tests/CMakeFiles/tst_WriteQueue_autogen | ${cmake_ninja_workdir}tests/CMak
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_TagCache_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_TagCache_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_TagCache_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/qt6/libexec/uic /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
+build tests/CMakeFiles/tst_TagCache_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_TagCache_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/qt6/libexec/uic /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2
 
 
 #############################################
@@ -1524,7 +1739,7 @@ build tests/CMakeFiles/tst_TagCache_autogen | ${cmake_ninja_workdir}tests/CMakeF
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_PollPlanner_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_PollPlanner_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_PollPlanner_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/qt6/libexec/uic /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
+build tests/CMakeFiles/tst_PollPlanner_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_PollPlanner_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/qt6/libexec/uic /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2
 
 
 #############################################
@@ -1534,9 +1749,21 @@ build tests/CMakeFiles/tst_PollPlanner_autogen | ${cmake_ninja_workdir}tests/CMa
 
 
 #############################################
+# Phony custom command for tests/CMakeFiles/tst_DashboardRepository_autogen_timestamp_deps
+
+build tests/CMakeFiles/tst_DashboardRepository_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_DashboardRepository_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/qt6/libexec/uic /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2
+
+
+#############################################
+# Phony custom command for tests/CMakeFiles/tst_DashboardRepository_autogen
+
+build tests/CMakeFiles/tst_DashboardRepository_autogen | ${cmake_ninja_workdir}tests/CMakeFiles/tst_DashboardRepository_autogen: phony tests/tst_DashboardRepository_autogen/timestamp || tests/tst_DashboardRepository_autogen_timestamp_deps
+
+
+#############################################
 # Phony custom command for tests/CMakeFiles/tst_QtModbusClient_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_QtModbusClient_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_QtModbusClient_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/qt6/libexec/uic /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
+build tests/CMakeFiles/tst_QtModbusClient_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_QtModbusClient_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/qt6/libexec/uic /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2
 
 
 #############################################
@@ -1548,7 +1775,7 @@ build tests/CMakeFiles/tst_QtModbusClient_autogen | ${cmake_ninja_workdir}tests/
 #############################################
 # Phony custom command for tests/CMakeFiles/tst_AcquisitionEngine_autogen_timestamp_deps
 
-build tests/CMakeFiles/tst_AcquisitionEngine_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_AcquisitionEngine_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/qt6/libexec/uic /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
+build tests/CMakeFiles/tst_AcquisitionEngine_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_AcquisitionEngine_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/qt6/libexec/uic /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2
 
 
 #############################################
@@ -1570,6 +1797,12 @@ build tst_AcquisitionEngine: phony tests/tst_AcquisitionEngine
 build tst_AcquisitionEngine_autogen: phony tests/tst_AcquisitionEngine_autogen
 
 build tst_AcquisitionEngine_autogen_timestamp_deps: phony tests/tst_AcquisitionEngine_autogen_timestamp_deps
+
+build tst_DashboardRepository: phony tests/tst_DashboardRepository
+
+build tst_DashboardRepository_autogen: phony tests/tst_DashboardRepository_autogen
+
+build tst_DashboardRepository_autogen_timestamp_deps: phony tests/tst_DashboardRepository_autogen_timestamp_deps
 
 build tst_DatabaseMigrations: phony tests/tst_DatabaseMigrations
 
@@ -1641,7 +1874,7 @@ build src/all: phony src/plc_host
 #############################################
 # Folder: /home/victor/c_proj/plc_host/build/tests
 
-build tests/all: phony tests/tst_smoke tests/tst_DomainModels tests/tst_DatabaseMigrations tests/tst_ValueCodec tests/tst_WriteQueue tests/tst_TagCache tests/tst_PollPlanner tests/tst_QtModbusClient tests/tst_AcquisitionEngine
+build tests/all: phony tests/tst_smoke tests/tst_DomainModels tests/tst_DatabaseMigrations tests/tst_ValueCodec tests/tst_WriteQueue tests/tst_TagCache tests/tst_PollPlanner tests/tst_DashboardRepository tests/tst_QtModbusClient tests/tst_AcquisitionEngine
 
 # =============================================================================
 # Built-in targets

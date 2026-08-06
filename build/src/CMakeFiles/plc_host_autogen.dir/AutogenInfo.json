@@ -23,6 +23,18 @@
 			null
 		],
 		[
+			"/home/victor/c_proj/plc_host/src/dashboard/DashboardDocument.h",
+			"MU",
+			"DSNZRYT7KM/moc_DashboardDocument.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/DashboardRepository.h",
+			"MU",
+			"DSNZRYT7KM/moc_DashboardRepository.cpp",
+			null
+		],
+		[
 			"/home/victor/c_proj/plc_host/src/domain/PlcConfig.h",
 			"MU",
 			"ZIYP446TXO/moc_PlcConfig.cpp",
@@ -171,6 +183,11 @@
 		[ "/home/victor/c_proj/plc_host/src/app/AppContext.cpp", "MU", null ],
 		[ "/home/victor/c_proj/plc_host/src/app/MainWindow.cpp", "MU", null ],
 		[ "/home/victor/c_proj/plc_host/src/app/main.cpp", "MU", null ],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/DashboardRepository.cpp",
+			"MU",
+			null
+		],
 		[ "/home/victor/c_proj/plc_host/src/domain/Tag.cpp", "MU", null ],
 		[ "/home/victor/c_proj/plc_host/src/modbus/PollPlanner.cpp", "MU", null ],
 		[
