@@ -4,6 +4,7 @@
 
 #include <bit>
 #include <cmath>
+#include <limits>
 #include <utility>
 
 namespace {
@@ -45,6 +46,45 @@ QVariant toEngineering(const QVariant& raw, const Tag& tag)
 double toRaw(double engineering, const Tag& tag)
 {
     return (engineering - tag.offset) / tag.scale;
+}
+
+// encode 侧原始值合法性校验：必须有限（拒绝 NaN/Inf）且落在 dataType 可表示范围内，
+// 否则后续 lround/窄化强转会溢出或产生 UB（如 lround(NaN)、超范围整数转换）。
+bool isRawRepresentable(double raw, DataType type)
+{
+    if (!std::isfinite(raw))
+        return false;
+    switch (type) {
+    case DataType::Int16:
+        return raw >= std::numeric_limits<qint16>::min()
+            && raw <= std::numeric_limits<qint16>::max();
+    case DataType::UInt16:
+        return raw >= std::numeric_limits<quint16>::min()
+            && raw <= std::numeric_limits<quint16>::max();
+    case DataType::Int32:
+        return raw >= std::numeric_limits<qint32>::min()
+            && raw <= std::numeric_limits<qint32>::max();
+    case DataType::UInt32:
+        return raw >= std::numeric_limits<quint32>::min()
+            && raw <= std::numeric_limits<quint32>::max();
+    case DataType::Float32:
+        return raw >= -std::numeric_limits<float>::max()
+            && raw <= std::numeric_limits<float>::max();
+    default:
+        return true; // Bool / BitField 不走数值编码路径
+    }
+}
+
+// 计算并校验 encode 的原始值；非法时输出 qWarning 并返回 false
+bool rawForEncode(const Tag& tag, const QVariant& value, double& raw)
+{
+    raw = toRaw(value.toDouble(), tag);
+    if (isRawRepresentable(raw, tag.dataType))
+        return true;
+    qWarning() << "ValueCodec::encode: value" << value.toDouble()
+               << "not representable as" << static_cast<int>(tag.dataType)
+               << "raw value for tag" << tag.name;
+    return false;
 }
 
 // 按字节序将 32 位值拆为两个寄存器字（encode 侧）
@@ -168,6 +208,12 @@ QModbusDataUnit ValueCodec::encode(const Tag& tag, const QVariant& value)
         return QModbusDataUnit(type, tag.address, 0);
     }
 
+    // scale == 0 时 toRaw 会除零（UB），直接拒绝
+    if (tag.scale == 0.0) {
+        qWarning() << "ValueCodec::encode: scale is zero for tag" << tag.name;
+        return QModbusDataUnit(type, tag.address, 0);
+    }
+
     QModbusDataUnit unit(type, tag.address, tag.registerCount());
 
     switch (tag.dataType) {
@@ -180,26 +226,32 @@ QModbusDataUnit ValueCodec::encode(const Tag& tag, const QVariant& value)
         return unit;
     }
     case DataType::Int16: {
-        const qint16 raw = static_cast<qint16>(std::lround(toRaw(value.toDouble(), tag)));
-        unit.setValue(0, quint16(raw));
+        double raw = 0.0;
+        if (!rawForEncode(tag, value, raw))
+            return QModbusDataUnit(type, tag.address, 0);
+        unit.setValue(0, quint16(static_cast<qint16>(std::lround(raw))));
         return unit;
     }
     case DataType::UInt16: {
-        const quint16 raw = static_cast<quint16>(std::lround(toRaw(value.toDouble(), tag)));
-        unit.setValue(0, raw);
+        double raw = 0.0;
+        if (!rawForEncode(tag, value, raw))
+            return QModbusDataUnit(type, tag.address, 0);
+        unit.setValue(0, static_cast<quint16>(std::lround(raw)));
         return unit;
     }
     case DataType::Int32:
     case DataType::UInt32:
     case DataType::Float32: {
+        double raw = 0.0;
+        if (!rawForEncode(tag, value, raw))
+            return QModbusDataUnit(type, tag.address, 0);
         quint32 bits = 0;
         if (tag.dataType == DataType::Int32)
-            bits = static_cast<quint32>(
-                static_cast<qint32>(std::lround(toRaw(value.toDouble(), tag))));
+            bits = static_cast<quint32>(static_cast<qint32>(std::lround(raw)));
         else if (tag.dataType == DataType::UInt32)
-            bits = static_cast<quint32>(std::lround(toRaw(value.toDouble(), tag)));
+            bits = static_cast<quint32>(std::lround(raw));
         else
-            bits = std::bit_cast<quint32>(static_cast<float>(toRaw(value.toDouble(), tag)));
+            bits = std::bit_cast<quint32>(static_cast<float>(raw));
 
         const auto [word0, word1] = splitWords(bits, tag.byteOrder);
         unit.setValue(0, word0);

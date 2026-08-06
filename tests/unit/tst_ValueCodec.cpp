@@ -1,6 +1,9 @@
 #include <QTest>
 #include <QModbusDataUnit>
 
+#include <cmath>
+#include <limits>
+
 #include "modbus/ValueCodec.h"
 
 namespace {
@@ -289,6 +292,67 @@ private slots:
 
         unit = ValueCodec::encode(tag, QVariant(false));
         QCOMPARE(unit.values().at(0), quint16(0));
+    }
+
+    void testEncodeScaleZero()
+    {
+        Tag tag = makeTag(DataType::Int16, ByteOrder::ABCD, 100);
+        tag.scale = 0.0;
+        auto unit = ValueCodec::encode(tag, QVariant(50));
+        QCOMPARE(unit.valueCount(), 0); // 空 unit 表示编码失败，避免除零
+    }
+
+    void testEncodeRejectsNaN()
+    {
+        Tag tag = makeTag(DataType::Int16, ByteOrder::ABCD, 100);
+        const double nan = std::numeric_limits<double>::quiet_NaN();
+        auto unit = ValueCodec::encode(tag, QVariant(nan));
+        QCOMPARE(unit.valueCount(), 0);
+
+        const double inf = std::numeric_limits<double>::infinity();
+        unit = ValueCodec::encode(tag, QVariant(inf));
+        QCOMPARE(unit.valueCount(), 0);
+    }
+
+    void testEncodeRejectsOverflow()
+    {
+        // Int16 超上限
+        Tag tag = makeTag(DataType::Int16, ByteOrder::ABCD, 100);
+        auto unit = ValueCodec::encode(tag, QVariant(40000));
+        QCOMPARE(unit.valueCount(), 0);
+        unit = ValueCodec::encode(tag, QVariant(-40000));
+        QCOMPARE(unit.valueCount(), 0);
+
+        // UInt16 越下限（负数）
+        tag.dataType = DataType::UInt16;
+        unit = ValueCodec::encode(tag, QVariant(-1));
+        QCOMPARE(unit.valueCount(), 0);
+
+        // Float32 超出 float 表示范围
+        tag.dataType = DataType::Float32;
+        unit = ValueCodec::encode(tag, QVariant(1e40));
+        QCOMPARE(unit.valueCount(), 0);
+    }
+
+    void testDecodeWithScaleOffset()
+    {
+        Tag tag = makeTag(DataType::Int16);
+        tag.scale = 2.0;
+        tag.offset = 100.0;
+        auto unit = makeUnit(QModbusDataUnit::HoldingRegisters, 0, {0x0005});
+        auto r = ValueCodec::decode(unit, tag);
+        QVERIFY2(r.valid, qPrintable(r.error));
+        QCOMPARE(r.value.toDouble(), 110.0); // 5 * 2 + 100
+    }
+
+    void testEncodeWithScaleOffset()
+    {
+        Tag tag = makeTag(DataType::Int16, ByteOrder::ABCD, 100);
+        tag.scale = 2.0;
+        tag.offset = 100.0;
+        auto unit = ValueCodec::encode(tag, QVariant(110.0));
+        QCOMPARE(unit.valueCount(), 1);
+        QCOMPARE(unit.values().at(0), quint16(0x0005)); // (110 - 100) / 2
     }
 
     void roundTrip_Int32_allByteOrders()
