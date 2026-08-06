@@ -8,13 +8,25 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
-    name: Windows Qt 6.8 MSVC
-    runs-on: windows-2022
-
+  build-linux:
+    name: Linux Build & Test
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Install Qt
+        run: sudo apt-get update && sudo apt-get install -y qt6-base-dev qt6-base-dev-tools qt6-charts-dev qt6-serialbus-dev qt6-serialport-dev libqt6sql6-sqlite libgl1-mesa-dev
+      - name: Configure
+        run: cmake -S . -B build -G Ninja -DBUILD_TESTING=ON
+      - name: Build
+        run: cmake --build build
+      - name: Test
+        run: ctest --test-dir build --output-on-failure
 
+  build-windows:
+    name: Windows Qt 6.8 MSVC
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v4
       - name: Install Qt
         uses: jurplel/install-qt-action@v4
         with:
@@ -24,26 +36,19 @@ jobs:
           arch: win64_msvc2022_64
           modules: "qtcharts qtserialbus qtserialport"
           cache: true
-
       - name: Setup MSVC
         uses: ilammy/msvc-dev-cmd@v1
-
       - name: Configure
-        run: |
-          cmake -S . -B build -G Ninja -DBUILD_TESTING=ON
-
+        run: cmake -S . -B build -G Ninja -DBUILD_TESTING=ON
       - name: Build
         run: cmake --build build --config Release
-
       - name: Test
         run: ctest --test-dir build -C Release --output-on-failure
-
       - name: Package
         run: |
           cmake --install build --config Release --prefix dist
           windeployqt.exe --release --dir dist/bin dist/bin/plc_host.exe
           7z a plc_host-windows-x64.zip .\dist\*
-
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
