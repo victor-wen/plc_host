@@ -24,6 +24,11 @@ set(SOURCES
     dashboard/items/ValueItem.cpp
     dashboard/items/LedItem.cpp
     dashboard/items/SwitchItem.cpp
+    dashboard/items/ProgressBarItem.cpp
+    dashboard/items/GaugeItem.cpp
+    dashboard/items/ValueInputItem.cpp
+    dashboard/items/TrendItem.cpp
+    dashboard/items/ButtonItem.cpp
     ui/PlcConfigWidget.cpp
     ui/TagEditorWidget.cpp
     ui/TagMonitorWidget.cpp
@@ -59,6 +64,12 @@ set(HEADERS
     dashboard/items/ValueItem.h
     dashboard/items/LedItem.h
     dashboard/items/SwitchItem.h
+    dashboard/items/ProgressBarItem.h
+    dashboard/items/GaugeItem.h
+    dashboard/items/ValueInputItem.h
+    dashboard/items/TrendItem.h
+    dashboard/items/ButtonItem.h
+    dashboard/runtime/ButtonAction.h
     ui/PlcConfigWidget.h
     ui/TagEditorWidget.h
     ui/TagMonitorWidget.h

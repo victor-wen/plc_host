@@ -29,6 +29,11 @@ set(DASHBOARD_SOURCES
     ${CMAKE_SOURCE_DIR}/src/dashboard/items/ValueItem.cpp
     ${CMAKE_SOURCE_DIR}/src/dashboard/items/LedItem.cpp
     ${CMAKE_SOURCE_DIR}/src/dashboard/items/SwitchItem.cpp
+    ${CMAKE_SOURCE_DIR}/src/dashboard/items/ProgressBarItem.cpp
+    ${CMAKE_SOURCE_DIR}/src/dashboard/items/GaugeItem.cpp
+    ${CMAKE_SOURCE_DIR}/src/dashboard/items/ValueInputItem.cpp
+    ${CMAKE_SOURCE_DIR}/src/dashboard/items/TrendItem.cpp
+    ${CMAKE_SOURCE_DIR}/src/dashboard/items/ButtonItem.cpp
 )
 set(DASHBOARD_HEADERS
     ${CMAKE_SOURCE_DIR}/src/dashboard/DashboardDocument.h
@@ -47,6 +52,12 @@ set(DASHBOARD_HEADERS
     ${CMAKE_SOURCE_DIR}/src/dashboard/items/ValueItem.h
     ${CMAKE_SOURCE_DIR}/src/dashboard/items/LedItem.h
     ${CMAKE_SOURCE_DIR}/src/dashboard/items/SwitchItem.h
+    ${CMAKE_SOURCE_DIR}/src/dashboard/items/ProgressBarItem.h
+    ${CMAKE_SOURCE_DIR}/src/dashboard/items/GaugeItem.h
+    ${CMAKE_SOURCE_DIR}/src/dashboard/items/ValueInputItem.h
+    ${CMAKE_SOURCE_DIR}/src/dashboard/items/TrendItem.h
+    ${CMAKE_SOURCE_DIR}/src/dashboard/items/ButtonItem.h
+    ${CMAKE_SOURCE_DIR}/src/dashboard/runtime/ButtonAction.h
 )
 set(UI_SOURCES
     ${CMAKE_SOURCE_DIR}/src/ui/PlcConfigWidget.cpp
@@ -87,3 +98,4 @@ add_qtest(ui/tst_UiSmoke)
 add_qtest(ui/tst_DashboardScene)
 add_qtest(ui/tst_DashboardGeometry)
 add_qtest(ui/tst_DashboardItems)
+add_qtest(unit/tst_ButtonActionModel)

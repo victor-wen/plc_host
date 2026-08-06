@@ -22,6 +22,7 @@
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_DashboardScene.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_DashboardGeometry.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_DashboardItems.dir
+/home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_ButtonActionModel.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/test.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/edit_cache.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/rebuild_cache.dir
@@ -55,3 +56,5 @@
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_DashboardGeometry_autogen.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_DashboardItems_autogen_timestamp_deps.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_DashboardItems_autogen.dir
+/home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_ButtonActionModel_autogen_timestamp_deps.dir
+/home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_ButtonActionModel_autogen.dir

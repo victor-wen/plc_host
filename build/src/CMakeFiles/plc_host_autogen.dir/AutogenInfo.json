@@ -83,6 +83,18 @@
 			null
 		],
 		[
+			"/home/victor/c_proj/plc_host/src/dashboard/items/ButtonItem.h",
+			"MU",
+			"AHBDRIS5OT/moc_ButtonItem.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/items/GaugeItem.h",
+			"MU",
+			"AHBDRIS5OT/moc_GaugeItem.cpp",
+			null
+		],
+		[
 			"/home/victor/c_proj/plc_host/src/dashboard/items/ImageItem.h",
 			"MU",
 			"AHBDRIS5OT/moc_ImageItem.cpp",
@@ -92,6 +104,12 @@
 			"/home/victor/c_proj/plc_host/src/dashboard/items/LedItem.h",
 			"MU",
 			"AHBDRIS5OT/moc_LedItem.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/items/ProgressBarItem.h",
+			"MU",
+			"AHBDRIS5OT/moc_ProgressBarItem.cpp",
 			null
 		],
 		[
@@ -113,9 +131,27 @@
 			null
 		],
 		[
+			"/home/victor/c_proj/plc_host/src/dashboard/items/TrendItem.h",
+			"MU",
+			"AHBDRIS5OT/moc_TrendItem.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/items/ValueInputItem.h",
+			"MU",
+			"AHBDRIS5OT/moc_ValueInputItem.cpp",
+			null
+		],
+		[
 			"/home/victor/c_proj/plc_host/src/dashboard/items/ValueItem.h",
 			"MU",
 			"AHBDRIS5OT/moc_ValueItem.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/runtime/ButtonAction.h",
+			"MU",
+			"5EQDA4L2U4/moc_ButtonAction.cpp",
 			null
 		],
 		[
@@ -326,12 +362,27 @@
 			null
 		],
 		[
+			"/home/victor/c_proj/plc_host/src/dashboard/items/ButtonItem.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/items/GaugeItem.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/victor/c_proj/plc_host/src/dashboard/items/ImageItem.cpp",
 			"MU",
 			null
 		],
 		[
 			"/home/victor/c_proj/plc_host/src/dashboard/items/LedItem.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/items/ProgressBarItem.cpp",
 			"MU",
 			null
 		],
@@ -347,6 +398,16 @@
 		],
 		[
 			"/home/victor/c_proj/plc_host/src/dashboard/items/TextItem.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/items/TrendItem.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/items/ValueInputItem.cpp",
 			"MU",
 			null
 		],

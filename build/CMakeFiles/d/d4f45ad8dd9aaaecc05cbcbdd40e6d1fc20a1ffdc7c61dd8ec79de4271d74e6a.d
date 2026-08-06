@@ -20,18 +20,29 @@ tests/tst_smoke_autogen/timestamp: \
   /home/victor/c_proj/plc_host/src/dashboard/commands/RemoveItemCommand.h \
   /home/victor/c_proj/plc_host/src/dashboard/commands/ResizeCommand.cpp \
   /home/victor/c_proj/plc_host/src/dashboard/commands/ResizeCommand.h \
+  /home/victor/c_proj/plc_host/src/dashboard/items/ButtonItem.cpp \
+  /home/victor/c_proj/plc_host/src/dashboard/items/ButtonItem.h \
+  /home/victor/c_proj/plc_host/src/dashboard/items/GaugeItem.cpp \
+  /home/victor/c_proj/plc_host/src/dashboard/items/GaugeItem.h \
   /home/victor/c_proj/plc_host/src/dashboard/items/ImageItem.cpp \
   /home/victor/c_proj/plc_host/src/dashboard/items/ImageItem.h \
   /home/victor/c_proj/plc_host/src/dashboard/items/LedItem.cpp \
   /home/victor/c_proj/plc_host/src/dashboard/items/LedItem.h \
+  /home/victor/c_proj/plc_host/src/dashboard/items/ProgressBarItem.cpp \
+  /home/victor/c_proj/plc_host/src/dashboard/items/ProgressBarItem.h \
   /home/victor/c_proj/plc_host/src/dashboard/items/RectItem.cpp \
   /home/victor/c_proj/plc_host/src/dashboard/items/RectItem.h \
   /home/victor/c_proj/plc_host/src/dashboard/items/SwitchItem.cpp \
   /home/victor/c_proj/plc_host/src/dashboard/items/SwitchItem.h \
   /home/victor/c_proj/plc_host/src/dashboard/items/TextItem.cpp \
   /home/victor/c_proj/plc_host/src/dashboard/items/TextItem.h \
+  /home/victor/c_proj/plc_host/src/dashboard/items/TrendItem.cpp \
+  /home/victor/c_proj/plc_host/src/dashboard/items/TrendItem.h \
+  /home/victor/c_proj/plc_host/src/dashboard/items/ValueInputItem.cpp \
+  /home/victor/c_proj/plc_host/src/dashboard/items/ValueInputItem.h \
   /home/victor/c_proj/plc_host/src/dashboard/items/ValueItem.cpp \
   /home/victor/c_proj/plc_host/src/dashboard/items/ValueItem.h \
+  /home/victor/c_proj/plc_host/src/dashboard/runtime/ButtonAction.h \
   /home/victor/c_proj/plc_host/src/domain/PlcConfig.h \
   /home/victor/c_proj/plc_host/src/domain/Tag.cpp \
   /home/victor/c_proj/plc_host/src/domain/Tag.h \
@@ -373,6 +384,7 @@ tests/tst_smoke_autogen/timestamp: \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QIODevice \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QJsonArray \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QJsonObject \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QJsonValue \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QMargins \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QMetaEnum \

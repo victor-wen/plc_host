@@ -14,11 +14,16 @@
 #include "dashboard/commands/MoveCommand.h"
 #include "dashboard/commands/RemoveItemCommand.h"
 #include "dashboard/commands/ResizeCommand.h"
+#include "dashboard/items/ButtonItem.h"
+#include "dashboard/items/GaugeItem.h"
 #include "dashboard/items/ImageItem.h"
 #include "dashboard/items/LedItem.h"
+#include "dashboard/items/ProgressBarItem.h"
 #include "dashboard/items/RectItem.h"
 #include "dashboard/items/SwitchItem.h"
 #include "dashboard/items/TextItem.h"
+#include "dashboard/items/TrendItem.h"
+#include "dashboard/items/ValueInputItem.h"
 #include "dashboard/items/ValueItem.h"
 
 #include <algorithm>
@@ -33,7 +38,8 @@ const QStringList& knownItemTypes()
         QStringLiteral("image"),      QStringLiteral("value"),
         QStringLiteral("led"),        QStringLiteral("switch"),
         QStringLiteral("progress"),   QStringLiteral("gauge"),
-        QStringLiteral("trend"),      QStringLiteral("button"),
+        QStringLiteral("valueInput"), QStringLiteral("trend"),
+        QStringLiteral("button"),
     };
     return types;
 }
@@ -107,7 +113,8 @@ void DashboardScene::setPage(const DashboardPage& page)
 DashboardBaseItem* DashboardScene::addItem(const DashboardItem& meta)
 {
     // 工厂：DASH-05 起按 itemType 分发到具体组件；未知/损坏类型降级为
-    // PlaceholderItem（黄色占位框，接口 §9 降级语义）。
+    // PlaceholderItem（黄色占位框，接口 §9 降级语义）。DASH-06 新增
+    // progress/gauge/valueInput/trend 高级组件。
     DashboardBaseItem* item = nullptr;
     if (meta.itemType == QStringLiteral("text"))
         item = new TextItem;
@@ -121,6 +128,16 @@ DashboardBaseItem* DashboardScene::addItem(const DashboardItem& meta)
         item = new LedItem;
     else if (meta.itemType == QStringLiteral("switch"))
         item = new SwitchItem;
+    else if (meta.itemType == QStringLiteral("progress"))
+        item = new ProgressBarItem;
+    else if (meta.itemType == QStringLiteral("gauge"))
+        item = new GaugeItem;
+    else if (meta.itemType == QStringLiteral("valueInput"))
+        item = new ValueInputItem;
+    else if (meta.itemType == QStringLiteral("trend"))
+        item = new TrendItem;
+    else if (meta.itemType == QStringLiteral("button"))
+        item = new ButtonItem;
     else
         item = new PlaceholderItem(meta.itemType);
 

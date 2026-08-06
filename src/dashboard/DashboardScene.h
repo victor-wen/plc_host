@@ -16,8 +16,8 @@ class QKeyEvent;
 //
 // - 场景尺寸与背景色来自 DashboardPage（setPage）。
 // - addItem(const DashboardItem&) 是组件工厂：按 itemType 创建对应 QGraphicsObject
-//   （text/rect/image/value/led/switch 为 DASH-05 具体组件，其余类型 DASH-06+）；
-//   未知/损坏类型按 errorPlaceholder 黄色占位。
+//   （text/rect/image/value/led/switch 为 DASH-05 具体组件，progress/gauge/valueInput/
+//   trend 为 DASH-06 高级组件）；未知/损坏类型按 errorPlaceholder 黄色占位。
 // - setEditMode(false) 切换运行模式：所有组件不可移动/不可选择。
 // - 组件数 <100，使用 NoIndex 线性索引，避免维护 BSP 树的开销。
 class DashboardScene : public QGraphicsScene {
