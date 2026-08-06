@@ -2,9 +2,14 @@ tests/tst_smoke_autogen/timestamp: \
   tests/tst_smoke_autogen/moc_predefs.h \
   /home/victor/c_proj/plc_host/src/app/MainWindow.cpp \
   /home/victor/c_proj/plc_host/src/app/MainWindow.h \
+  /home/victor/c_proj/plc_host/src/dashboard/DashboardBaseItem.h \
   /home/victor/c_proj/plc_host/src/dashboard/DashboardDocument.h \
   /home/victor/c_proj/plc_host/src/dashboard/DashboardRepository.cpp \
   /home/victor/c_proj/plc_host/src/dashboard/DashboardRepository.h \
+  /home/victor/c_proj/plc_host/src/dashboard/DashboardScene.cpp \
+  /home/victor/c_proj/plc_host/src/dashboard/DashboardScene.h \
+  /home/victor/c_proj/plc_host/src/dashboard/DashboardView.cpp \
+  /home/victor/c_proj/plc_host/src/dashboard/DashboardView.h \
   /home/victor/c_proj/plc_host/src/domain/PlcConfig.h \
   /home/victor/c_proj/plc_host/src/domain/Tag.cpp \
   /home/victor/c_proj/plc_host/src/domain/Tag.h \
@@ -351,6 +356,7 @@ tests/tst_smoke_autogen/timestamp: \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QMetaType \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QMutex \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QPointF \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSharedDataPointer \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
@@ -505,7 +511,10 @@ tests/tst_smoke_autogen/timestamp: \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qkeysequence.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpaintdevice.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainterpath.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpointingdevice.h \
@@ -517,6 +526,7 @@ tests/tst_smoke_autogen/timestamp: \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qsurface.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qsurfaceformat.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtestsupport_gui.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
@@ -579,6 +589,9 @@ tests/tst_smoke_autogen/timestamp: \
   /usr/include/x86_64-linux-gnu/qt6/QtTest/qttestexports.h \
   /usr/include/x86_64-linux-gnu/qt6/QtTest/qttestglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtTest/qttestlib-config.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsObject \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsView \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSizePolicy \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTableView \
@@ -590,8 +603,12 @@ tests/tst_smoke_autogen/timestamp: \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsitem.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsview.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollarea.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h \

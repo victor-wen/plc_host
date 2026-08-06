@@ -23,6 +23,12 @@
 			null
 		],
 		[
+			"/home/victor/c_proj/plc_host/src/dashboard/DashboardBaseItem.h",
+			"MU",
+			"DSNZRYT7KM/moc_DashboardBaseItem.cpp",
+			null
+		],
+		[
 			"/home/victor/c_proj/plc_host/src/dashboard/DashboardDocument.h",
 			"MU",
 			"DSNZRYT7KM/moc_DashboardDocument.cpp",
@@ -32,6 +38,18 @@
 			"/home/victor/c_proj/plc_host/src/dashboard/DashboardRepository.h",
 			"MU",
 			"DSNZRYT7KM/moc_DashboardRepository.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/DashboardScene.h",
+			"MU",
+			"DSNZRYT7KM/moc_DashboardScene.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/DashboardView.h",
+			"MU",
+			"DSNZRYT7KM/moc_DashboardView.cpp",
 			null
 		],
 		[
@@ -203,6 +221,16 @@
 		[ "/home/victor/c_proj/plc_host/src/app/main.cpp", "MU", null ],
 		[
 			"/home/victor/c_proj/plc_host/src/dashboard/DashboardRepository.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/DashboardScene.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/DashboardView.cpp",
 			"MU",
 			null
 		],

@@ -17,6 +17,12 @@
 			null
 		],
 		[
+			"/home/victor/c_proj/plc_host/src/dashboard/DashboardBaseItem.h",
+			"MU",
+			"GOJBEEH4MY/moc_DashboardBaseItem.cpp",
+			null
+		],
+		[
 			"/home/victor/c_proj/plc_host/src/dashboard/DashboardDocument.h",
 			"MU",
 			"GOJBEEH4MY/moc_DashboardDocument.cpp",
@@ -26,6 +32,18 @@
 			"/home/victor/c_proj/plc_host/src/dashboard/DashboardRepository.h",
 			"MU",
 			"GOJBEEH4MY/moc_DashboardRepository.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/DashboardScene.h",
+			"MU",
+			"GOJBEEH4MY/moc_DashboardScene.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/DashboardView.h",
+			"MU",
+			"GOJBEEH4MY/moc_DashboardView.cpp",
 			null
 		],
 		[
@@ -181,6 +199,16 @@
 		[ "/home/victor/c_proj/plc_host/src/app/MainWindow.cpp", "MU", null ],
 		[
 			"/home/victor/c_proj/plc_host/src/dashboard/DashboardRepository.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/DashboardScene.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/dashboard/DashboardView.cpp",
 			"MU",
 			null
 		],

@@ -1,0 +1,233 @@
+#include "DashboardScene.h"
+
+#include <QColor>
+#include <QPainter>
+#include <QPainterPath>
+#include <QStyleOptionGraphicsItem>
+
+#include <algorithm>
+
+namespace {
+
+// 已冻结的组件类型清单 (docs/architecture/interfaces.md §9)。
+const QStringList& knownItemTypes()
+{
+    static const QStringList types = {
+        QStringLiteral("text"),       QStringLiteral("rect"),
+        QStringLiteral("image"),      QStringLiteral("value"),
+        QStringLiteral("led"),        QStringLiteral("switch"),
+        QStringLiteral("progress"),   QStringLiteral("gauge"),
+        QStringLiteral("trend"),      QStringLiteral("button"),
+    };
+    return types;
+}
+
+// 占位组件：具体组件（DASH-05+）实现前，工厂用占位组件承载场景几何与元数据。
+// 未知类型或显式 errorPlaceholder 渲染为黄色占位框（接口 §9 降级语义），
+// 不阻塞其他组件/页面。
+class PlaceholderItem : public DashboardBaseItem {
+public:
+    explicit PlaceholderItem(const QString& type, QGraphicsItem* parent = nullptr)
+        : DashboardBaseItem(parent)
+        , m_isError(type == QStringLiteral("errorPlaceholder")
+                    || !knownItemTypes().contains(type))
+    {
+        itemType = type;
+    }
+
+    void paint(QPainter* painter, const QStyleOptionGraphicsItem* option,
+               QWidget* widget = nullptr) override;
+
+private:
+    bool m_isError = false;
+};
+
+void PlaceholderItem::paint(QPainter* painter, const QStyleOptionGraphicsItem* option,
+                            QWidget* widget)
+{
+    Q_UNUSED(option);
+    Q_UNUSED(widget);
+
+    const QRectF rect = boundingRect();
+    painter->setRenderHint(QPainter::Antialiasing, true);
+    if (m_isError) {
+        painter->setBrush(QColor(0xFF, 0xE0, 0x5A)); // 黄色占位
+        painter->setPen(QPen(QColor(0xB0, 0x8A, 0x00), 1, Qt::DashLine));
+    } else {
+        painter->setBrush(QColor(0x2A, 0x2E, 0x38));
+        painter->setPen(QPen(QColor(0x5A, 0x64, 0x75), 1, Qt::DashLine));
+    }
+    painter->drawRoundedRect(rect, 4, 4);
+    painter->setPen(QColor(0xE0, 0xE3, 0xEA));
+    painter->drawText(rect, Qt::AlignCenter, itemType);
+}
+
+// background 为 #RRGGBB 颜色或图片资源路径；空解析失败 → 默认深色（Luna dark）。
+QColor pageBackground(const QString& background)
+{
+    if (background.startsWith(QLatin1Char('#'))) {
+        const QColor color(background);
+        if (color.isValid())
+            return color;
+    }
+    return QColor(0x1E, 0x21, 0x28);
+}
+
+} // namespace
+
+DashboardScene::DashboardScene(QObject* parent)
+    : QGraphicsScene(parent)
+{
+    // 组件数 <100：线性索引，添加/移动/删除为常数级开销。
+    setItemIndexMethod(QGraphicsScene::NoIndex);
+}
+
+void DashboardScene::setPage(const DashboardPage& page)
+{
+    setSceneRect(0, 0, page.width, page.height);
+    setBackgroundBrush(pageBackground(page.background));
+}
+
+DashboardBaseItem* DashboardScene::addItem(const DashboardItem& meta)
+{
+    // 工厂：DASH-05+ 在此按 itemType 分发到具体组件；当前统一创建占位组件。
+    auto* item = new PlaceholderItem(meta.itemType);
+    item->itemId = meta.id;
+    item->itemType = meta.itemType;
+    item->commonStyle = meta.commonStyle;
+    item->config = meta.config;
+    item->schemaVersion = meta.schemaVersion;
+    item->setSize(meta.width, meta.height);
+    item->setPos(meta.x, meta.y);
+    item->setZValue(meta.zOrder);
+    item->setEditMode(m_editMode);
+    QGraphicsScene::addItem(item);
+    return item;
+}
+
+void DashboardScene::setEditMode(bool editing)
+{
+    m_editMode = editing;
+    const auto items = dashboardItems();
+    for (auto* item : items)
+        item->setEditMode(editing);
+}
+
+QList<DashboardBaseItem*> DashboardScene::dashboardItems() const
+{
+    QList<DashboardBaseItem*> result;
+    const auto all = QGraphicsScene::items();
+    result.reserve(all.size());
+    for (QGraphicsItem* item : all) {
+        if (auto* dbi = dynamic_cast<DashboardBaseItem*>(item))
+            result.append(dbi);
+    }
+    return result;
+}
+
+QPointF DashboardScene::snapToGrid(QPointF pos, int gridSize) const
+{
+    if (gridSize <= 0)
+        return pos;
+    const qreal x = qRound(pos.x() / gridSize) * gridSize;
+    const qreal y = qRound(pos.y() / gridSize) * gridSize;
+    return QPointF(x, y);
+}
+
+void DashboardScene::bringToFront()
+{
+    auto sel = selectedItems();
+    if (sel.isEmpty())
+        return;
+
+    qreal top = 0.0;
+    for (auto* item : dashboardItems())
+        top = qMax(top, item->zValue());
+
+    // 保持选中集内部相对层级：QGraphicsScene::selectedItems() 的顺序无保证，
+    // 显式按当前 z 升序后依次抬升（最上层获得最高 z）。
+    std::sort(sel.begin(), sel.end(),
+              [](DashboardBaseItem* lhs, DashboardBaseItem* rhs) {
+                  return lhs->zValue() < rhs->zValue();
+              });
+    for (auto* item : sel) {
+        item->setZValue(top + 1.0);
+        top += 1.0;
+    }
+}
+
+void DashboardScene::sendToBack()
+{
+    auto sel = selectedItems();
+    if (sel.isEmpty())
+        return;
+
+    qreal bottom = 0.0;
+    for (auto* item : dashboardItems())
+        bottom = qMin(bottom, item->zValue());
+
+    // 保持选中集内部相对层级：按当前 z 降序后依次下沉（最上层先下沉）。
+    std::sort(sel.begin(), sel.end(),
+              [](DashboardBaseItem* lhs, DashboardBaseItem* rhs) {
+                  return lhs->zValue() > rhs->zValue();
+              });
+    for (auto* item : sel) {
+        item->setZValue(bottom - 1.0);
+        bottom -= 1.0;
+    }
+}
+
+void DashboardScene::alignSelected(Qt::Alignment alignment)
+{
+    const auto sel = selectedItems();
+    if (sel.isEmpty())
+        return;
+
+    // 以选中集的包围盒作为对齐基准。
+    QRectF bounds;
+    for (auto* item : sel)
+        bounds |= item->sceneBoundingRect();
+
+    for (auto* item : sel) {
+        const QRectF rect(item->pos(), item->boundingRect().size());
+        QPointF pos = rect.topLeft();
+
+        if (alignment.testFlag(Qt::AlignLeft))
+            pos.setX(bounds.left());
+        else if (alignment.testFlag(Qt::AlignHCenter))
+            pos.setX(bounds.center().x() - rect.width() / 2.0);
+        else if (alignment.testFlag(Qt::AlignRight))
+            pos.setX(bounds.right() - rect.width());
+
+        if (alignment.testFlag(Qt::AlignTop))
+            pos.setY(bounds.top());
+        else if (alignment.testFlag(Qt::AlignVCenter))
+            pos.setY(bounds.center().y() - rect.height() / 2.0);
+        else if (alignment.testFlag(Qt::AlignBottom))
+            pos.setY(bounds.bottom() - rect.height());
+
+        item->setPos(pos);
+    }
+}
+
+void DashboardScene::deleteSelected()
+{
+    const auto sel = selectedItems();
+    for (auto* item : sel) {
+        item->setSelected(false);
+        QGraphicsScene::removeItem(item);
+        delete item; // scene 持有组件所有权
+    }
+}
+
+QList<DashboardBaseItem*> DashboardScene::selectedItems() const
+{
+    QList<DashboardBaseItem*> result;
+    const auto all = QGraphicsScene::selectedItems();
+    result.reserve(all.size());
+    for (QGraphicsItem* item : all) {
+        if (auto* dbi = dynamic_cast<DashboardBaseItem*>(item))
+            result.append(dbi);
+    }
+    return result;
+}

@@ -11,6 +11,8 @@ set(SOURCES
     runtime/WriteQueue.cpp
     storage/DatabaseMigrator.cpp
     dashboard/DashboardRepository.cpp
+    dashboard/DashboardScene.cpp
+    dashboard/DashboardView.cpp
     ui/PlcConfigWidget.cpp
     ui/TagEditorWidget.cpp
     ui/TagMonitorWidget.cpp
@@ -32,6 +34,9 @@ set(HEADERS
     storage/DatabaseMigrator.h
     dashboard/DashboardDocument.h
     dashboard/DashboardRepository.h
+    dashboard/DashboardBaseItem.h
+    dashboard/DashboardScene.h
+    dashboard/DashboardView.h
     ui/PlcConfigWidget.h
     ui/TagEditorWidget.h
     ui/TagMonitorWidget.h

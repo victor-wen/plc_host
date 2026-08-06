@@ -16,10 +16,15 @@ set(MODBUS_HEADERS
 )
 set(DASHBOARD_SOURCES
     ${CMAKE_SOURCE_DIR}/src/dashboard/DashboardRepository.cpp
+    ${CMAKE_SOURCE_DIR}/src/dashboard/DashboardScene.cpp
+    ${CMAKE_SOURCE_DIR}/src/dashboard/DashboardView.cpp
 )
 set(DASHBOARD_HEADERS
     ${CMAKE_SOURCE_DIR}/src/dashboard/DashboardDocument.h
     ${CMAKE_SOURCE_DIR}/src/dashboard/DashboardRepository.h
+    ${CMAKE_SOURCE_DIR}/src/dashboard/DashboardBaseItem.h
+    ${CMAKE_SOURCE_DIR}/src/dashboard/DashboardScene.h
+    ${CMAKE_SOURCE_DIR}/src/dashboard/DashboardView.h
 )
 set(UI_SOURCES
     ${CMAKE_SOURCE_DIR}/src/ui/PlcConfigWidget.cpp
@@ -56,3 +61,4 @@ add_qtest(unit/tst_DashboardRepository)
 add_qtest(integration/tst_QtModbusClient)
 add_qtest(integration/tst_AcquisitionEngine)
 add_qtest(ui/tst_UiSmoke)
+add_qtest(ui/tst_DashboardScene)
