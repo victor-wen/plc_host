@@ -1,10 +1,10 @@
-Start testing: Aug 06 21:34 CST
+Start testing: Aug 06 21:37 CST
 ----------------------------------------------------------
-1/1 Testing: tst_smoke
-1/1 Test: tst_smoke
+1/3 Testing: tst_smoke
+1/3 Test: tst_smoke
 Command: "/home/victor/c_proj/plc_host/build/tests/tst_smoke"
 Directory: /home/victor/c_proj/plc_host/build/tests
-"tst_smoke" start time: Aug 06 21:34 CST
+"tst_smoke" start time: Aug 06 21:37 CST
 Output:
 ----------------------------------------------------------
 ********* Start testing of SmokeTest *********
@@ -12,14 +12,66 @@ Config: Using QtTest library 6.4.2, Qt 6.4.2 (x86_64-little_endian-lp64 shared (
 PASS   : SmokeTest::initTestCase()
 PASS   : SmokeTest::alwaysPasses()
 PASS   : SmokeTest::cleanupTestCase()
-Totals: 3 passed, 0 failed, 0 skipped, 0 blacklisted, 1ms
+Totals: 3 passed, 0 failed, 0 skipped, 0 blacklisted, 0ms
 ********* Finished testing of SmokeTest *********
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"tst_smoke" end time: Aug 06 21:34 CST
+"tst_smoke" end time: Aug 06 21:37 CST
 "tst_smoke" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Aug 06 21:34 CST
+2/3 Testing: tst_DomainModels
+2/3 Test: tst_DomainModels
+Command: "/home/victor/c_proj/plc_host/build/tests/tst_DomainModels"
+Directory: /home/victor/c_proj/plc_host/build/tests
+"tst_DomainModels" start time: Aug 06 21:37 CST
+Output:
+----------------------------------------------------------
+********* Start testing of DomainModelsTest *********
+Config: Using QtTest library 6.4.2, Qt 6.4.2 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 13.2.0), ubuntu 24.04
+PASS   : DomainModelsTest::initTestCase()
+PASS   : DomainModelsTest::tag_registerCount_UInt16_returns_1()
+PASS   : DomainModelsTest::tag_registerCount_Int32_returns_2()
+PASS   : DomainModelsTest::tag_registerCount_Float32_returns_2()
+PASS   : DomainModelsTest::tag_registerCount_Bool_returns_1()
+PASS   : DomainModelsTest::tag_modbusAddress_returns_address()
+PASS   : DomainModelsTest::tagValue_default_quality_is_Disconnected()
+PASS   : DomainModelsTest::tagValue_default_tagId_is_negative()
+PASS   : DomainModelsTest::cleanupTestCase()
+Totals: 9 passed, 0 failed, 0 skipped, 0 blacklisted, 0ms
+********* Finished testing of DomainModelsTest *********
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"tst_DomainModels" end time: Aug 06 21:37 CST
+"tst_DomainModels" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: tst_DatabaseMigrations
+3/3 Test: tst_DatabaseMigrations
+Command: "/home/victor/c_proj/plc_host/build/tests/tst_DatabaseMigrations"
+Directory: /home/victor/c_proj/plc_host/build/tests
+"tst_DatabaseMigrations" start time: Aug 06 21:37 CST
+Output:
+----------------------------------------------------------
+********* Start testing of DatabaseMigrationsTest *********
+Config: Using QtTest library 6.4.2, Qt 6.4.2 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 13.2.0), ubuntu 24.04
+PASS   : DatabaseMigrationsTest::initTestCase()
+PASS   : DatabaseMigrationsTest::migrate_creates_all_tables()
+PASS   : DatabaseMigrationsTest::migrate_idempotent()
+PASS   : DatabaseMigrationsTest::currentVersion_returns_1_after_migration()
+PASS   : DatabaseMigrationsTest::cleanupTestCase()
+Totals: 5 passed, 0 failed, 0 skipped, 0 blacklisted, 81ms
+********* Finished testing of DatabaseMigrationsTest *********
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"tst_DatabaseMigrations" end time: Aug 06 21:37 CST
+"tst_DatabaseMigrations" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 06 21:37 CST

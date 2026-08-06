@@ -25,14 +25,86 @@
 },
 {
   "directory": "/home/victor/c_proj/plc_host/build",
-  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_TESTCASE_BUILDDIR=\\\"/home/victor/c_proj/plc_host/build/tests\\\" -DQT_TESTCASE_SOURCEDIR=\\\"/home/victor/c_proj/plc_host/tests\\\" -DQT_TESTLIB_LIB -I/home/victor/c_proj/plc_host/build/tests/tst_smoke_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC -o tests/CMakeFiles/tst_smoke.dir/tst_smoke_autogen/mocs_compilation.cpp.o -c /home/victor/c_proj/plc_host/build/tests/tst_smoke_autogen/mocs_compilation.cpp",
+  "command": "/usr/bin/c++ -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/victor/c_proj/plc_host/build/src/plc_host_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC -o src/CMakeFiles/plc_host.dir/domain/Tag.cpp.o -c /home/victor/c_proj/plc_host/src/domain/Tag.cpp",
+  "file": "/home/victor/c_proj/plc_host/src/domain/Tag.cpp",
+  "output": "src/CMakeFiles/plc_host.dir/domain/Tag.cpp.o"
+},
+{
+  "directory": "/home/victor/c_proj/plc_host/build",
+  "command": "/usr/bin/c++ -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/victor/c_proj/plc_host/build/src/plc_host_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC -o src/CMakeFiles/plc_host.dir/storage/DatabaseMigrator.cpp.o -c /home/victor/c_proj/plc_host/src/storage/DatabaseMigrator.cpp",
+  "file": "/home/victor/c_proj/plc_host/src/storage/DatabaseMigrator.cpp",
+  "output": "src/CMakeFiles/plc_host.dir/storage/DatabaseMigrator.cpp.o"
+},
+{
+  "directory": "/home/victor/c_proj/plc_host/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\\\"/home/victor/c_proj/plc_host/build/tests\\\" -DQT_TESTCASE_SOURCEDIR=\\\"/home/victor/c_proj/plc_host/tests\\\" -DQT_TESTLIB_LIB -I/home/victor/c_proj/plc_host/build/tests/tst_smoke_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC -o tests/CMakeFiles/tst_smoke.dir/tst_smoke_autogen/mocs_compilation.cpp.o -c /home/victor/c_proj/plc_host/build/tests/tst_smoke_autogen/mocs_compilation.cpp",
   "file": "/home/victor/c_proj/plc_host/build/tests/tst_smoke_autogen/mocs_compilation.cpp",
   "output": "tests/CMakeFiles/tst_smoke.dir/tst_smoke_autogen/mocs_compilation.cpp.o"
 },
 {
   "directory": "/home/victor/c_proj/plc_host/build",
-  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_TESTCASE_BUILDDIR=\\\"/home/victor/c_proj/plc_host/build/tests\\\" -DQT_TESTCASE_SOURCEDIR=\\\"/home/victor/c_proj/plc_host/tests\\\" -DQT_TESTLIB_LIB -I/home/victor/c_proj/plc_host/build/tests/tst_smoke_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC -o tests/CMakeFiles/tst_smoke.dir/unit/tst_smoke.cpp.o -c /home/victor/c_proj/plc_host/tests/unit/tst_smoke.cpp",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\\\"/home/victor/c_proj/plc_host/build/tests\\\" -DQT_TESTCASE_SOURCEDIR=\\\"/home/victor/c_proj/plc_host/tests\\\" -DQT_TESTLIB_LIB -I/home/victor/c_proj/plc_host/build/tests/tst_smoke_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC -o tests/CMakeFiles/tst_smoke.dir/unit/tst_smoke.cpp.o -c /home/victor/c_proj/plc_host/tests/unit/tst_smoke.cpp",
   "file": "/home/victor/c_proj/plc_host/tests/unit/tst_smoke.cpp",
   "output": "tests/CMakeFiles/tst_smoke.dir/unit/tst_smoke.cpp.o"
+},
+{
+  "directory": "/home/victor/c_proj/plc_host/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\\\"/home/victor/c_proj/plc_host/build/tests\\\" -DQT_TESTCASE_SOURCEDIR=\\\"/home/victor/c_proj/plc_host/tests\\\" -DQT_TESTLIB_LIB -I/home/victor/c_proj/plc_host/build/tests/tst_smoke_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC -o tests/CMakeFiles/tst_smoke.dir/__/src/domain/Tag.cpp.o -c /home/victor/c_proj/plc_host/src/domain/Tag.cpp",
+  "file": "/home/victor/c_proj/plc_host/src/domain/Tag.cpp",
+  "output": "tests/CMakeFiles/tst_smoke.dir/__/src/domain/Tag.cpp.o"
+},
+{
+  "directory": "/home/victor/c_proj/plc_host/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\\\"/home/victor/c_proj/plc_host/build/tests\\\" -DQT_TESTCASE_SOURCEDIR=\\\"/home/victor/c_proj/plc_host/tests\\\" -DQT_TESTLIB_LIB -I/home/victor/c_proj/plc_host/build/tests/tst_smoke_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC -o tests/CMakeFiles/tst_smoke.dir/__/src/storage/DatabaseMigrator.cpp.o -c /home/victor/c_proj/plc_host/src/storage/DatabaseMigrator.cpp",
+  "file": "/home/victor/c_proj/plc_host/src/storage/DatabaseMigrator.cpp",
+  "output": "tests/CMakeFiles/tst_smoke.dir/__/src/storage/DatabaseMigrator.cpp.o"
+},
+{
+  "directory": "/home/victor/c_proj/plc_host/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\\\"/home/victor/c_proj/plc_host/build/tests\\\" -DQT_TESTCASE_SOURCEDIR=\\\"/home/victor/c_proj/plc_host/tests\\\" -DQT_TESTLIB_LIB -I/home/victor/c_proj/plc_host/build/tests/tst_DomainModels_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC -o tests/CMakeFiles/tst_DomainModels.dir/tst_DomainModels_autogen/mocs_compilation.cpp.o -c /home/victor/c_proj/plc_host/build/tests/tst_DomainModels_autogen/mocs_compilation.cpp",
+  "file": "/home/victor/c_proj/plc_host/build/tests/tst_DomainModels_autogen/mocs_compilation.cpp",
+  "output": "tests/CMakeFiles/tst_DomainModels.dir/tst_DomainModels_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/victor/c_proj/plc_host/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\\\"/home/victor/c_proj/plc_host/build/tests\\\" -DQT_TESTCASE_SOURCEDIR=\\\"/home/victor/c_proj/plc_host/tests\\\" -DQT_TESTLIB_LIB -I/home/victor/c_proj/plc_host/build/tests/tst_DomainModels_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC -o tests/CMakeFiles/tst_DomainModels.dir/unit/tst_DomainModels.cpp.o -c /home/victor/c_proj/plc_host/tests/unit/tst_DomainModels.cpp",
+  "file": "/home/victor/c_proj/plc_host/tests/unit/tst_DomainModels.cpp",
+  "output": "tests/CMakeFiles/tst_DomainModels.dir/unit/tst_DomainModels.cpp.o"
+},
+{
+  "directory": "/home/victor/c_proj/plc_host/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\\\"/home/victor/c_proj/plc_host/build/tests\\\" -DQT_TESTCASE_SOURCEDIR=\\\"/home/victor/c_proj/plc_host/tests\\\" -DQT_TESTLIB_LIB -I/home/victor/c_proj/plc_host/build/tests/tst_DomainModels_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC -o tests/CMakeFiles/tst_DomainModels.dir/__/src/domain/Tag.cpp.o -c /home/victor/c_proj/plc_host/src/domain/Tag.cpp",
+  "file": "/home/victor/c_proj/plc_host/src/domain/Tag.cpp",
+  "output": "tests/CMakeFiles/tst_DomainModels.dir/__/src/domain/Tag.cpp.o"
+},
+{
+  "directory": "/home/victor/c_proj/plc_host/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\\\"/home/victor/c_proj/plc_host/build/tests\\\" -DQT_TESTCASE_SOURCEDIR=\\\"/home/victor/c_proj/plc_host/tests\\\" -DQT_TESTLIB_LIB -I/home/victor/c_proj/plc_host/build/tests/tst_DomainModels_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC -o tests/CMakeFiles/tst_DomainModels.dir/__/src/storage/DatabaseMigrator.cpp.o -c /home/victor/c_proj/plc_host/src/storage/DatabaseMigrator.cpp",
+  "file": "/home/victor/c_proj/plc_host/src/storage/DatabaseMigrator.cpp",
+  "output": "tests/CMakeFiles/tst_DomainModels.dir/__/src/storage/DatabaseMigrator.cpp.o"
+},
+{
+  "directory": "/home/victor/c_proj/plc_host/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\\\"/home/victor/c_proj/plc_host/build/tests\\\" -DQT_TESTCASE_SOURCEDIR=\\\"/home/victor/c_proj/plc_host/tests\\\" -DQT_TESTLIB_LIB -I/home/victor/c_proj/plc_host/build/tests/tst_DatabaseMigrations_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC -o tests/CMakeFiles/tst_DatabaseMigrations.dir/tst_DatabaseMigrations_autogen/mocs_compilation.cpp.o -c /home/victor/c_proj/plc_host/build/tests/tst_DatabaseMigrations_autogen/mocs_compilation.cpp",
+  "file": "/home/victor/c_proj/plc_host/build/tests/tst_DatabaseMigrations_autogen/mocs_compilation.cpp",
+  "output": "tests/CMakeFiles/tst_DatabaseMigrations.dir/tst_DatabaseMigrations_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/victor/c_proj/plc_host/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\\\"/home/victor/c_proj/plc_host/build/tests\\\" -DQT_TESTCASE_SOURCEDIR=\\\"/home/victor/c_proj/plc_host/tests\\\" -DQT_TESTLIB_LIB -I/home/victor/c_proj/plc_host/build/tests/tst_DatabaseMigrations_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC -o tests/CMakeFiles/tst_DatabaseMigrations.dir/unit/tst_DatabaseMigrations.cpp.o -c /home/victor/c_proj/plc_host/tests/unit/tst_DatabaseMigrations.cpp",
+  "file": "/home/victor/c_proj/plc_host/tests/unit/tst_DatabaseMigrations.cpp",
+  "output": "tests/CMakeFiles/tst_DatabaseMigrations.dir/unit/tst_DatabaseMigrations.cpp.o"
+},
+{
+  "directory": "/home/victor/c_proj/plc_host/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\\\"/home/victor/c_proj/plc_host/build/tests\\\" -DQT_TESTCASE_SOURCEDIR=\\\"/home/victor/c_proj/plc_host/tests\\\" -DQT_TESTLIB_LIB -I/home/victor/c_proj/plc_host/build/tests/tst_DatabaseMigrations_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC -o tests/CMakeFiles/tst_DatabaseMigrations.dir/__/src/domain/Tag.cpp.o -c /home/victor/c_proj/plc_host/src/domain/Tag.cpp",
+  "file": "/home/victor/c_proj/plc_host/src/domain/Tag.cpp",
+  "output": "tests/CMakeFiles/tst_DatabaseMigrations.dir/__/src/domain/Tag.cpp.o"
+},
+{
+  "directory": "/home/victor/c_proj/plc_host/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\\\"/home/victor/c_proj/plc_host/build/tests\\\" -DQT_TESTCASE_SOURCEDIR=\\\"/home/victor/c_proj/plc_host/tests\\\" -DQT_TESTLIB_LIB -I/home/victor/c_proj/plc_host/build/tests/tst_DatabaseMigrations_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC -o tests/CMakeFiles/tst_DatabaseMigrations.dir/__/src/storage/DatabaseMigrator.cpp.o -c /home/victor/c_proj/plc_host/src/storage/DatabaseMigrator.cpp",
+  "file": "/home/victor/c_proj/plc_host/src/storage/DatabaseMigrator.cpp",
+  "output": "tests/CMakeFiles/tst_DatabaseMigrations.dir/__/src/storage/DatabaseMigrator.cpp.o"
 }
 ]

@@ -2,11 +2,17 @@ set(SOURCES
     app/main.cpp
     app/MainWindow.cpp
     app/AppContext.cpp
+    domain/Tag.cpp
+    storage/DatabaseMigrator.cpp
 )
 
 set(HEADERS
     app/MainWindow.h
     app/AppContext.h
+    domain/PlcConfig.h
+    domain/Tag.h
+    domain/TagValue.h
+    storage/DatabaseMigrator.h
 )
 
 qt_add_executable(plc_host ${SOURCES} ${HEADERS})

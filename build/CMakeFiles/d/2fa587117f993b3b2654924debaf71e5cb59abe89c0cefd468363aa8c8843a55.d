@@ -6,6 +6,12 @@ src/plc_host_autogen/timestamp: \
   /home/victor/c_proj/plc_host/src/app/MainWindow.cpp \
   /home/victor/c_proj/plc_host/src/app/MainWindow.h \
   /home/victor/c_proj/plc_host/src/app/main.cpp \
+  /home/victor/c_proj/plc_host/src/domain/PlcConfig.h \
+  /home/victor/c_proj/plc_host/src/domain/Tag.cpp \
+  /home/victor/c_proj/plc_host/src/domain/Tag.h \
+  /home/victor/c_proj/plc_host/src/domain/TagValue.h \
+  /home/victor/c_proj/plc_host/src/storage/DatabaseMigrator.cpp \
+  /home/victor/c_proj/plc_host/src/storage/DatabaseMigrator.h \
   /usr/bin/cmake \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \

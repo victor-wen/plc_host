@@ -8,7 +8,21 @@
 	"CMAKE_SOURCE_DIR" : "/home/victor/c_proj/plc_host",
 	"DEP_FILE" : "/home/victor/c_proj/plc_host/build/tests/tst_smoke_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "tst_smoke_autogen/timestamp",
-	"HEADERS" : [],
+	"HEADERS" : 
+	[
+		[
+			"/home/victor/c_proj/plc_host/src/domain/Tag.h",
+			"MU",
+			"RCFEFXN5P7/moc_Tag.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/storage/DatabaseMigrator.h",
+			"MU",
+			"UTQNU3RORD/moc_DatabaseMigrator.cpp",
+			null
+		]
+	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/home/victor/c_proj/plc_host/build/tests/tst_smoke_autogen/include",
 	"MOC_COMPILATION_FILE" : "/home/victor/c_proj/plc_host/build/tests/tst_smoke_autogen/mocs_compilation.cpp",
@@ -16,6 +30,7 @@
 	[
 		"QT_CORE_LIB",
 		"QT_NO_DEBUG",
+		"QT_SQL_LIB",
 		"QT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\"",
 		"QT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\"",
 		"QT_TESTLIB_LIB"
@@ -29,10 +44,12 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"/home/victor/c_proj/plc_host/src",
 		"/usr/include/x86_64-linux-gnu/qt6/QtTest",
 		"/usr/include/x86_64-linux-gnu/qt6",
 		"/usr/include/x86_64-linux-gnu/qt6/QtCore",
 		"/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++",
+		"/usr/include/x86_64-linux-gnu/qt6/QtSql",
 		"/usr/include/c++/13",
 		"/usr/include/x86_64-linux-gnu/c++/13",
 		"/usr/include/c++/13/backward",
@@ -73,6 +90,12 @@
 	"SETTINGS_FILE" : "/home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_smoke_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "/home/victor/c_proj/plc_host/src/domain/Tag.cpp", "MU", null ],
+		[
+			"/home/victor/c_proj/plc_host/src/storage/DatabaseMigrator.cpp",
+			"MU",
+			null
+		],
 		[ "/home/victor/c_proj/plc_host/tests/unit/tst_smoke.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

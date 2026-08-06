@@ -1,2 +1,4 @@
-tst_smoke 1 0.00477303
+tst_smoke 4 0.000900902
+tst_DomainModels 3 0.00127595
+tst_DatabaseMigrations 1 0.0850325
 ---

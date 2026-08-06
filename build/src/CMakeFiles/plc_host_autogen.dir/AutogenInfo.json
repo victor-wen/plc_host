@@ -21,6 +21,30 @@
 			"MU",
 			"VJIZ3MDCXP/moc_MainWindow.cpp",
 			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/domain/PlcConfig.h",
+			"MU",
+			"ZIYP446TXO/moc_PlcConfig.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/domain/Tag.h",
+			"MU",
+			"ZIYP446TXO/moc_Tag.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/domain/TagValue.h",
+			"MU",
+			"ZIYP446TXO/moc_TagValue.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/storage/DatabaseMigrator.h",
+			"MU",
+			"5XLNPBDXWK/moc_DatabaseMigrator.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -104,7 +128,13 @@
 	[
 		[ "/home/victor/c_proj/plc_host/src/app/AppContext.cpp", "MU", null ],
 		[ "/home/victor/c_proj/plc_host/src/app/MainWindow.cpp", "MU", null ],
-		[ "/home/victor/c_proj/plc_host/src/app/main.cpp", "MU", null ]
+		[ "/home/victor/c_proj/plc_host/src/app/main.cpp", "MU", null ],
+		[ "/home/victor/c_proj/plc_host/src/domain/Tag.cpp", "MU", null ],
+		[
+			"/home/victor/c_proj/plc_host/src/storage/DatabaseMigrator.cpp",
+			"MU",
+			null
+		]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

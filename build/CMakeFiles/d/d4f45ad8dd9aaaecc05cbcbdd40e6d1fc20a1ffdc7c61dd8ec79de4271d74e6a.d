@@ -1,5 +1,9 @@
 tests/tst_smoke_autogen/timestamp: \
   tests/tst_smoke_autogen/moc_predefs.h \
+  /home/victor/c_proj/plc_host/src/domain/Tag.cpp \
+  /home/victor/c_proj/plc_host/src/domain/Tag.h \
+  /home/victor/c_proj/plc_host/src/storage/DatabaseMigrator.cpp \
+  /home/victor/c_proj/plc_host/src/storage/DatabaseMigrator.h \
   /home/victor/c_proj/plc_host/tests/CMakeLists.txt \
   /home/victor/c_proj/plc_host/tests/unit/tst_smoke.cpp \
   /usr/bin/cmake \
