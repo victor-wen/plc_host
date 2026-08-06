@@ -108,3 +108,5 @@ target_link_libraries(plc_host PRIVATE
 )
 
 set_target_properties(plc_host PROPERTIES WIN32_EXECUTABLE ON)
+
+install(TARGETS plc_host RUNTIME DESTINATION bin)
