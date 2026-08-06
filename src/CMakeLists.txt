@@ -3,6 +3,7 @@ set(SOURCES
     app/MainWindow.cpp
     app/AppContext.cpp
     domain/Tag.cpp
+    modbus/QtModbusClient.cpp
     modbus/ValueCodec.cpp
     runtime/TagCache.cpp
     runtime/WriteQueue.cpp
@@ -15,6 +16,8 @@ set(HEADERS
     domain/PlcConfig.h
     domain/Tag.h
     domain/TagValue.h
+    modbus/IModbusClient.h
+    modbus/QtModbusClient.h
     modbus/ValueCodec.h
     runtime/TagCache.h
     runtime/WriteQueue.h
