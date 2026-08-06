@@ -1,6 +1,10 @@
 set(DOMAIN_SOURCES ${CMAKE_SOURCE_DIR}/src/domain/Tag.cpp)
 set(STORAGE_SOURCES ${CMAKE_SOURCE_DIR}/src/storage/DatabaseMigrator.cpp)
-set(HISTORY_SOURCES ${CMAKE_SOURCE_DIR}/src/history/HistoryService.cpp)
+set(HISTORY_SOURCES
+    ${CMAKE_SOURCE_DIR}/src/history/HistoryService.cpp
+    ${CMAKE_SOURCE_DIR}/src/history/CsvExporter.cpp
+    ${CMAKE_SOURCE_DIR}/src/history/TrendService.cpp
+)
 set(ALARM_SOURCES ${CMAKE_SOURCE_DIR}/src/alarm/AlarmEngine.cpp)
 set(RUNTIME_SOURCES
     ${CMAKE_SOURCE_DIR}/src/runtime/AcquisitionEngine.cpp
@@ -69,12 +73,14 @@ set(UI_SOURCES
     ${CMAKE_SOURCE_DIR}/src/ui/PlcConfigWidget.cpp
     ${CMAKE_SOURCE_DIR}/src/ui/TagEditorWidget.cpp
     ${CMAKE_SOURCE_DIR}/src/ui/TagMonitorWidget.cpp
+    ${CMAKE_SOURCE_DIR}/src/ui/TrendWidget.cpp
     ${CMAKE_SOURCE_DIR}/src/app/MainWindow.cpp
 )
 set(UI_HEADERS
     ${CMAKE_SOURCE_DIR}/src/ui/PlcConfigWidget.h
     ${CMAKE_SOURCE_DIR}/src/ui/TagEditorWidget.h
     ${CMAKE_SOURCE_DIR}/src/ui/TagMonitorWidget.h
+    ${CMAKE_SOURCE_DIR}/src/ui/TrendWidget.h
     ${CMAKE_SOURCE_DIR}/src/app/MainWindow.h
 )
 
@@ -87,7 +93,8 @@ function(add_qtest filepath)
         ${DASHBOARD_SOURCES} ${DASHBOARD_HEADERS}
         ${UI_SOURCES} ${UI_HEADERS})
     target_include_directories(${target} PRIVATE ${CMAKE_SOURCE_DIR}/src)
-    target_link_libraries(${target} PRIVATE Qt6::Test Qt6::Sql Qt6::SerialBus Qt6::Widgets)
+    target_link_libraries(${target} PRIVATE
+        Qt6::Test Qt6::Sql Qt6::SerialBus Qt6::Widgets Qt6::Charts)
     add_test(NAME ${target} COMMAND ${target})
 endfunction()
 
@@ -110,4 +117,6 @@ add_qtest(unit/tst_ButtonActionModel)
 add_qtest(unit/tst_ButtonActionExecutor)
 add_qtest(ui/tst_DashboardRuntime)
 add_qtest(unit/tst_HistoryService)
+add_qtest(unit/tst_CsvExporter)
+add_qtest(ui/tst_TrendWidget)
 add_qtest(unit/tst_AlarmEngine)

@@ -44,6 +44,7 @@
 #define __cpp_variable_templates 201304L
 #define __FLT32X_MAX_EXP__ 1024
 #define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_1 1
+#define QT_OPENGL_LIB 1
 #define __FLT32_HAS_DENORM__ 1
 #define __UINT_FAST8_MAX__ 0xff
 #define __cpp_rvalue_reference 200610L
@@ -120,6 +121,7 @@
 #define __INT_WIDTH__ 32
 #define __STDC_IEC_559__ 1
 #define __STDC_ISO_10646__ 201706L
+#define QT_CHARTS_LIB 1
 #define __GCC_ATOMIC_CHAR8_T_LOCK_FREE 2
 #define __DECIMAL_DIG__ 21
 #define __STDC_IEC_559_COMPLEX__ 1
@@ -252,6 +254,7 @@
 #define __ORDER_PDP_ENDIAN__ 3412
 #define __DEC128_MIN_EXP__ (-6142)
 #define __DEC128_MAX__ 9.999999999999999999999999999999999E6144DL
+#define QT_OPENGLWIDGETS_LIB 1
 #define __cpp_constinit 201907L
 #define __INT_FAST32_TYPE__ long int
 #define __UINT_LEAST16_TYPE__ short unsigned int

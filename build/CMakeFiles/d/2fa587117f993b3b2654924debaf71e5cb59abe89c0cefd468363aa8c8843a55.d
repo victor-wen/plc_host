@@ -58,8 +58,12 @@ src/plc_host_autogen/timestamp: \
   /home/victor/c_proj/plc_host/src/domain/Tag.cpp \
   /home/victor/c_proj/plc_host/src/domain/Tag.h \
   /home/victor/c_proj/plc_host/src/domain/TagValue.h \
+  /home/victor/c_proj/plc_host/src/history/CsvExporter.cpp \
+  /home/victor/c_proj/plc_host/src/history/CsvExporter.h \
   /home/victor/c_proj/plc_host/src/history/HistoryService.cpp \
   /home/victor/c_proj/plc_host/src/history/HistoryService.h \
+  /home/victor/c_proj/plc_host/src/history/TrendService.cpp \
+  /home/victor/c_proj/plc_host/src/history/TrendService.h \
   /home/victor/c_proj/plc_host/src/modbus/IModbusClient.h \
   /home/victor/c_proj/plc_host/src/modbus/PollPlanner.cpp \
   /home/victor/c_proj/plc_host/src/modbus/PollPlanner.h \
@@ -81,6 +85,8 @@ src/plc_host_autogen/timestamp: \
   /home/victor/c_proj/plc_host/src/ui/TagEditorWidget.h \
   /home/victor/c_proj/plc_host/src/ui/TagMonitorWidget.cpp \
   /home/victor/c_proj/plc_host/src/ui/TagMonitorWidget.h \
+  /home/victor/c_proj/plc_host/src/ui/TrendWidget.cpp \
+  /home/victor/c_proj/plc_host/src/ui/TrendWidget.h \
   /usr/bin/cmake \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \

@@ -173,9 +173,21 @@
 			null
 		],
 		[
+			"/home/victor/c_proj/plc_host/src/history/CsvExporter.h",
+			"MU",
+			"LZX4AUEEY2/moc_CsvExporter.cpp",
+			null
+		],
+		[
 			"/home/victor/c_proj/plc_host/src/history/HistoryService.h",
 			"MU",
 			"LZX4AUEEY2/moc_HistoryService.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/history/TrendService.h",
+			"MU",
+			"LZX4AUEEY2/moc_TrendService.cpp",
 			null
 		],
 		[
@@ -243,6 +255,12 @@
 			"MU",
 			"RF5KSEWXUK/moc_TagMonitorWidget.cpp",
 			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/ui/TrendWidget.h",
+			"MU",
+			"RF5KSEWXUK/moc_TrendWidget.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -250,9 +268,12 @@
 	"MOC_COMPILATION_FILE" : "/home/victor/c_proj/plc_host/build/tests/tst_smoke_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
+		"QT_CHARTS_LIB",
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
 		"QT_NETWORK_LIB",
+		"QT_OPENGLWIDGETS_LIB",
+		"QT_OPENGL_LIB",
 		"QT_SERIALBUS_LIB",
 		"QT_SERIALPORT_LIB",
 		"QT_SQL_LIB",
@@ -281,6 +302,9 @@
 		"/usr/include/x86_64-linux-gnu/qt6/QtSerialPort",
 		"/usr/include/x86_64-linux-gnu/qt6/QtWidgets",
 		"/usr/include/x86_64-linux-gnu/qt6/QtGui",
+		"/usr/include/x86_64-linux-gnu/qt6/QtCharts",
+		"/usr/include/x86_64-linux-gnu/qt6/QtOpenGL",
+		"/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets",
 		"/usr/include",
 		"/usr/include/c++/13",
 		"/usr/include/x86_64-linux-gnu/c++/13",
@@ -430,7 +454,17 @@
 		],
 		[ "/home/victor/c_proj/plc_host/src/domain/Tag.cpp", "MU", null ],
 		[
+			"/home/victor/c_proj/plc_host/src/history/CsvExporter.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/victor/c_proj/plc_host/src/history/HistoryService.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/history/TrendService.cpp",
 			"MU",
 			null
 		],
@@ -460,6 +494,7 @@
 			"MU",
 			null
 		],
+		[ "/home/victor/c_proj/plc_host/src/ui/TrendWidget.cpp", "MU", null ],
 		[ "/home/victor/c_proj/plc_host/tests/unit/tst_smoke.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

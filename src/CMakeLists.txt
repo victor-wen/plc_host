@@ -11,6 +11,8 @@ set(SOURCES
     runtime/WriteQueue.cpp
     storage/DatabaseMigrator.cpp
     history/HistoryService.cpp
+    history/CsvExporter.cpp
+    history/TrendService.cpp
     alarm/AlarmEngine.cpp
     dashboard/DashboardRepository.cpp
     dashboard/DashboardScene.cpp
@@ -36,6 +38,7 @@ set(SOURCES
     ui/PlcConfigWidget.cpp
     ui/TagEditorWidget.cpp
     ui/TagMonitorWidget.cpp
+    ui/TrendWidget.cpp
 )
 
 set(HEADERS
@@ -53,6 +56,8 @@ set(HEADERS
     runtime/WriteQueue.h
     storage/DatabaseMigrator.h
     history/HistoryService.h
+    history/CsvExporter.h
+    history/TrendService.h
     alarm/AlarmEngine.h
     alarm/AlarmRule.h
     dashboard/DashboardDocument.h
@@ -82,6 +87,7 @@ set(HEADERS
     ui/PlcConfigWidget.h
     ui/TagEditorWidget.h
     ui/TagMonitorWidget.h
+    ui/TrendWidget.h
 )
 
 qt_add_executable(plc_host ${SOURCES} ${HEADERS})

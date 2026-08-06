@@ -197,9 +197,21 @@
 			null
 		],
 		[
+			"/home/victor/c_proj/plc_host/src/history/CsvExporter.h",
+			"MU",
+			"ZGCQNSLDUB/moc_CsvExporter.cpp",
+			null
+		],
+		[
 			"/home/victor/c_proj/plc_host/src/history/HistoryService.h",
 			"MU",
 			"ZGCQNSLDUB/moc_HistoryService.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/history/TrendService.h",
+			"MU",
+			"ZGCQNSLDUB/moc_TrendService.cpp",
 			null
 		],
 		[
@@ -266,6 +278,12 @@
 			"/home/victor/c_proj/plc_host/src/ui/TagMonitorWidget.h",
 			"MU",
 			"UYX5XTB5RZ/moc_TagMonitorWidget.cpp",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/ui/TrendWidget.h",
+			"MU",
+			"UYX5XTB5RZ/moc_TrendWidget.cpp",
 			null
 		]
 	],
@@ -458,7 +476,17 @@
 		],
 		[ "/home/victor/c_proj/plc_host/src/domain/Tag.cpp", "MU", null ],
 		[
+			"/home/victor/c_proj/plc_host/src/history/CsvExporter.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/victor/c_proj/plc_host/src/history/HistoryService.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/victor/c_proj/plc_host/src/history/TrendService.cpp",
 			"MU",
 			null
 		],
@@ -487,7 +515,8 @@
 			"/home/victor/c_proj/plc_host/src/ui/TagMonitorWidget.cpp",
 			"MU",
 			null
-		]
+		],
+		[ "/home/victor/c_proj/plc_host/src/ui/TrendWidget.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
