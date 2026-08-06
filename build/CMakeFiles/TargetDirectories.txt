@@ -33,6 +33,7 @@
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_RecipeService.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_LogService.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_BackupService.dir
+/home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_Integration.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/test.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/edit_cache.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/rebuild_cache.dir
@@ -88,3 +89,5 @@
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_LogService_autogen.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_BackupService_autogen_timestamp_deps.dir
 /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_BackupService_autogen.dir
+/home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_Integration_autogen_timestamp_deps.dir
+/home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_Integration_autogen.dir

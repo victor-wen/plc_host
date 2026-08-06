@@ -56,3 +56,5 @@ add_test([=[tst_LogService]=] "/home/victor/c_proj/plc_host/build/tests/tst_LogS
 set_tests_properties([=[tst_LogService]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/victor/c_proj/plc_host/tests/CMakeLists.txt;104;add_test;/home/victor/c_proj/plc_host/tests/CMakeLists.txt;131;add_qtest;/home/victor/c_proj/plc_host/tests/CMakeLists.txt;0;")
 add_test([=[tst_BackupService]=] "/home/victor/c_proj/plc_host/build/tests/tst_BackupService")
 set_tests_properties([=[tst_BackupService]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/victor/c_proj/plc_host/tests/CMakeLists.txt;104;add_test;/home/victor/c_proj/plc_host/tests/CMakeLists.txt;132;add_qtest;/home/victor/c_proj/plc_host/tests/CMakeLists.txt;0;")
+add_test([=[tst_Integration]=] "/home/victor/c_proj/plc_host/build/tests/tst_Integration")
+set_tests_properties([=[tst_Integration]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/victor/c_proj/plc_host/tests/CMakeLists.txt;104;add_test;/home/victor/c_proj/plc_host/tests/CMakeLists.txt;133;add_qtest;/home/victor/c_proj/plc_host/tests/CMakeLists.txt;0;")

@@ -10152,6 +10152,376 @@ build tests/tst_BackupService: CXX_EXECUTABLE_LINKER__tst_BackupService_Debug te
   TARGET_FILE = tests/tst_BackupService
   TARGET_PDB = tst_BackupService.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target tst_Integration
+
+
+#############################################
+# Order-only phony target for tst_Integration
+
+build cmake_object_order_depends_target_tst_Integration: phony || tests/tst_Integration_autogen tests/tst_Integration_autogen/mocs_compilation.cpp tests/tst_Integration_autogen/timestamp tests/tst_Integration_autogen_timestamp_deps
+
+build tests/CMakeFiles/tst_Integration.dir/tst_Integration_autogen/mocs_compilation.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/tst_Integration_autogen/mocs_compilation.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/tst_Integration_autogen
+
+build tests/CMakeFiles/tst_Integration.dir/integration/tst_Integration.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/tests/integration/tst_Integration.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/integration/tst_Integration.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/integration
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/domain/Tag.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/domain/Tag.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/domain/Tag.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/domain
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/storage/DatabaseMigrator.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/storage/DatabaseMigrator.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/storage/DatabaseMigrator.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/storage
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/storage/BackupService.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/storage/BackupService.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/storage/BackupService.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/storage
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/history/HistoryService.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/history/HistoryService.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/history/HistoryService.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/history
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/history/CsvExporter.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/history/CsvExporter.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/history/CsvExporter.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/history
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/history/TrendService.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/history/TrendService.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/history/TrendService.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/history
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/alarm/AlarmEngine.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/alarm/AlarmEngine.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/alarm/AlarmEngine.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/alarm
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/runtime/AcquisitionEngine.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/runtime/AcquisitionEngine.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/runtime/AcquisitionEngine.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/runtime
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/runtime/TagCache.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/runtime/TagCache.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/runtime/TagCache.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/runtime
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/runtime/WriteQueue.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/runtime/WriteQueue.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/runtime/WriteQueue.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/runtime
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/modbus/PollPlanner.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/modbus/PollPlanner.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/modbus/PollPlanner.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/modbus
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/modbus/QtModbusClient.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/modbus/QtModbusClient.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/modbus/QtModbusClient.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/modbus
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/modbus/ValueCodec.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/modbus/ValueCodec.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/modbus/ValueCodec.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/modbus
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/DashboardRepository.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/DashboardRepository.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/DashboardRepository.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/DashboardScene.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/DashboardScene.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/DashboardScene.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/DashboardView.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/DashboardView.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/DashboardView.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/DashboardController.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/DashboardController.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/DashboardController.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/runtime/ButtonActionExecutor.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/runtime/ButtonActionExecutor.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/runtime/ButtonActionExecutor.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/runtime
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/commands/AddItemCommand.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/commands/AddItemCommand.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/commands/AddItemCommand.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/commands
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/commands/RemoveItemCommand.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/commands/RemoveItemCommand.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/commands/RemoveItemCommand.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/commands
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/commands/MoveCommand.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/commands/MoveCommand.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/commands/MoveCommand.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/commands
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/commands/ResizeCommand.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/commands/ResizeCommand.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/commands/ResizeCommand.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/commands
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/commands/PropertyChangeCommand.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/commands/PropertyChangeCommand.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/commands/PropertyChangeCommand.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/commands
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/TextItem.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/items/TextItem.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/TextItem.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/RectItem.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/items/RectItem.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/RectItem.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/ImageItem.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/items/ImageItem.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/ImageItem.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/ValueItem.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/items/ValueItem.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/ValueItem.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/LedItem.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/items/LedItem.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/LedItem.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/SwitchItem.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/items/SwitchItem.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/SwitchItem.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/ProgressBarItem.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/items/ProgressBarItem.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/ProgressBarItem.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/GaugeItem.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/items/GaugeItem.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/GaugeItem.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/ValueInputItem.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/items/ValueInputItem.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/ValueInputItem.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/TrendItem.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/items/TrendItem.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/TrendItem.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/ButtonItem.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/dashboard/items/ButtonItem.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/ButtonItem.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/ui/PlcConfigWidget.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/ui/PlcConfigWidget.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/ui/PlcConfigWidget.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/ui
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/ui/TagEditorWidget.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/ui/TagEditorWidget.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/ui/TagEditorWidget.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/ui
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/ui/TagMonitorWidget.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/ui/TagMonitorWidget.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/ui/TagMonitorWidget.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/ui
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/ui/TrendWidget.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/ui/TrendWidget.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/ui/TrendWidget.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/ui
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/app/MainWindow.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/app/MainWindow.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/app/MainWindow.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/app
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/recipe/RecipeService.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/recipe/RecipeService.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/recipe/RecipeService.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/recipe
+
+build tests/CMakeFiles/tst_Integration.dir/__/src/logging/LogService.cpp.o: CXX_COMPILER__tst_Integration_unscanned_Debug /home/victor/c_proj/plc_host/src/logging/LogService.cpp || cmake_object_order_depends_target_tst_Integration
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SERIALBUS_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_TESTCASE_BUILDDIR=\"/home/victor/c_proj/plc_host/build/tests\" -DQT_TESTCASE_SOURCEDIR=\"/home/victor/c_proj/plc_host/tests\" -DQT_TESTLIB_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = tests/CMakeFiles/tst_Integration.dir/__/src/logging/LogService.cpp.o.d
+  FLAGS = -g -std=gnu++20 -Wall -Wextra -Werror -Wpedantic -fPIC
+  INCLUDES = -I/home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/include -I/home/victor/c_proj/plc_host/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtTest -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialBus -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/tst_Integration.dir/__/src/logging
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target tst_Integration
+
+
+#############################################
+# Link the executable tests/tst_Integration
+
+build tests/tst_Integration: CXX_EXECUTABLE_LINKER__tst_Integration_Debug tests/CMakeFiles/tst_Integration.dir/tst_Integration_autogen/mocs_compilation.cpp.o tests/CMakeFiles/tst_Integration.dir/integration/tst_Integration.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/domain/Tag.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/storage/DatabaseMigrator.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/storage/BackupService.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/history/HistoryService.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/history/CsvExporter.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/history/TrendService.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/alarm/AlarmEngine.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/runtime/AcquisitionEngine.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/runtime/TagCache.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/runtime/WriteQueue.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/modbus/PollPlanner.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/modbus/QtModbusClient.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/modbus/ValueCodec.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/DashboardRepository.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/DashboardScene.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/DashboardView.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/DashboardController.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/runtime/ButtonActionExecutor.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/commands/AddItemCommand.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/commands/RemoveItemCommand.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/commands/MoveCommand.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/commands/ResizeCommand.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/commands/PropertyChangeCommand.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/TextItem.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/RectItem.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/ImageItem.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/ValueItem.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/LedItem.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/SwitchItem.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/ProgressBarItem.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/GaugeItem.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/ValueInputItem.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/TrendItem.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/dashboard/items/ButtonItem.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/ui/PlcConfigWidget.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/ui/TagEditorWidget.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/ui/TagMonitorWidget.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/ui/TrendWidget.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/app/MainWindow.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/recipe/RecipeService.cpp.o tests/CMakeFiles/tst_Integration.dir/__/src/logging/LogService.cpp.o | /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6OpenGLWidgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so || tests/tst_Integration_autogen tests/tst_Integration_autogen_timestamp_deps
+  FLAGS = -g
+  LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6OpenGLWidgets.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2  /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2  /usr/lib/x86_64-linux-gnu/libGLX.so  /usr/lib/x86_64-linux-gnu/libOpenGL.so
+  OBJECT_DIR = tests/CMakeFiles/tst_Integration.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = tests/tst_Integration
+  TARGET_PDB = tst_Integration.dbg
+
 
 #############################################
 # Utility command for test
@@ -10501,6 +10871,18 @@ build tests/tst_BackupService_autogen: phony tests/CMakeFiles/tst_BackupService_
 
 
 #############################################
+# Utility command for tst_Integration_autogen_timestamp_deps
+
+build tests/tst_Integration_autogen_timestamp_deps: phony tests/CMakeFiles/tst_Integration_autogen_timestamp_deps
+
+
+#############################################
+# Utility command for tst_Integration_autogen
+
+build tests/tst_Integration_autogen: phony tests/CMakeFiles/tst_Integration_autogen tests/tst_Integration_autogen/timestamp tests/tst_Integration_autogen/mocs_compilation.cpp tests/tst_Integration_autogen_timestamp_deps
+
+
+#############################################
 # Custom command for tests/tst_smoke_autogen/timestamp
 
 build tests/tst_smoke_autogen/timestamp tests/tst_smoke_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}tests/tst_smoke_autogen/timestamp ${cmake_ninja_workdir}tests/tst_smoke_autogen/mocs_compilation.cpp: CUSTOM_COMMAND /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic || tests/tst_smoke_autogen_timestamp_deps
@@ -10757,6 +11139,16 @@ build tests/tst_BackupService_autogen/timestamp tests/tst_BackupService_autogen/
   COMMAND = cd /home/victor/c_proj/plc_host/build/tests && /usr/bin/cmake -E cmake_autogen /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_BackupService_autogen.dir/AutogenInfo.json Debug && /usr/bin/cmake -E touch /home/victor/c_proj/plc_host/build/tests/tst_BackupService_autogen/timestamp && /usr/bin/cmake -E cmake_transform_depfile Ninja gccdepfile /home/victor/c_proj/plc_host /home/victor/c_proj/plc_host/tests /home/victor/c_proj/plc_host/build /home/victor/c_proj/plc_host/build/tests /home/victor/c_proj/plc_host/build/tests/tst_BackupService_autogen/deps /home/victor/c_proj/plc_host/build/CMakeFiles/d/ad9a00dafab14b99ba86fe68f48b20193461aea58979ff305934b650575a9be8.d
   DESC = Automatic MOC and UIC for target tst_BackupService
   depfile = /home/victor/c_proj/plc_host/build/CMakeFiles/d/ad9a00dafab14b99ba86fe68f48b20193461aea58979ff305934b650575a9be8.d
+  restat = 1
+
+
+#############################################
+# Custom command for tests/tst_Integration_autogen/timestamp
+
+build tests/tst_Integration_autogen/timestamp tests/tst_Integration_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}tests/tst_Integration_autogen/timestamp ${cmake_ninja_workdir}tests/tst_Integration_autogen/mocs_compilation.cpp: CUSTOM_COMMAND /usr/lib/qt6/libexec/moc /usr/lib/qt6/libexec/uic || tests/tst_Integration_autogen_timestamp_deps
+  COMMAND = cd /home/victor/c_proj/plc_host/build/tests && /usr/bin/cmake -E cmake_autogen /home/victor/c_proj/plc_host/build/tests/CMakeFiles/tst_Integration_autogen.dir/AutogenInfo.json Debug && /usr/bin/cmake -E touch /home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/timestamp && /usr/bin/cmake -E cmake_transform_depfile Ninja gccdepfile /home/victor/c_proj/plc_host /home/victor/c_proj/plc_host/tests /home/victor/c_proj/plc_host/build /home/victor/c_proj/plc_host/build/tests /home/victor/c_proj/plc_host/build/tests/tst_Integration_autogen/deps /home/victor/c_proj/plc_host/build/CMakeFiles/d/a768a811fe6ae996926cbbb986ff01cf22eb248518f66b569c849a554548e305.d
+  DESC = Automatic MOC and UIC for target tst_Integration
+  depfile = /home/victor/c_proj/plc_host/build/CMakeFiles/d/a768a811fe6ae996926cbbb986ff01cf22eb248518f66b569c849a554548e305.d
   restat = 1
 
 
@@ -11071,6 +11463,18 @@ build tests/CMakeFiles/tst_BackupService_autogen_timestamp_deps | ${cmake_ninja_
 
 build tests/CMakeFiles/tst_BackupService_autogen | ${cmake_ninja_workdir}tests/CMakeFiles/tst_BackupService_autogen: phony tests/tst_BackupService_autogen/timestamp || tests/tst_BackupService_autogen_timestamp_deps
 
+
+#############################################
+# Phony custom command for tests/CMakeFiles/tst_Integration_autogen_timestamp_deps
+
+build tests/CMakeFiles/tst_Integration_autogen_timestamp_deps | ${cmake_ninja_workdir}tests/CMakeFiles/tst_Integration_autogen_timestamp_deps: phony /usr/lib/qt6/libexec/uic /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.4.2 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6SerialBus.so.6.4.2
+
+
+#############################################
+# Phony custom command for tests/CMakeFiles/tst_Integration_autogen
+
+build tests/CMakeFiles/tst_Integration_autogen | ${cmake_ninja_workdir}tests/CMakeFiles/tst_Integration_autogen: phony tests/tst_Integration_autogen/timestamp || tests/tst_Integration_autogen_timestamp_deps
+
 # =============================================================================
 # Target aliases.
 
@@ -11170,6 +11574,12 @@ build tst_HistoryService_autogen: phony tests/tst_HistoryService_autogen
 
 build tst_HistoryService_autogen_timestamp_deps: phony tests/tst_HistoryService_autogen_timestamp_deps
 
+build tst_Integration: phony tests/tst_Integration
+
+build tst_Integration_autogen: phony tests/tst_Integration_autogen
+
+build tst_Integration_autogen_timestamp_deps: phony tests/tst_Integration_autogen_timestamp_deps
+
 build tst_LogService: phony tests/tst_LogService
 
 build tst_LogService_autogen: phony tests/tst_LogService_autogen
@@ -11258,7 +11668,7 @@ build src/all: phony src/plc_host
 #############################################
 # Folder: /home/victor/c_proj/plc_host/build/tests
 
-build tests/all: phony tests/tst_smoke tests/tst_DomainModels tests/tst_DatabaseMigrations tests/tst_ValueCodec tests/tst_WriteQueue tests/tst_TagCache tests/tst_PollPlanner tests/tst_DashboardRepository tests/tst_UndoCommands tests/tst_QtModbusClient tests/tst_AcquisitionEngine tests/tst_UiSmoke tests/tst_DashboardScene tests/tst_DashboardGeometry tests/tst_DashboardItems tests/tst_ButtonActionModel tests/tst_ButtonActionExecutor tests/tst_DashboardRuntime tests/tst_DashboardRecovery tests/tst_HistoryService tests/tst_CsvExporter tests/tst_TrendWidget tests/tst_AlarmEngine tests/tst_RecipeService tests/tst_LogService tests/tst_BackupService
+build tests/all: phony tests/tst_smoke tests/tst_DomainModels tests/tst_DatabaseMigrations tests/tst_ValueCodec tests/tst_WriteQueue tests/tst_TagCache tests/tst_PollPlanner tests/tst_DashboardRepository tests/tst_UndoCommands tests/tst_QtModbusClient tests/tst_AcquisitionEngine tests/tst_UiSmoke tests/tst_DashboardScene tests/tst_DashboardGeometry tests/tst_DashboardItems tests/tst_ButtonActionModel tests/tst_ButtonActionExecutor tests/tst_DashboardRuntime tests/tst_DashboardRecovery tests/tst_HistoryService tests/tst_CsvExporter tests/tst_TrendWidget tests/tst_AlarmEngine tests/tst_RecipeService tests/tst_LogService tests/tst_BackupService tests/tst_Integration
 
 # =============================================================================
 # Built-in targets
