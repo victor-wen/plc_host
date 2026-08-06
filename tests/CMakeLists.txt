@@ -1,6 +1,7 @@
 set(DOMAIN_SOURCES ${CMAKE_SOURCE_DIR}/src/domain/Tag.cpp)
 set(STORAGE_SOURCES ${CMAKE_SOURCE_DIR}/src/storage/DatabaseMigrator.cpp)
 set(RUNTIME_SOURCES
+    ${CMAKE_SOURCE_DIR}/src/runtime/AcquisitionEngine.cpp
     ${CMAKE_SOURCE_DIR}/src/runtime/TagCache.cpp
     ${CMAKE_SOURCE_DIR}/src/runtime/WriteQueue.cpp
 )
@@ -31,3 +32,4 @@ add_qtest(unit/tst_WriteQueue)
 add_qtest(unit/tst_TagCache)
 add_qtest(unit/tst_PollPlanner)
 add_qtest(integration/tst_QtModbusClient)
+add_qtest(integration/tst_AcquisitionEngine)

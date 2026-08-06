@@ -65,6 +65,12 @@
 			null
 		],
 		[
+			"/home/victor/c_proj/plc_host/src/runtime/AcquisitionEngine.h",
+			"MU",
+			"BP4HXTY4JZ/moc_AcquisitionEngine.cpp",
+			null
+		],
+		[
 			"/home/victor/c_proj/plc_host/src/runtime/TagCache.h",
 			"MU",
 			"BP4HXTY4JZ/moc_TagCache.cpp",
@@ -173,6 +179,11 @@
 			null
 		],
 		[ "/home/victor/c_proj/plc_host/src/modbus/ValueCodec.cpp", "MU", null ],
+		[
+			"/home/victor/c_proj/plc_host/src/runtime/AcquisitionEngine.cpp",
+			"MU",
+			null
+		],
 		[ "/home/victor/c_proj/plc_host/src/runtime/TagCache.cpp", "MU", null ],
 		[ "/home/victor/c_proj/plc_host/src/runtime/WriteQueue.cpp", "MU", null ],
 		[

@@ -2,3 +2,4 @@
 #include "VJIZ3MDCXP/moc_MainWindow.cpp"
 #include "EQXUSF6PRG/moc_IModbusClient.cpp"
 #include "EQXUSF6PRG/moc_QtModbusClient.cpp"
+#include "BP4HXTY4JZ/moc_AcquisitionEngine.cpp"

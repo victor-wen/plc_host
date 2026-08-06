@@ -6,6 +6,7 @@ set(SOURCES
     modbus/PollPlanner.cpp
     modbus/QtModbusClient.cpp
     modbus/ValueCodec.cpp
+    runtime/AcquisitionEngine.cpp
     runtime/TagCache.cpp
     runtime/WriteQueue.cpp
     storage/DatabaseMigrator.cpp
@@ -21,6 +22,7 @@ set(HEADERS
     modbus/PollPlanner.h
     modbus/QtModbusClient.h
     modbus/ValueCodec.h
+    runtime/AcquisitionEngine.h
     runtime/TagCache.h
     runtime/WriteQueue.h
     storage/DatabaseMigrator.h
