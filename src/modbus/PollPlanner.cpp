@@ -62,8 +62,9 @@ QVector<PollGroup> PollPlanner::buildGroups(const QVector<Tag>& tags)
 
         if (sameKey && gap <= kMaxMergeGap && mergedCount <= kMaxRegistersPerBlock) {
             // 合并到当前块（规则 3、4）
-            current.count = mergedCount;
-            currentEnd = tagEnd;
+            // 重叠 tag 的 tagEnd 可能小于既有 currentEnd，取 max 防止 extent 回退。
+            currentEnd = std::max(currentEnd, tagEnd);
+            current.count = currentEnd - current.startAddress + 1;
             current.tagIds.append(tag.id);
         } else {
             if (hasCurrent)

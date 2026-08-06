@@ -140,6 +140,38 @@ private slots:
         QCOMPARE(groups[0].tagIds, QVector<int>({1, 2}));
     }
 
+    void overlappingTags_mergedIntoSingleBlock()
+    {
+        // Int32@10 covers regs 10..11; UInt16@10 covers reg 10 (重叠).
+        // count 必须取 max(tagEnd) 之后的整体跨度，即 11 - 10 + 1 = 2。
+        PollPlanner planner;
+        const auto groups = planner.buildGroups(
+            {makeTag(1, RegisterType::HoldingRegister, 10, 500, DataType::Int32),
+             makeTag(2, RegisterType::HoldingRegister, 10)});
+
+        QCOMPARE(groups.size(), 1);
+        QCOMPARE(groups[0].startAddress, 10);
+        QCOMPARE(groups[0].count, 2);
+        QCOMPARE(groups[0].tagIds, QVector<int>({1, 2}));
+    }
+
+    void overlappingTag_thenTailExtension_mergedIntoSingleBlock()
+    {
+        // Int32@10 (10..11) + UInt16@10 (10) + UInt16@17 (17):
+        // 重叠后 currentEnd 保持 11，再与 17 合并 gap = 17-11-1 = 5 <= 5，
+        // 最终一块覆盖 10..17，count = 17 - 10 + 1 = 8。
+        PollPlanner planner;
+        const auto groups = planner.buildGroups(
+            {makeTag(1, RegisterType::HoldingRegister, 10, 500, DataType::Int32),
+             makeTag(2, RegisterType::HoldingRegister, 10),
+             makeTag(3, RegisterType::HoldingRegister, 17)});
+
+        QCOMPARE(groups.size(), 1);
+        QCOMPARE(groups[0].startAddress, 10);
+        QCOMPARE(groups[0].count, 8);
+        QCOMPARE(groups[0].tagIds, QVector<int>({1, 2, 3}));
+    }
+
     void unsortedTags_sortedByAddress()
     {
         PollPlanner planner;
