@@ -57,12 +57,20 @@ private slots:
         v1.tagId = 1;
         v1.value = QVariant(42.5);
         v1.quality = Quality::Good;
+#if QT_VERSION >= QT_VERSION_CHECK(6, 5, 0)
+        v1.timestamp = QDateTime(QDate(2026, 8, 7), QTime(10, 30, 0, 123), QTimeZone::UTC);
+#else
         v1.timestamp = QDateTime(QDate(2026, 8, 7), QTime(10, 30, 0, 123), Qt::UTC);
+#endif
         TagValue v2;
         v2.tagId = 2;
         v2.value = QVariant(25);
         v2.quality = Quality::Stale;
+#if QT_VERSION >= QT_VERSION_CHECK(6, 5, 0)
+        v2.timestamp = QDateTime(QDate(2026, 8, 7), QTime(10, 30, 1), QTimeZone::UTC);
+#else
         v2.timestamp = QDateTime(QDate(2026, 8, 7), QTime(10, 30, 1), Qt::UTC);
+#endif
         data.append(v1);
         data.append(v2);
 
@@ -101,7 +109,11 @@ private slots:
         v.tagId = 99;   // 不在 tags 中
         v.value = QVariant(1.5);
         v.quality = Quality::Bad;
+#if QT_VERSION >= QT_VERSION_CHECK(6, 5, 0)
+        v.timestamp = QDateTime(QDate(2026, 8, 7), QTime(9, 0), QTimeZone::UTC);
+#else
         v.timestamp = QDateTime(QDate(2026, 8, 7), QTime(9, 0), Qt::UTC);
+#endif
         data.append(v);
 
         QVERIFY(CsvExporter::exportHistory(path, data, {}));
@@ -118,7 +130,11 @@ private slots:
             v.tagId = 1;
             v.value = QVariant(3.14159265358979);
             v.quality = Quality::Good;
+#if QT_VERSION >= QT_VERSION_CHECK(6, 5, 0)
+            v.timestamp = QDateTime(QDate(2026, 8, 7), QTime(0, 0), QTimeZone::UTC);
+#else
             v.timestamp = QDateTime(QDate(2026, 8, 7), QTime(0, 0), Qt::UTC);
+#endif
             data.append(v);
         }
         {
@@ -126,7 +142,11 @@ private slots:
             v.tagId = 1;
             v.value = QVariant(true);
             v.quality = Quality::Good;
+#if QT_VERSION >= QT_VERSION_CHECK(6, 5, 0)
+            v.timestamp = QDateTime(QDate(2026, 8, 7), QTime(0, 0, 1), QTimeZone::UTC);
+#else
             v.timestamp = QDateTime(QDate(2026, 8, 7), QTime(0, 0, 1), Qt::UTC);
+#endif
             data.append(v);
         }
         QVector<Tag> tags;
@@ -157,7 +177,11 @@ private slots:
         v.tagId = 1;
         v.value = QVariant(1.0);
         v.quality = Quality::Good;
+#if QT_VERSION >= QT_VERSION_CHECK(6, 5, 0)
+        v.timestamp = QDateTime(QDate(2026, 8, 7), QTime(0, 0), QTimeZone::UTC);
+#else
         v.timestamp = QDateTime(QDate(2026, 8, 7), QTime(0, 0), Qt::UTC);
+#endif
         data.append(v);
 
         const QString path = m_tempDir.path() + "/escape.csv";
