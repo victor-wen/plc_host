@@ -4,8 +4,10 @@
 #include <QListWidget>
 #include <QTest>
 #include <QTemporaryDir>
+#include <QTimeZone>
 #include <QtCharts/QChart>
 #include <QtCharts/QLineSeries>
+#include <QtGlobal>
 
 #include "history/TrendService.h"
 #include "ui/TrendWidget.h"
@@ -99,7 +101,11 @@ private slots:
                 gotValue = value;
             });
 
+#if QT_VERSION >= QT_VERSION_CHECK(6, 5, 0)
+        const QDateTime now = QDateTime(QDate(2026, 8, 7), QTime(10, 0, 0, 500), QTimeZone::UTC);
+#else
         const QDateTime now = QDateTime(QDate(2026, 8, 7), QTime(10, 0, 0, 500), Qt::UTC);
+#endif
         TagValue tv;
         tv.tagId = 1;
         tv.value = QVariant(42.5);
@@ -139,7 +145,11 @@ private slots:
         QLineSeries* series = widget.service()->seriesFor(1);
         QVERIFY(series != nullptr);
 
+#if QT_VERSION >= QT_VERSION_CHECK(6, 5, 0)
+        const QDateTime t0(QDate(2026, 8, 7), QTime(0, 0), QTimeZone::UTC);
+#else
         const QDateTime t0(QDate(2026, 8, 7), QTime(0, 0), Qt::UTC);
+#endif
         for (int i = 0; i < 150; ++i) {
             TagValue tv;
             tv.tagId = 1;
@@ -159,7 +169,11 @@ private slots:
         QVERIFY(list != nullptr);
         list->item(0)->setCheckState(Qt::Checked);
 
+#if QT_VERSION >= QT_VERSION_CHECK(6, 5, 0)
+        const QDateTime now = QDateTime(QDate(2026, 8, 7), QTime(10, 0), QTimeZone::UTC);
+#else
         const QDateTime now = QDateTime(QDate(2026, 8, 7), QTime(10, 0), Qt::UTC);
+#endif
         TagValue tv;
         tv.tagId = 1;
         tv.value = QVariant(7.25);
