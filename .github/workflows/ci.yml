@@ -27,6 +27,7 @@ jobs:
     runs-on: windows-2022
     steps:
       - uses: actions/checkout@v4
+
       - name: Install Qt
         uses: jurplel/install-qt-action@v4
         with:
@@ -36,21 +37,59 @@ jobs:
           arch: win64_msvc2022_64
           modules: "qtcharts qtserialbus qtserialport"
           cache: true
+
       - name: Setup MSVC
         uses: ilammy/msvc-dev-cmd@v1
+
       - name: Configure
-        run: cmake -S . -B build -G Ninja -DBUILD_TESTING=ON
+        run: cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=ON
+
       - name: Build
-        run: cmake --build build --config Release
+        run: cmake --build build --parallel
+
       - name: Test
-        run: |
-          set QT_QPA_PLATFORM=offscreen
-          ctest --test-dir build -C Release --output-on-failure
+        env:
+          QT_QPA_PLATFORM: offscreen
+        run: ctest --test-dir build --output-on-failure
+
       - name: Package
+        shell: pwsh
         run: |
-          cmake --install build --config Release --prefix dist
-          windeployqt.exe --release --dir dist/bin dist/bin/plc_host.exe
-          7z a plc_host-windows-x64.zip .\dist\*
+          cmake --install build --prefix "$pwd/dist"
+
+          windeployqt.exe `
+            --release `
+            --compiler-runtime `
+            --no-translations `
+            --verbose 2 `
+            --dir "$pwd/dist/bin" `
+            "$pwd/dist/bin/plc_host.exe"
+
+          Write-Host "===== Package Files ====="
+          Get-ChildItem "$pwd/dist/bin" -Recurse
+
+          Write-Host "===== EXE Dependencies ====="
+          dumpbin /DEPENDENTS "$pwd/dist/bin/plc_host.exe"
+
+      - name: Smoke Test Packaged EXE
+        shell: pwsh
+        run: |
+          $exe = "$pwd/dist/bin/plc_host.exe"
+          Write-Host "Starting packaged executable: $exe"
+          $process = Start-Process -FilePath $exe -WorkingDirectory "$pwd/dist/bin" -PassThru
+          Start-Sleep -Seconds 5
+
+          if ($process.HasExited) {
+            throw "plc_host.exe exited during startup. ExitCode=$($process.ExitCode)"
+          }
+
+          Write-Host "plc_host.exe stayed running for 5 seconds: startup smoke test passed."
+          Stop-Process -Id $process.Id -Force
+
+      - name: Create ZIP
+        shell: pwsh
+        run: 7z a plc_host-windows-x64.zip "$pwd/dist/*"
+
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
