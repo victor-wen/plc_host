@@ -14,13 +14,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install Qt
-        run: sudo apt-get update && sudo apt-get install -y qt6-base-dev qt6-base-dev-tools qt6-charts-dev qt6-serialbus-dev qt6-serialport-dev libqt6sql6-sqlite libgl1-mesa-dev
+        run: sudo apt-get update && sudo apt-get install -y qt6-base-dev qt6-base-dev-tools qt6-charts-dev qt6-serialbus-dev qt6-serialport-dev libqt6sql6-sqlite libgl1-mesa-dev xvfb
       - name: Configure
         run: cmake -S . -B build -G Ninja -DBUILD_TESTING=ON
       - name: Build
         run: cmake --build build
       - name: Test
-        run: ctest --test-dir build --output-on-failure
+        run: xvfb-run ctest --test-dir build --output-on-failure
 
   build-windows:
     name: Windows Qt 6.8 MSVC

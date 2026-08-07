@@ -2,6 +2,8 @@
 #include <QFile>
 #include <QTemporaryDir>
 #include <QTest>
+#include <QTimeZone>
+#include <QtGlobal>
 
 #include "history/CsvExporter.h"
 
