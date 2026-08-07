@@ -177,7 +177,7 @@ void DashboardController::saveDraft()
         arr.append(obj);
     }
 
-    QSettings settings;
+    QSettings settings(QSettings::IniFormat, QSettings::UserScope, "plc_host", "dashboard");
     settings.setValue(QString("dashboard/draft_%1").arg(m_currentPageId),
                       QJsonDocument(arr).toJson(QJsonDocument::Compact));
 }
@@ -187,7 +187,7 @@ bool DashboardController::restoreDraft()
     if (m_currentPageId < 0)
         return false;
 
-    QSettings settings;
+    QSettings settings(QSettings::IniFormat, QSettings::UserScope, "plc_host", "dashboard");
     QByteArray data = settings.value(QString("dashboard/draft_%1").arg(m_currentPageId)).toByteArray();
     if (data.isEmpty())
         return false;
